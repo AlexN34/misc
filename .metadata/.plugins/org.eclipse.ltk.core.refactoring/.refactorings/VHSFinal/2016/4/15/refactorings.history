@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 8 elements to &apos;test/src/(default package)&apos;&#x0A;- Original project: &apos;VHSFinal&apos;&#x0A;- Destination element: &apos;test/src/(default package)&apos;&#x0A;- Original elements:&#x0A;     Venue.java&#x0A;     Change.java&#x0A;     Room.java&#x0A;     DateData.java&#x0A;     Action.java&#x0A;     Request.java&#x0A;     VenueHireSystem.java&#x0A;     Cancel.java" description="Copy compilation units" destination="=test/src&lt;" element1="/src&lt;{Venue.java" element2="/src&lt;{Change.java" element3="/src&lt;{Room.java" element4="/src&lt;{DateData.java" element5="/src&lt;{Action.java" element6="/src&lt;{Request.java" element7="/src&lt;{VenueHireSystem.java" element8="/src&lt;{Cancel.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1460015600981" units="8" version="1.0"/>
+</session>

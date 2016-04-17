@@ -1,0 +1,86 @@
+import java.util.Calendar;
+import java.util.Iterator;
+import java.util.Set;
+
+public class DateData {
+	private Set<Calendar> bookedDates;
+	/**
+	 * @return the bookedDates
+	 */
+	private Set<Calendar> getBookedDates() {
+		return bookedDates;
+	}
+
+	/**
+	 * @param bookedDates the bookedDates to set
+	 */
+	private void setBookedDates(Set<Calendar> dates) {
+		this.bookedDates = dates;
+	}
+
+	public DateData (Set<Calendar> dates){
+		this.bookedDates = dates;
+	}
+	
+	boolean isAvailable(Calendar d) {
+		Iterator<Calendar> itr = this.bookedDates.iterator();
+		while (itr.hasNext()) {
+			Calendar curDate = itr.next();
+			if (curDate.equals(d)) return false;
+		}
+		return true;
+		//dates.contains()
+	}
+	
+	public void addDate(Calendar d) {
+		this.bookedDates.add(d);
+
+	}
+	
+	public void removeDate(Calendar d) {
+		this.bookedDates.remove(d);
+	}
+
+}
+
+
+/*
+ * 
+ * @startuml
+ * Venue *-- Room
+ * DateData --* Room
+ *  
+ *  class Venue {
+ *  -List<Room> rooms 
+ *  -String name 
+ *  + <<constructor>> Venue(room: * List<Room>, name:String) 
+ * + getName() : String
+ * + addRoom(rooms:Hashtable, r:Room)
+ * + delRoom(rooms:Hashtable, r:Room)
+ * } 
+ * 
+ * class Room {
+ *  -String name
+ *  -String type
+ *  -DateData availabilities 
+ *  + <<constructor>> Room(name:String, type:String, availabilities:DateData) 
+ * + * isAvailable(date:String) : Boolean 
+ * + bookRoom(date:String) : String 
+ * + * freeRoom(date:String) : String 
+ * - setName(name: String) 
+ * - setType(type: * String) + getName() : String + getType() : String 
+ * }
+ * 
+ * class DateData { 
+ * -Calendar[] bookedDates 
+ * +<<constructor>> DateData()
+ * +isAvailable(d:Calendar) 
+ * +addDate(d:Calendar)
+ * +removeDate(d:Calendar)
+ * }
+ * 
+ * 
+ * 
+
+ * @enduml
+ */

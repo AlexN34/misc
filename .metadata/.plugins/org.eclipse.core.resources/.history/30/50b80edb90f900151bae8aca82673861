@@ -1,0 +1,100 @@
+import java.util.Hashtable;
+
+public class Venue {
+	private String name;
+	private Hashtable<String, Room> rooms;
+	private Set<Action> Reservations;
+
+	//	GETTERS AND SETTERS
+	private String getName() {
+		return name;
+	}
+
+	private void setName(String name) {
+		this.name = name;
+	}
+
+	public Hashtable<String, Room> getRooms() {
+		return rooms;
+	}
+
+	// Not sure if required
+	public void setRooms(Hashtable<String, Room> rooms) {
+		this.rooms = rooms;
+	}
+
+	//	Constructor
+
+	public Venue (String name) {
+		this.name = name;
+		rooms = new Hashtable<String, Room>();
+	}
+
+
+	//	HELPER METHODS
+	
+	public void addRoom(Hashtable<String, Room>rooms, Room r ) {
+		rooms.put(r.getName(), r);
+	}
+	
+	public void delRoom(Hashtable<String, Room>rooms, Room r ) {
+		if (rooms.containsKey(r.getName())) {
+			rooms.remove(r.getName());
+		}
+	}
+	
+	public boolean searchForRoomName(String roomName) {
+		return this.rooms.containsKey(roomName);
+	}
+
+	public void printRoom(Room r) {
+		if (searchForRoomName(r.getName())) {
+			r.toString();
+		}
+		
+	}
+
+}
+
+/*
+ * 
+ * @startuml
+ * Venue *-- Room
+ * DateData --* Room
+ *  
+ *  class Venue {
+ *  -List<Room> rooms 
+ *  -String name 
+ *  + <<constructor>> Venue(room: * List<Room>, name:String) 
+ * + getName() : String
+ * + addRoom(rooms:Hashtable, r:Room)
+ * + delRoom(rooms:Hashtable, r:Room)
+ * + roomExists(r:Room)
+ * + printRoom(r:Room)
+ * } 
+ * 
+ * class Room {
+ *  -String name
+ *  -String type
+ *  -DateData bookedDates
+ *  + <<constructor>> Room(name:String, type:String, availabilities:DateData) 
+ * + * isAvailable(date:String) : Boolean 
+ * + bookRoom(date:String) : String 
+ * + * freeRoom(date:String) : String 
+ * - setName(name: String) 
+ * - setType(type: * String) + getName() : String + getType() : String 
+ * }
+ * 
+ * class DateData { 
+ * -Calendar[] bookedDates 
+ * +<<constructor>> DateData()
+ * +isAvailable(d:Calendar) 
+ * +addDate(d:Calendar)
+ * +removeDate(d:Calendar)
+ * }
+ * 
+ * 
+ * 
+
+ * @enduml
+ */

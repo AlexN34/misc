@@ -1,0 +1,37 @@
+package tutwk2;
+
+import java.util.Calendar;
+
+public class Manager extends Employee {
+	private Calendar hireDate;
+	public Manager (String name, int salary, Calendar hireDate) {
+		super(name, salary);
+		this.hireDate = hireDate;
+	}
+	
+	public Calendar getHireDate () {
+		return this.hireDate;
+	}
+	
+	public void setHireDate (Calendar hireDate) {
+		this.hireDate = hireDate;
+	}
+	
+	public String toString () {
+		String empString = super.toString();
+		return empString + "{ hireDate = " + this.hireDate + "}";
+	}
+	
+	public boolean equals(Manager manager2) {
+		if (super.equals(manager2) && this.hireDate.equals(manager2.hireDate)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	public Manager clone() {
+		Manager clone = super.clone()		
+		return clone;
+	}
+}

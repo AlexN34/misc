@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Reservation&apos; to &apos;Request&apos;&#x0A;- Original project: &apos;VHS&apos;&#x0A;- Original element: &apos;Reservation&apos;&#x0A;- Renamed element: &apos;Request&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Reservation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Reservation.java[Reservation" matchStrategy="1" name="Request" qualified="false" references="true" similarDeclarations="false" stamp="1459417867708" textual="false" version="1.0"/>
+</session>

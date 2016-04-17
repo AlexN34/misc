@@ -1,0 +1,12 @@
+
+
+Reservation 1 Zoo Penguin Hippo
+Reservation 2 Zoo Elephant
+Reservation 3 Gardens Figtree
+Change 1 Zoo Penguin
+Reservation 4 Zoo Penguin
+Cancel 3
+Request rejected
+Zoo Penguin Mar 25 2 Mar 27 3
+Zoo Hippo
+Zoo Elephant Mar 24 4 

@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+Request rejected
+
+Reservation 2 Zoo Hippo
+
+Reservation 3 Zoo Elephant
+
+Cancel rejected
+
+Reservation 5 Zoo Penguin
+
+Request rejected
+

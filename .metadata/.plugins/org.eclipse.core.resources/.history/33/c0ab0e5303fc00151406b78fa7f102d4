@@ -1,0 +1,343 @@
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.LinkedHashMap;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Action implements Request, Cancel, Change, Cloneable {
+	String name;
+	String type;
+	LinkedHashMap<String, Integer> roomType; //stores how many of each room type is needed
+	int id;
+	Calendar start;
+	Calendar end;
+
+//	Construct Action - leave Calendar to be set later
+	public Action (String name, String type, int id) {
+		this.name = name;
+		this.type = type;
+		LinkedHashMap<String, Integer> roomType; 
+		this.id = id;
+		this.start = Calendar.getInstance();
+		this.end = Calendar.getInstance();
+	}
+	
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * @return the roomTypes [contains numbers of each room type in hash]
+	 */
+	public LinkedHashMap<String, Integer> getRoomType() {
+		return roomType;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setRoomType(LinkedHashMap<String, Integer> roomType) {
+		this.roomType = roomType;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the start
+	 */
+	public Calendar getStart() {
+		return start;
+	}
+
+	/**
+	 * @param start the start to set
+	 */
+	public void setStart(Calendar start) {
+		this.start = start;
+		timeZero(start);
+	}
+
+	/**
+	 * @return the end
+	 */
+	public Calendar getEnd() {
+		return end;
+	}
+
+	/**
+	 * @param end the end to set
+	 */
+	public void setEnd(Calendar end) {
+		timeZero(end);
+		this.end = end;
+	}
+
+	
+	private void timeZero(Calendar c) {
+		//Force later compareTo to only consider dates rather than time of day
+		//Dates will roll onto each other evenly
+		c.set(Calendar.HOUR_OF_DAY, 0);
+		c.set(Calendar.MINUTE, 0);
+		c.set(Calendar.SECOND, 0);
+	}
+	//To identify for cancel/change
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) 
+			return true;
+			// check if refer to same plus - object is equal to itself
+		if (o == null || this.getClass() != o.getClass())
+			return false;
+			// not equal if classes differ or null
+			Action a = (Action) o;
+		return a.name.equals(this.name) && a.type.equals(this.type) && a.id == this.id &&
+				a.start.equals(this.start) && a.end.equals(this.end);	
+	}
+	
+	@Override
+	public Action clone() {
+		try {
+			Action a = (Action) super.clone();
+			return a;
+		} catch (CloneNotSupportedException e) {
+			System.err.println(this.name + " could not be cloned - returning null obj");
+			return null;
+		}
+	}
+
+	public int duration() {
+		int i = 1;
+		Calendar curDate = start;
+		while (curDate.compareTo(end) <= 0) {
+			i++;
+			curDate.roll(Calendar.DAY_OF_MONTH, true);
+		}
+		return i;
+	}
+
+	//Functions only return id code and booking changes -- titles have to put in externally
+	//by calling functions
+	@Override
+	public String requestBooking(VenueHireSystem vhs) {
+		Set<String> bookedStrings = new TreeSet<String>();
+		ArrayList<Room> roomsToBook = new ArrayList<Room>(); //save rooms to book on isAvailable pass, then book all
+		String returnString =  "" + this.id;
+		boolean bookingStatus = true;
+		int i;
+//		outerloop: //here for use later
+		for (Venue v: vhs.getVenueList()) {
+			for (String type : this.roomType.keySet()) { //how to do it n in hash times
+				for (i = 0; i < roomType.get(type); i++) {
+					for (Room r : v.getRoomList()) {
+						if (type.equals(r.getType())) {
+							if (r.isAvailable(this)) {
+								roomsToBook.add(r);
+								bookedStrings.add(v.getName()); //if from same venue not added - no duplicates
+								bookedStrings.add(r.getName());
+							} else {
+								bookingStatus = false;
+							}
+						}
+					}
+				} 
+							//bookingStatus = false;
+							//break outerloop; //if any rooms of right type don't work, request rejected
+			}
+		}
+		if (bookingStatus == true) {
+			for (Room rB : roomsToBook) {
+				rB.bookRoom(this);
+			}
+			for (String str : bookedStrings) {
+				returnString = returnString + " " + str;
+			}
+		} else {
+			returnString = "Request rejected";
+		}
+		return returnString;
+	}
+
+	@Override
+	public String cancelBooking (VenueHireSystem vhs) {
+		for (Venue v : vhs.getVenueList()) {
+					for (Room r : v.getRoomList()) {
+						//TODO: Fix up once room booking logic is complete
+						//rotate through types. currently rotating through every room at this venue. 
+						//Add venue name to returnString before next venue
+						if (r.containsAction(this)) {
+							if(!r.freeRoom(this)) { //if freeRoom false, unable to remove - didnt exist
+								return "Cancel rejected";
+							}
+						}
+					}
+		}
+		return "Cancel reservation " + this.id;
+	}
+	@Override
+	public String changeBooking (VenueHireSystem vhs) {
+		//check if exists? - maybe interface function needed
+		//find action with same id
+		Action actionToCancel = null; //dummy for now
+		try {
+			outerloop:
+			 for (Venue v : vhs.getVenueList()) {
+					for (Room r : v.getRoomList()) {
+						//TODO: Fix up once room booking logic is complete
+						//rotate through types. currently rotating through every room at this venue. 
+						//Add venue name to returnString before next venue
+						if (r.containsID(this.id)) {
+							actionToCancel = r.getBooking(this.id);
+							break outerloop;
+						}
+					}
+			}	
+		} catch (Exception e) {
+			System.out.println("actionToCancel was not found");
+			return " rejected";
+		}
+		actionToCancel.cancelBooking(vhs); //discard return string
+		return this.requestBooking(vhs);	
+	}
+
+}
+/*
+ * UML Diagram (s) below 'Class Diagram
+ * 
+ * @startuml
+ * 
+ * 
+ * VenueHireSystem o-- Action 
+ * VenueHireSystem *-- Venue
+ * 
+ * Request<|-- Change
+ *  Cancel<|-- Change
+ * 
+ * Action ..|> Request
+ *  Action ..|> Cancel
+ *   Action --> Room
+ * 
+ * 
+
+ * 
+ * class Action { 
+ * -String name 
+ * -String type
+ * -LinkedHashMap<String, Integer> roomType 
+ * -int id 
+ * -Calendar start
+ * -Calendar end
+ * +duration(start:CustomDate, end:CustomDate): int
+ * + <<constructor>> Action() + setters() and * getters() 
+ * + equals(o:Object)
+ * + clone(o:Object)
+ * }
+ * 
+ * class VenueHireSystem { 
+ * -Venue[] venues 
+ * -Action[] actions 
+ * - scanInput() : * String 
+ * - venueParse(input:String) 
+ * - actionParse(input:String) -
+ * printOutput(): String 
+ * -setters() and +getters() 
+ * + <<constructor>> VenueHireSystem(roomReq: List<Room>, name:String, type:String, id:int, dateRequired:String[])
+ * -actionExists(a:Action[]): boolean
+ * +contains(o:Object):boolean
+ *  }
+ * 
+
+ * Venue *-- Room
+ * DateData --* Room
+ *  
+ *  class Venue {
+ *  -LinkedHashMap<String, Room> rooms 
+ *  -String name 
+ *  + <<constructor>> Venue(rooms: LinkedHashMap<String, Room>, name:String) 
+ * + getName() : String
+ * + getRoomNames() : String
+ * + addRoom(rooms:LinkedHashMap, r:Room)
+ * + delRoom(rooms:LinkedHashMap, r:Room)
+ * + roomExists(r:Room)
+ * + printRoomData(r:Room)
+ * } 
+ * 
+ * class Room {
+ *  -String name
+ *  -String type
+ *  -DateData bookedDates
+ *  -TreeSet<Action> reservations
+ *  + <<constructor>> Room(name:String, type:String, availabilities:DateData) 
+ * + * isAvailable(a:Action) : Boolean 
+ * + bookRoom(a:Action) : String 
+ * + * freeRoom(a:Action) : String 
+ * - setName(name: String) 
+ * - setType(type: * String) + getName() : String + getType() : String 
+ * }
+ * 
+ * class DateData { 
+ * -Calendar[] bookedDates 
+ * +<<constructor>> DateData()
+ * +isAvailable(d:Calendar) 
+ * +addDate(d:Calendar)
+ * +removeDate(d:Calendar)
+ * }
+ * 
+ * 
+ * interface Request {
+ * 		+requestBooking(a:Action):String
+ * }
+ *  
+ * interface Cancel {
+ * +cancelBooking(a:Action):String 
+ * }
+ * 
+ * interface Change {
+ +changeBooking(a:Action):String 
+ * }
+ * @enduml 'Use cases
+ * 
+ * @startuml :User: (Request reservation) User --> (Request)
+ * 
+ * User --> (Change)
+ * 
+ * User --> (Cancel)
+ * 
+ * @enduml
+ * 
+ */

@@ -1,0 +1,13 @@
+
+public class test {
+	String test;
+	public static int test(String test) {
+		return Integer.parseInt(test);
+	}
+	
+	public static void main(String[] args) {
+		String testString = "5";
+		System.out.println(test(testString));
+
+	}
+}

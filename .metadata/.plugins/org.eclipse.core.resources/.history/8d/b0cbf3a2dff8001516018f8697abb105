@@ -1,0 +1,210 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class VenueHireSystem {
+	private List<Venue> venues;
+	private List<Action> actions;
+
+	private static Venue venueParse (String venueString) {
+//		TODO
+//					String[] tokens = venueString.split("\\s");
+		Venue dummy = new Venue();
+		return dummy;
+	}
+	private static Action actionParse (String actionString) {
+//		TODO
+		Action action = new Action();
+		return action;
+	}
+
+	//Provides string containing venue that needs to be printed out
+	private static void printParse (String printString) {
+//		TODO
+		Pattern p = Pattern.compile("^Print\\s(\\w+)");
+		Matcher m = p.matcher(printString);
+		m.find();
+//		System.out.println(m.group(1)); //0th group is everything, 1st is match 1
+//		Write a Venue toString function
+		/*for (Venue v: this.venues) { //with array. can use hashtable instead
+			if (v.name.equals(m.group(1))) {
+				String = venueOutput = v.toString()
+			}
+		} */
+
+	}
+	public Venue[] getVenues() {
+		return venues;
+	}
+
+//	venueParse will call this
+	private void setVenues(Venue[] venues) {
+		this.venues = venues;
+	}
+
+	public Action[] getActions() {
+		return actions;
+	}
+
+//	actionParse will call this
+	private void setActions(Action[] actions) {
+		this.actions = actions;
+	}
+
+	@Override
+	public String toString() { //Prints output
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	public VenueHireSystem(Venue[] venues, Action[] actions) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		List<Venue> venues = new ArrayList<Venue>();
+		List<Action> actions = new List<Action>() ;
+//	Scan from input
+		  Scanner sc = null;
+	      try
+	      {
+	          sc = new Scanner(new FileReader(args[0]));    // args[0] is the first command line argument
+	          //set first argument as object to scan through
+	          while (sc.hasNext()) {
+				String curLine = sc.nextLine();
+				if (curLine.matches("^Venue\\s.*")) {
+					System.out.println("Matched venue. Line is: " + curLine);
+//					make venue object from parsed line and add to venues list
+//					venueParse(curLine); 
+
+				} else if (curLine.matches("^Print\\s.*")){
+//				   Print. after parsing which venue to print, do the printing
+					System.out.println("Matched Print. Line is: " + curLine);
+					printParse(curLine);
+
+				} else {
+//					Action. after parsing and setting, get response and add to actions list
+					System.out.println("Matched else. Line is: " + curLine);
+//					actionParse(curLine);
+					
+				}
+			} 
+	      }
+	      catch (FileNotFoundException e) {}
+	      finally
+	      {
+	    	  //once done with file, close to free memory
+	          if (sc != null) sc.close();
+	      }
+
+		System.out.println("Scan finished");
+	}
+
+}
+
+/*
+ * UML Diagram (s) below
+ *'Class Diagram 
+ * @startuml
+ * 
+ * 'Sample for class info
+ * 'Object <|-- ArrayList
+ * 'Object : equals ()
+ * 'ArrayList : Object [] elementData 
+ * 'ArrayList : size ()
+ * 
+ * 
+ * VenueHireSystem o-- Action
+ *  VenueHireSystem *-- Venue
+ *  Venue *-- Room
+ * 
+ * Request<|-- Change
+ * Cancel<|-- Change
+ * 
+ * Action ..|> Request
+ * Action ..|> Cancel
+ * Action --> Room
+ * 
+ * DateData --* Room
+ * DateData *-- CustomDate
+ skinparam classAttributeIconSize 0 
+ 
+ class Room {
+ 		-String name
+ 		-String type
+ 		-DateData availabilities
+ 		+ <<constructor>> Room(name:String, type:String, availabilities:DateData)
+ 		+ isAvailable(date:String) : Boolean
+ 		+ bookRoom(date:String) : String
+ 		+ freeRoom(date:String) : String
+ 		- setName(name: String)
+ 		- setType(type: String) 
+ 		+ getName() : String
+ 		+ getType() : String
+ }
+
+
+class Venue {
+ 		-List<Room> rooms
+ 		-String name
+ 		+ <<constructor>> Venue(room: List<Room>, name:String)
+ 		+ isAvailable(date:String) : Boolean
+ 		+ bookRoom(date:String) : String
+ 		+ freeRoom(date:String) : String
+ 		- setName(name: String)
+ 		- setType(type: String) 
+ 		+ getName() : String
+ 		+ getType() : String
+ } 
+  
+class Action {
+ 		-String name
+ 		-String type
+ 		-int id
+ 		-String[] dateRequired
+ 		-List<Room> roomReq
+ 		+ <<constructor>> Action(roomReq: List<Room>, name:String, type:String, id:int, dateRequired:String[])
+ 		+ setters() and getters()
+ } 
+  
+class VenueHireSystem {
+ 		-Venue[] venues
+ 		-Action[] actions
+		- scanInput() : String
+		- venueParse(input:String)
+		- actionParse(input:String)
+		- printOutput(): String
+ 		-setters() and +getters()
+ 		+ <<constructor>> VenueHireSystem(roomReq: List<Room>, name:String, type:String, id:int, dateRequired:String[])
+}
+
+class DateData {
+	-CustomDate[] bookedDates
+	+<<constructor>> DateData()
+	+Boolean getDate()
+	+isAvailable(date:CustomDate)
+}
+
+class CustomDate {
+	-String month
+	-int day
+	+equals()
+}
+
+
+  @enduml
+ *'Use cases 
+ * @startuml
+ * :User:
+ * (Request reservation)
+ * User --> (Request) 
+ * 
+ * User --> (Change)
+ * 
+ * User --> (Cancel)
+ * @enduml
+ * 
+ */

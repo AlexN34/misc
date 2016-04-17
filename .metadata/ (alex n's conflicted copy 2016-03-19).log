@@ -1,0 +1,27 @@
+!SESSION 2016-03-08 17:08:17.284 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_95
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -clean
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:18.674
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/jee.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:19.303
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/pydev.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:19.594
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/adt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:19.822
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/cdt.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:20.071
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/subversive.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:20.327
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/php.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-08 17:08:20.513
+!MESSAGE Unable to acquire PluginConverter service during generation for: /opt/eclipse/dropins/dtp.

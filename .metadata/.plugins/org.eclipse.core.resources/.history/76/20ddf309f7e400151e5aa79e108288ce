@@ -1,0 +1,8 @@
+package tutwk2;
+
+public class Manager extends Employee {
+	private Calendar hireDate;
+	public Manager (String name, int salary, Calendar hireDate) {
+		this.hireDate = hireDate;
+	}
+}

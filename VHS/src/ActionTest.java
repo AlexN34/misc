@@ -1,0 +1,144 @@
+//import static org.junit.Assert.*;
+
+//import java.util.Calendar;
+//
+//import org.junit.Before;
+//import org.junit.Test;
+
+public class ActionTest {
+//	private VenueHireSystem vhs; 
+//	private Action r1;
+//	private Action r2; //Follows sample input
+//	private Action r3;
+//	private Action ch1;
+//	private Action r4;
+//	private Action c3;
+//	private Action r5;
+}
+
+//
+//	@Before
+//	public void setUp() throws Exception {
+//		VenueHireSystem vhs = new VenueHireSystem();
+//		Room penguin = new Room("Penguin", "small");
+//		Room hippo = new Room("Hippo", "large");
+//		Room elephant = new Room("Elephant", "large");
+//		Room figtree = new Room("Figtree", "large");
+//		Venue zoo = new Venue("Zoo");
+//		Venue gardens = new Venue("Gardens");
+//		//make addVenue public to enable
+////		zoo.addRoom(penguin);
+////		zoo.addRoom(hippo);
+////		zoo.addRoom(elephant);
+////		gardens.addRoom(figtree);
+////		vhs.addVenue(zoo);
+////		vhs.addVenue(gardens);
+//		this.vhs = vhs;
+//		
+//	//		Set up some requests to use universally
+//		this.r1 = new Action("Request", 1);
+//		this.r1.addRoomType("large", 1);
+//		this.r1.addRoomType("small", 1);
+//		this.r1.setStartFromInput("Mar", 25);
+//		this.r1.setEndFromInput("Mar", 26);
+//		this.r2 = new Action("Request", 2);
+//		this.r2.addRoomType("large", 1);
+//		this.r2.setStartFromInput("Mar", 24);
+//		this.r2.setEndFromInput("Mar", 27);
+//		this.r3 = new Action("Request", 3);
+//		this.r3.addRoomType("large", 1);
+//		this.r3.setStartFromInput("Mar", 26);
+//		this.r3.setEndFromInput("Mar", 26);
+//		this.ch1 = new Action("Change", 1);
+//		this.ch1.addRoomType("small", 1);
+//		this.ch1.setStartFromInput("Mar", 27);
+//		this.ch1.setEndFromInput("Mar", 29);
+//		this.r4 = new Action("Request", 4);
+//		this.r4.addRoomType("small", 1);
+//		this.r4.setStartFromInput("Mar", 25);
+//		this.r4.setEndFromInput("Mar", 26);
+////		this.c3 = this.r3.clone();
+//		this.r5 = new Action("Request", 5);
+//		this.r5.addRoomType("small", 1);
+//		this.r5.setStartFromInput("Mar", 26);
+//		this.r5.setEndFromInput("Mar", 26);
+//		
+//
+//
+//		//* Request 1 Mar 25 Mar 26 1 large 1 small */
+//	}
+//
+//
+//
+//	@Test
+//	public void testEqualsObject() {
+//		assertNotEquals("Initialisation problem", this.r1, this.r2);
+//		assertEquals("Initialisation problem", this.r1, this.c3);
+//		Action a1 = this.r1; 
+////		Action a2 = this.r1.clone();
+//		assertEquals("Initialisation problem", a1, a2);
+//
+//		a2.getStart().add(Calendar.DAY_OF_MONTH, 8);
+//
+//		assertNotEquals(a1, a2);
+//		a1.getStart().add(Calendar.DAY_OF_MONTH, 8);
+//		assertEquals("Initialisation problem", a1, a2);
+//		a2.setName("blargh");
+//		assertNotEquals(a1, a2);
+//		a1.setName("blargh");
+//		assertEquals("Initialisation problem", a1, a2);
+//		a2.getRoomType().put("random", 2);
+//		assertNotEquals(a1, a2);
+//		a1.getRoomType().put("random", 1);
+//		assertNotEquals(a1, a2);
+//		a1.getRoomType().put("random", 2);
+////		a1.getRoomType().remove("random");
+//		assertEquals("Initialisation problem", a1, a2);
+//		a2.setId(2);
+//		assertNotEquals(a1, a2);
+//		a1.setId(2);
+//		assertEquals("Initialisation problem", a1, a2);
+//	}
+//
+//	@Test
+//	public void testDuration() {
+//		assertEquals(2, this.r1.duration());
+//		assertEquals(4, this.r2.duration());
+//		assertEquals(1, this.r3.duration());
+//		//change duration
+//		assertEquals(3, this.ch1.duration());
+//		assertEquals(2, this.r4.duration());
+//		assertEquals(1, this.r5.duration());
+//
+//	}
+//
+//	@Test
+//	public void testInput() {
+//		VenueHireSystem vhs = this.vhs;
+//		String output = this.r1.requestBooking(vhs);
+//		assertEquals("r1 failed", "Reservation 1 Zoo Penguin Hippo", output);
+//		System.out.println("output is: " + output);
+//		output = this.r2.requestBooking(vhs);
+//		assertEquals("r2 failed", "Reservation 2 Zoo Elephant", output);
+//		System.out.println("output is: " + output);
+//		output = this.r3.requestBooking(vhs);
+//		assertEquals("r3 failed", "Reservation 3 Gardens Figtree", output);
+//		System.out.println("output is: " + output);
+//		output = this.ch1.changeBooking(vhs);
+//		assertNotNull("null output, booking deleted", output);
+//		//assertEquals("ch1 failed", "Change 1 Zoo Penguin", output);
+//		System.out.println("output is: " + output);
+//		output = this.r4.requestBooking(vhs);
+//		assertEquals("r4 failed", "Reservation 4 Zoo Penguin", output);
+//		System.out.println("output is: " + output);
+//		output = this.c3.cancelBooking(vhs);
+//		assertEquals("r4 failed", "Cancel 3", output);
+//		System.out.println("output is: " + output);
+//		output = this.r5.requestBooking(vhs);
+//		assertEquals("r5 failed", "Request rejected", output);
+//		System.out.println("output is: " + output);
+//		output = this.vhs.Parser("Print Zoo");
+//		System.out.println("output is: " + output);
+//	}
+//
+//}

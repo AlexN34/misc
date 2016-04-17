@@ -1,0 +1,165 @@
+import java.util.Calendar;
+import java.util.TreeSet;
+
+public class Room {
+	private String name;
+	private String type;
+	private DateData bookedDates;
+	private TreeSet<Action> reservations;
+
+	// GETTERS AND SETTERS
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * @param type the type to set
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	/**
+	 * @return the reservations
+	 */
+	public TreeSet<Action> getReservations() {
+		return reservations;
+	}
+
+	/**
+	 * @param reservations the reservations to set
+	 */
+	public void setReservations(TreeSet<Action> reservations) {
+		this.reservations = reservations;
+	}
+
+	//Print room contents
+	@Override
+	public String toString(){
+		String returnString = this.name + " ";
+		for (Action action : reservations) {
+			returnString = returnString + " " + action.start;
+			returnString = returnString +  " " + action.duration();
+		}
+		return returnString;
+	}
+
+	//CONSTRUCTOR
+	public Room(String name, String type) {
+		this.name = name;
+		this.type = type;
+		this.bookedDates = new DateData(new TreeSet<Calendar>()); //empty - all rooms start with none booked
+		this.reservations = new TreeSet<Action>();
+	}
+
+	//	HELPER METHODS
+	//	Checks whether dates between start and free exists in bookedDates
+	public boolean isAvailable(Action request) {
+	//TODO: Handle incorrect input -- throw exception if end > start?
+		//TODO: Handle multiple numbers, multiple types
+		Calendar start = request.start;
+		Calendar end = request.end;
+		Calendar curDate = start;
+		while (curDate.compareTo(end) <= 0) {
+			if (!this.bookedDates.isAvailable(curDate)) {
+				return false;
+			}
+			curDate.roll(Calendar.DATE, true);
+		}
+		return true;
+		
+	}
+
+	public String bookRoom(Action request) {
+		if (isAvailable(request)) {
+			//Keep track of reservation objects? keep a list of actions
+			Calendar curDate = request.start;
+			while (curDate.compareTo(request.end) <= 0) {
+				this.bookedDates.addDate(curDate);
+				curDate.roll(Calendar.DATE, true);
+			}
+			this.reservations.add(request);
+			return this.name; //nothing went wrong if got here
+			//TODO perhaps incorporate exception
+		} else {
+			return "Request Rejected";
+		}
+
+	}
+
+	//TODO: Consider changing to string
+	public boolean freeRoom(Action request) {
+		if(!isAvailable(request)) {
+			Calendar curDate = request.start;
+			while (curDate.compareTo(request.end) <= 0) {
+				this.bookedDates.removeDate(curDate);
+				curDate.roll(Calendar.DATE, true);
+			}
+			this.reservations.remove(request);
+			return true; //successfully removed all.
+			//TODO: exception?
+		} else {
+			return false;
+		}
+	}
+
+}
+
+/*
+ * 
+ * @startuml
+ * Venue *-- Room
+ * DateData --* Room
+ *  
+ *  class Venue {
+ *  -List<Room> rooms 
+ *  -String name 
+ *  + <<constructor>> Venue(room: * List<Room>, name:String) 
+ * + getName() : String
+ * + addRoom(rooms:Hashtable, r:Room)
+ * + delRoom(rooms:Hashtable, r:Room)
+ * } 
+ * 
+ * class Room {
+ *  -String name
+ *  -String type
+ *  -DateData bookedDates
+ *  -TreeSet<Action> reservations
+ *  + <<constructor>> Room(name:String, type:String, availabilities:DateData) 
+ * + * isAvailable(a:Action) : Boolean 
+ * + bookRoom(a:Action) : String 
+ * + * freeRoom(a:Action) : String 
+ * - setName(name: String) 
+ * - setType(type: * String) + getName() : String + getType() : String 
+ * }
+ * 
+ * class DateData { 
+ * -Calendar[] bookedDates 
+ * +<<constructor>> DateData()
+ * +isAvailable(d:Calendar) 
+ * +addDate(d:Calendar)
+ * +removeDate(d:Calendar)
+ * }
+ * 
+ * 
+ * 
+
+ * @enduml
+ */
