@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;Assignment2/src/(default package)&apos;&#x0A;- Original project: &apos;VHS&apos;&#x0A;- Destination element: &apos;Assignment2/src/(default package)&apos;&#x0A;- Original elements:&#x0A;     Action.java&#x0A;     VenueHireSystem.java" description="Copy files" destination="=Assignment2/src&lt;" element1="Action.java" element2="VenueHireSystem.java" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1460897126232" units="0" version="1.0"/>
+</session>
