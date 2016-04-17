@@ -1,0 +1,184 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{parskip}
+\title{MATH5605 Assignment 2}
+\author{Stuart Hatzioannou}
+\date{16/04/14}
+\begin{document}
+\maketitle{Question 1}
+	
+Assume that T is a positive, bounded operator over a complex Hilbert space $\mathcal{H}$,
+\indent{that is:}
+
+ \hspace{2cm}$T \in B(\mathcal{H},\mathcal{H}), \hspace{1cm}  \langle Tx , x \rangle \ge  0, \hspace{1cm}  \forall x \in H$
+ 
+ Now as T is bounded, there exists its adjoint $T^*$ such that:
+ 
+ \hspace{4cm}$\langle Tx , y \rangle = \langle x , T^*y \rangle, \hspace{1cm}  \forall x,y \in \mathcal{H}$
+
+$\therefore \langle x , T^*x \rangle = \overline{\langle T^*x , x \rangle} =\langle T^*x , x \rangle = \langle x , Tx \rangle \implies \langle Tx - T^*x , x \rangle = 0, \forall x \in \mathcal{H}$
+
+With the second equality holding as $\langle Tx , y \rangle$ real, from by positivity.
+
+Now we fix some $y \in \mathcal{H}$ and consider $x+y \in \mathcal{H}$,
+
+$ \hspace{1cm} \langle T(x+y) - T^*(x+y) , x+y \rangle = \langle Tx - T^*x , y \rangle + \langle Ty - T^*y , x \rangle$ 
+
+$ \hspace{2cm}\implies \langle Tx - T^*x , y \rangle = -\langle Ty - T^*y , x \rangle, \forall x \in \mathcal{H}$
+
+Which follows as $\langle Tz - T^*z , z \rangle = 0, \forall z \in \mathcal{H}$ and linearity properties of $\langle . \rangle$.
+
+We now consider instead $x+iy \in H$ and obtain a similarly that:
+
+$ \hspace{1cm} \langle T(x+iy) - T^*(x+iy) , x+iy \rangle = i\langle Ty - T^*y , x \rangle - i\langle Tx - T^*x , y \rangle$ 
+
+$ \hspace{2cm}\implies \langle Tx - T^*x , y \rangle = \langle Ty - T^*y , x \rangle, \forall x \in \mathcal{H}$
+
+By anti-linearity in the second variable. Combining the results we arrive at:
+
+$ \hspace{3cm} \langle Ty - T^*y , x \rangle = 0, \forall x \in \mathcal{H} \implies Ty = T^*y$
+
+As can be seen by taking $x = Ty - T^*y$, thus as y is arbitrary we end up with the result that $T=T^*$, hence T is self-adjoint. 
+
+As a small aside, it is worth noting that if we assume that our field is real, the result fails. We can see this easily with the following example:
+
+Let $\mathcal{H} = \mathbb{R}^2$ with usual innerproduct, and consider the linear map L with matrix representation 
+
+\[ L = \left( \begin{array}{ccc}
+1 & 2 \\
+0 & 1 \\
+ \end{array} \right)\] 
+ 
+This linear operator is clearly bounded and positive ($\langle Lx , x \rangle = (x_1+x_2)^2$, \hspace{2cm} $x = (x_1 , x_2)$), however its clear that $L \neq L^*$.
+
+
+\maketitle{Question 2 1)}
+
+Let $T = T_A$ be a Toeplitz operator on $\ell^2$, where the matrix A has entries drawn from the following two-sided complex sequence $\lbrace a_m \rbrace_{m \in \mathbb{Z}}$,
+
+\hspace{5cm} $A = \lbrace a_{i-j} \rbrace^\infty_{i,j = 1}$
+
+Suppose that 
+
+\hspace{5cm}$\sum\limits_{m \in \mathbb{Z}}|a_m| < +\infty$
+
+For clarity we let 
+
+\hspace{4cm}${\lVert T \rVert}_B\hspace{3mm} =\hspace{3mm} \sup\limits_{x \in \lbrace x \in H : \lVert x \rVert \le 1 \rbrace} \lVert Tx \rVert$ 
+
+where $T \in L(\ell^2)$, the space of linear operators on $\ell^2$ and $\lVert . \rVert$ is the $\ell^2$ norm.
+
+First we define the following operators on $\ell^2$,
+\[ A_m = \begin{cases}
+        a_mS^m  &  m \ge 0\\
+        a_m(S^*)^m & m < 0
+        \end{cases}
+\]
+Where we have $S$ and $S^*$ the left and right shift operators respectively, we note that for $\mathbf{x} = \lbrace x_k \rbrace^\infty_{k=1} \in \ell^2 $
+
+$\hspace{0.2cm} S(\mathbf{x}) = (0,x_1,x_2,x_3,...),\hspace{0.5cm} S^*(\mathbf{x}) = (x_2,x_3,x_4,...) \implies {\lVert S \rVert}_B = 1 = {\lVert S^* \rVert}_B$
+
+$\therefore \hspace{1cm} S^m(\mathbf{x}) = (\underbrace{{0,...,0}}_\text{m},x_1,x_2,...), \hspace{1.5cm} (S^*)^m(\mathbf{x}) = (x_{m+1},x_{m+2},x_{m+3},...)$ 
+
+$ \hspace{1cm}\implies {\lVert S^m \rVert}_B = 1 = {\lVert (S^*)^m \rVert}_B \implies {\lVert A_m \rVert}_B = |a_m| \hspace{1cm} \forall m \in \mathbb{Z}$
+
+Using the above and the fact that $B(\ell^2)$ forms a Banach space with respect to ${\Vert . \Vert}_B$, we observe that:
+
+$\hspace{3cm}{\lVert \sum\limits_{m \in \mathbb{Z}}A_m \rVert}_B \le \sum\limits_{m \in \mathbb{Z}}{\lVert A_m \rVert}_B = \sum\limits_{m \in \mathbb{Z}}|a_m| < +\infty$
+
+Which implies that $\sum\limits_{m \in \mathbb{Z}}A_m \in B(\ell^2)$ as it is complete. We now note that:
+
+$(T_A(\mathbf{x}))_j = \sum\limits_{k=1}^\infty a_{j-k}x_k = \sum\limits_{k=1}^\infty (A_{j-k}(\mathbf{x}))_j =  \sum\limits_{m \in \mathbb{Z}} (A_m(\mathbf{x}))_j = \bigl({\sum\limits_{m \in \mathbb{Z}}A_m(\mathbf{x})}\bigr)_j$
+
+With the third equality holding as $m \ge j \implies (A_m(\mathbf{x}))_j = 0$,
+
+$\hspace{1.2cm}\therefore T_A = \sum\limits_{m \in \mathbb{Z}}A_m(\mathbf{x}) \implies {\lVert T_A \rVert}_B={\bigl\lVert \sum\limits_{m \in \mathbb{Z}}A_m \bigr\rVert}_B \le \sum\limits_{m \in \mathbb{Z}}|a_m| < +\infty$
+
+\maketitle{Question 2 3)}
+
+Let us proceed by way of contradiction. Assume that ${\Vert T_A \Vert}_{HS} < +\infty$ and $\exists a_n \in \lbrace a_m \rbrace_{m \in \mathbb{Z}} \hspace{3mm} s.t. \hspace{3mm} a_n \neq 0$, then by definition:
+
+$\hspace{2cm} {\Vert T_A \Vert}^2_{HS} = \sum\limits_{i=0}^{\infty}{\Vert T_A(e_i) \Vert}^2 = \sum\limits_{i=1}^{\infty}\bigl(\sum\limits_{m=1-i}^{\infty} |a_m|^2\bigr) \ge \sum\limits_{i=n+1}^{\infty}|a_n|^2$
+
+Which is clearly unbounded, hence we must have that the two sided sequence is the zero sequence and so $T_A = 0$, so the only Hilbert-Schmidt Toeplitz operator is the zero operator.
+
+\maketitle{Question 3 1)}
+
+Let $H$ be a Hilbert space and $ T \in B(\mathcal{H})$, we note the following:
+
+\hspace{3cm}$Im(T) = \lbrace Tx : x \in \mathcal{H}\rbrace$
+
+Is a vector subspace of $\mathcal{H}$, which can easily be seen as:
+
+\hspace{1cm}$\alpha \in \mathbb{C}, \hspace{0.2cm} x,y \in Im(T) \implies \exists x', y' \in \mathcal{H} : T(x') = x, T(y') = y$ 
+
+\hspace{2cm}$\therefore T(x' + \alpha y') = x+\alpha y \implies x+ \alpha y \in Im(T)$
+
+\hspace{5cm}$ Im(T) \le \mathcal{H}$
+
+Now as $T \in B(\mathcal{H}) \implies T^*$ exists and is bounded, then we have that:
+\begin{align}
+x \in (Im(T))^\perp &\Longleftrightarrow \langle x, Ty \rangle = 0 \hspace{0.2cm} \forall y \in \mathcal{H} \\
+\langle x, Ty \rangle = 0 \hspace{0.2cm} \forall y \in \mathcal{H} &\Longleftrightarrow \langle T^*x , y \rangle = 0 \hspace{0.2cm} \forall y \in \mathcal{H} \\ 
+\langle T^*x , y \rangle = 0 \hspace{0.2cm} \forall y \in \mathcal{H}&\Longleftrightarrow T^*x = 0 \\
+T^*x = 0 &\Longleftrightarrow x \in Ker(T^*)
+\end{align}
+
+\hspace{4cm} $\therefore (Im(T))^\perp = Ker(T^*)$
+
+\maketitle{Question 3 2)}
+
+This is a simple corollary of the previous proof. 
+
+As  $\hspace{0.1cm} Im(T) \le \mathcal{H}$, then we have that:
+
+\hspace{1.3cm}$(Im(T))^{\perp \perp} = \overline{\mbox{Span}(Im(T))} = \overline{Im(T)} \implies (Im(T^*))^{\perp \perp} = \overline{Im(T^*)}$
+
+Thus using the result from Question 3) 1) but considering $T^*$ rather than $T$:
+
+$\hspace{3cm} (Ker(T))^\perp = ((Im(T^*))^{\perp \perp} = \overline{Im(T^*)}$
+
+\clearpage
+
+\maketitle{Question 2 2)}
+
+The answer to the question of sharpness is unfortunately no, a proof of this is as follows and is due directly to the following Lemma:
+
+Lemma: \cite{Halmos63}
+
+The Toeplitz matrix corresponding to a two-sided sequence $\lbrace a_m \rbrace_{m \in \mathbb{Z}}$ of complex numbers is the matrix of a bounded operator on $\ell^2$ if and only if there exists a function $f \in L^\infty (\mathbb{T}, \mu)$ such that $a_n = \hat{f}(n)$ for every integer n.
+
+Here $\mathbb{T}$ is the unit circle of the complex plane and $\mu$ is the arc-length measure normalised by $2\pi$. $L^\infty$ is the space of all essentially bounded functions, that is functions that are bounded $\mu$ almost everywhere, further the fourier  coefficients $\hat{f}(n)$ are with respect to the basis $\lbrace z^n \rbrace_{n \in \mathbb{Z}}$ \hspace{0.1cm} $L^2(\mathbb{T},\mu)$.
+
+Now consider the monomial $f = z \in L^\infty (\mathbb{T}, \mu)$, we note that this has Fourier coefficients:
+\[ \hat{f}(n) = \begin{cases}
+        \frac{4}{n-4}  &  n \hspace{0.4cm} \mbox{odd}\\
+        2\pi i & n = 0\\
+        0 & \mbox{else} 
+        \end{cases}
+\]
+
+Thus by our lemma we note that the matrix of the Toeplitz operator with entries taken from the series above is a bounded operator on $\ell^2$, however the double sided sum is most definitely not absolutely convergent, as it is bounded below by the harmonic sum. Hence we have that the condition is not sharp.
+
+\vspace{9em}
+
+Pardon the wordiness here Denis, I was not entirely comfortable going through and proving something that seems a bit far from what we've done in the lectures thus far, even if it isn't technically difficult it still felt a bit off. I included this just so I'd have something for this section. The lemma was draw from a bit of trawling through the web after I failed to prove that a similar operator was bounded.
+
+I'd also like to thank Roberto for pointing out to me that I should probably mention that the real case fails in the first question, and Ed for this eternal patients and help with question 2 2) in particular.
+
+\begin{thebibliography}{1}
+
+\bibitem{Halmos63}
+  Arlen Brown and Paul Halmos,
+  Algebraic properties of Toeplitz Operators.
+  J. Reigne Angew.
+ Math. 213 (1963/1964), 89–102
+
+\end{thebibliography}
+
+
+\end{document}
+[7] Arlen Brown and Paul Halmos, Algebraic properties of Toeplitz Operators, J. Reigne Angew. Math. 213 (1963/1964), 89–102.

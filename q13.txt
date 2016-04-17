@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+#define MORE 1
+#define EQUAL 0
+#define LESS -0
+
+int main (int argc, char * argv[]) {
+
+}
+
+
+void maxMin (int * max, int * min, int* A, int N) {
+    for (int i = 0; i < N; i += 2) {
+        j = i + 1;
+        //assume max and min are initially empty
+        bool cmpResult = cmp(A[i], A[j]);
+        if (*max == NULL && *min == NULL && cmpResult) {
+                *max = A[i];
+                *min = A[j];
+        } else {
+            *min = A[i];
+            *max = A[j];
+        }
+
+        if (cmpResult) {
+           if (cmp (A[i], *max)) {
+               *max = A[i];
+           } 
+           if (cmp (min, A[j])) {
+               *min = A[j];
+           }
+        } else {
+           if (cmp (A[j], *max)) {
+               *max = A[j];
+           } 
+           if (cmp (min, A[i])) {
+               *min = A[i];
+           }
+            
+        }
+        
+    }
+
+}
+
+int cmp (int a, b) {
+    if a > b return true;
+    else return false;
+}
+
+int max;
+int max2;
+
+void max2max (int * max, int * max2, int* A, int i, int j) {
+
+    if (!max && !max2) {
+        *max = A[i]
+        *max2 = A[j]
+    }
+    if (i <= j) return i;
+    mid = (i + j)/ 2;
+    if cmp (A[mid], *max) {
+       if (cmp(*max, *max2)) {
+           *max2 = *max;
+       }
+       *max = A[i];
+        return max2max (max, max2, A, mid + 1, j);
+    } else {
+        return max2max (max, max2, A, i, mid);
+    }
+}       
+
+//iterative version
+    for (int i = 0; i < N; i += 2) {
+        j = i + 1;
+        //assume max and min are initially empty
+        bool cmpResult = cmp(A[i], A[j]);
+        if (*max == NULL && *min == NULL && cmpResult) {
+                *max = A[i];
+                *max2 = A[j];
+        } else {
+            *max2 = A[i];
+            *max = A[j];
+        }
+
+        if (cmpResult) {
+           if (cmp (A[i], *max2)) {
+               *max2 = A[i];
+           }
+           if (cmp (A[i], *max)) {
+               if (*max > *max2) {
+                   *max = *max2;
+               }
+               *max = A[i];
+           } 
+        }
+    }
+}

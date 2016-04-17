@@ -1,0 +1,15 @@
+
+Elbonia one: so the solution seems ok to describe in words, but not sure how much detail to go into with pseudocode. 
+did you have to define any other algorithms you used? (e.g. bfs) or is sort of talking in vague terms ok 
+e.g. 
+for each road
+    add road to highway graph
+    for each intersection on highway
+        if pathExists(currentIntersection, currentIntersection) 
+        //make sure first intersection always taken without change dir
+        return true
+    done
+done
+    return false
+
+

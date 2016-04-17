@@ -1,0 +1,38 @@
+COMP3121 ASSIGNMENT 1 QUESTION 8: quicksort
+
+combine shoe size and foot array
+save ends of each array
+swap arbitrary foot and shoe into either array
+save their index
+call quicksort(A, 1, A.length)
+swap foot and shoe back into original index (?)
+split final array back up to shoe and feet. 
+Scan through from low to high and A1 and A2 index i values will fit 
+
+//p, r - start or end of shoes; x, z start end feet
+quicksort(A, p, r, x, z)
+    if p < r 
+        exchange A[r] with A[z]
+        q = partition(A, p, r, z)
+        quicksort(A, p, q - 1, x, z) //lower half of array
+        quicksort(A, q + 1, r, x, z) // top half of array
+    else if x < z
+        exchange A[r] with A[z]
+        y = partition (A, x, z, r)
+        quicksort(A, p, r, x, y - 1) //lower half of array
+        quicksort(A, p, r, y + 1,  z) // top half of array
+       
+
+//x is the pivot at r -- somehow swap a shoe for foot in each array 
+    //before call here.
+partition(A, p, r, z)
+    x = A[r]
+    i = p -1
+    for j = p to r - 1
+        if sizeCompare(A[j], x) // Compares pivot foot to shoereturns boolean depending if too big or too small. too big => size < A[r] too small => size > A[r]
+            i = i + 1
+            exchange A[i] with A[j]
+    exchange A[r] with A[z] //partitioned, restore to array section of shoes/feet separately
+    exchange A[i + 1] with A[r]
+    return i + 1
+
