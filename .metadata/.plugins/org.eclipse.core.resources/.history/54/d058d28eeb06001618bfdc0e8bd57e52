@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class Vertex<E> {
+	String id;
+	E contents;
+	ArrayList<Vertex<E>> adjacentVertices;
+	
+	public E getContents() {
+		return contents;
+	}
+	public void setContents(E contents) {
+		this.contents = contents;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public Vertex (E contents, ArrayList<Edge<E>> connectedEdges) {
+		this.id = "";
+		this.contents = contents;
+		this.connectedEdges = connectedEdges;
+	}
+}

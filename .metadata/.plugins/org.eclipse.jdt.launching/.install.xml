@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+<entry loc="/dev/shm/java-7-openjdk-amd64" stamp="1461412430000"/>
+<entry loc="/usr/lib/jvm/java-1.7.0-openjdk-amd64" stamp="1458374413000"/>
 <entry loc="/usr/lib/jvm/java-7-openjdk-amd64" stamp="1460018240000"/>
-<entry loc="/usr/lib/jvm/java-1.7.0-openjdk-amd64" stamp="1460018240000"/>
 <entry loc="E:\HDD Files\HDD Programs\Java\jre1.8.0_66" stamp="1448888754923"/>
 <entry loc="E:\HDD Files\HDD Programs\Java\jre7" stamp="1457753226293"/>
 <entry loc="/usr/lib/jvm/java-7-openjdk-i386" stamp="1425215040000"/>

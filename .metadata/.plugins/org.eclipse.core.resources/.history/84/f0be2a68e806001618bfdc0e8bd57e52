@@ -1,0 +1,30 @@
+
+public class Edge<E>{
+	Node<E> from;
+	Node<E> to;
+	int weight;
+	public Edge(Node<E> from, Node<E> to, int weight) {
+		super();
+		this.from = from;
+		this.to = to;
+		this.weight = weight;
+	}
+	public Node<E> getFrom() {
+		return from;
+	}
+	public void setFrom(Node<E> from) {
+		this.from = from;
+	}
+	public Node<E> getTo() {
+		return to;
+	}
+	public void setTo(Node<E> to) {
+		this.to = to;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+}

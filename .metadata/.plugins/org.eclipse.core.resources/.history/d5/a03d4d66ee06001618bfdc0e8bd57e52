@@ -1,0 +1,6 @@
+
+public interface Graph<E> {
+	public void addVertex (Vertex<E> Vertex);
+	public void removeVertex (Vertex<E> Vertex);
+}
+

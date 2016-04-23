@@ -5,5 +5,8 @@ public class SimpleTripPlanner {
 		// TODO Auto-generated method stub
 
 	}
+	
+	private void testuml() {
 
+	}
 }

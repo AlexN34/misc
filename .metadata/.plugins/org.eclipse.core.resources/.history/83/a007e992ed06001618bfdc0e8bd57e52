@@ -1,0 +1,30 @@
+
+public class Edge<E>{
+	Vertex<E> src;
+	Vertex<E> dest;
+	int weight;
+	public Edge(Vertex<E> from, Vertex<E> to, int weight) {
+		super();
+		this.from = from;
+		this.to = to;
+		this.weight = weight;
+	}
+	public Vertex<E> getFrom() {
+		return from;
+	}
+	public void setFrom(Vertex<E> from) {
+		this.from = from;
+	}
+	public Vertex<E> getTo() {
+		return to;
+	}
+	public void setTo(Vertex<E> to) {
+		this.to = to;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+}

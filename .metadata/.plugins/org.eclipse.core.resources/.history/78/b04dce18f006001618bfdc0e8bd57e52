@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+
+public class BFSGraph implements Graph<String> {
+	ArrayList<Vertex<String>> Vertices;
+	
+	@Override
+	public void addVertex (Vertex<String> n) {
+		this.Vertices.add(n);
+	}
+	@Override
+	public void removeVertex (Vertex<String> n) {
+		this.Vertices.remove(n);
+		
+	}
+	
+	 public ArrayList<Vertex<String>> getVertexs() {
+		return Vertices;
+	}
+	public void setVertexs(ArrayList<Vertex<String>> Vertexs) {
+		this.Vertices = Vertexs;
+	}
+
+	public BFSGraph(ArrayList<Vertex<String>> Vertexs) {
+		super();
+		this.Vertices = Vertexs;
+	}
+	@Override
+	public void addEdge(Edge<String> e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void removeEdge(Edge<String> e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+public class Vertex<E> {
+	String id;
+	E contents;
+	ArrayList<Vertex<E>> adjacentVertices;
+	
+	public E getContents() {
+		return contents;
+	}
+	public void setContents(E contents) {
+		this.contents = contents;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void addEdge(Edge<E> e) {
+		this.adjacentVertices.add(e);
+	}
+
+	public void removeEdge(Edge<E> e) {
+		this.adjacentVertices.add(e);
+	}
+	
+	public Vertex (E contents, ArrayList<Edge<E>> connectedEdges) {
+		this.id = 0;
+		this.contents = contents;
+		this.connectedEdges = connectedEdges;
+	}
+}

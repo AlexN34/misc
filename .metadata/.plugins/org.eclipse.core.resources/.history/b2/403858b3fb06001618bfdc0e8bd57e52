@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Map;
+
+public class BFSGraph implements Graph<String> {
+	Map<Vertex<String>, ArrayList<Vertex<String>>> Vertices;
+//	Vertex[] adjLists
+	@Override
+	public void addVertex (Vertex<String> v) {
+		this.Vertices.put(v, new ArrayList<Vertex<String>>());
+	}
+	@Override
+	public void removeVertex (Vertex<String> n) {
+		this.Vertices.remove(n);
+		
+	}
+	
+	 public ArrayList<Vertex<String>> getVertexs() {
+		return Vertices;
+	}
+	public void setVertexs(ArrayList<Vertex<String>> Vertexs) {
+		this.Vertices = Vertexs;
+	}
+
+	public BFSGraph(ArrayList<Vertex<String>> Vertexs) {
+		super();
+		this.Vertices = Vertexs;
+	}
+	@Override
+	public void addEdge(Edge<String> e) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void removeEdge(Edge<String> e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

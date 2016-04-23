@@ -1,0 +1,69 @@
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class BFSGraphTest {
+	BFSGraph graph;
+	@Before
+	public void setUp() throws Exception {
+		this.graph = new BFSGraph();
+	}
+
+	@Test
+	public void testAddVertex() {
+		System.out.println(graph.toString());
+		Vertex<String> Arad = new Vertex<String>("Arad");
+		this.graph.addVertex(Arad);
+		Vertex<String> Zerind = new Vertex<String>("Zerind");
+		this.graph.addVertex(Zerind);
+		Vertex<String> Sibiu = new Vertex<String>("Sibiu");
+		this.graph.addVertex(Sibiu);
+		Vertex<String> Timisoara = new Vertex<String>("Timisoara");
+		this.graph.addVertex(Timisoara);
+		Vertex<String> Oaradea = new Vertex<String>("Oaradea");
+		this.graph.addVertex(Oaradea);
+		Vertex<String> Fagaras = new Vertex<String>("Fagaras");
+		this.graph.addVertex(Fagaras);
+		System.out.println(graph.toString());
+	}
+
+	@Test
+	public void testRemoveVertex() {
+		System.out.println(graph.toString());
+		Vertex<String> Arad = new Vertex<String>("Arad");
+		this.graph.removeVertex(Arad);
+		Vertex<String> Zerind = new Vertex<String>("Zerind");
+		this.graph.removeVertex(Zerind);
+		Vertex<String> Sibiu = new Vertex<String>("Sibiu");
+		this.graph.removeVertex(Sibiu);
+		Vertex<String> Timisoara = new Vertex<String>("Timisoara");
+		this.graph.removeVertex(Timisoara);
+		Vertex<String> Oaradea = new Vertex<String>("Oaradea");
+		this.graph.removeVertex(Oaradea);
+		Vertex<String> Fagaras = new Vertex<String>("Fagaras");
+		this.graph.removeVertex(Fagaras);
+		System.out.println(graph.toString());
+	}
+
+	@Test
+	public void testAddEdge() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testRemoveEdge() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testBFSGraphMapOfVertexOfStringArrayListOfEdgeOfString() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testBFSGraph() {
+		fail("Not yet implemented");
+	}
+
+}

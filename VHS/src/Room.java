@@ -129,7 +129,6 @@ public class Room {
 			}
 			this.reservations.add(request);
 			//return this.name; //nothing went wrong if got here
-			//TODO perhaps incorporate exception
 		} else {
 			//return "Request Rejected";
 		}

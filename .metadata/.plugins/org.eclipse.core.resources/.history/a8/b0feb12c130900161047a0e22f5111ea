@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+	public class BFSGraph<E> implements Graph<E> {
+		Map<Vertex<E>, ArrayList<Edge<E>>> vertices;
+//	Vertex[] adjLists
+	@Override
+	public void addVertex (Vertex<E> v) {
+		this.vertices.put(v, new ArrayList<Edge<E>>());
+	}
+	@Override
+	public void removeVertex (Vertex<E> v) {
+		this.vertices.remove(v);
+		
+	}
+	
+
+	@Override
+	public void addEdge(Edge<E> e) {
+		this.vertices.get(e.src).add(e);
+	}
+	@Override
+	public void removeEdge(Edge<E> e) {
+		this.vertices.get(e.src).remove(e);
+		
+	}
+
+	/* Vertices is graph representation, stores vertices and all edges to others*/
+	public Map<Vertex<E>, ArrayList<Edge<E>>> getVertices() {
+		return this.vertices;
+	}
+	public void setVertices(Map<Vertex<E>, ArrayList<Edge<E>>> vertices) {
+		this.vertices = vertices;
+	}
+
+	public BFSGraph(Map<Vertex<E>, ArrayList<Edge<E>>> vertices1) {
+		this.vertices = vertices1;
+	}
+
+	public BFSGraph() {
+		this.vertices = new HashMap<>();
+	}
+	
+
+	@Override
+	public boolean contains(Object o) {
+		if (o == null) return false;
+		if (o.getClass() == Vertex<E> ) {
+			return false;
+		} else if (o.getClass() == Edge<E>) {
+			
+		}
+		return false;
+	}
+	
+	public Set<Vertex<E>> getVertexSet() {
+	}
+	@Override
+	public ArrayList<Edge<E>> getEdgesFromVertex(Vertex<E> v) {
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "BFSGraph [vertices=" + vertices.toString() + "]";
+	}
+	@Override
+	public Set<Vertex<E>> getVertexData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

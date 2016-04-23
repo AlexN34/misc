@@ -225,6 +225,7 @@ public class VenueHireSystem {
 
 			}
 		} catch (FileNotFoundException e) {
+				System.out.println("File named in argument not found: " + args[0] + e); 
 		} finally {
 			// once done with file, close to free memory
 			if (sc != null)

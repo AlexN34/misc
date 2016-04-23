@@ -1,0 +1,6 @@
+
+public interface Graph<E> {
+	public void addNode (Node<E> node);
+	public void removeNode (Node<E> node);
+}
+

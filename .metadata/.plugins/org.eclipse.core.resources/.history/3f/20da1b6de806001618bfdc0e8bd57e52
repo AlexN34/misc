@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class BFSGraph implements Graph<String> {
+	ArrayList<Node<String>> nodes;
+	
+	public void addNode (Node<String> n) {
+		this.nodes.add(n);
+	}
+	public void removeNode (Node<String> n) {
+		this.nodes.remove(n);
+		
+	}
+	
+	 public ArrayList<Node<String>> getNodes() {
+		return nodes;
+	}
+	public void setNodes(ArrayList<Node<String>> nodes) {
+		this.nodes = nodes;
+	}
+
+	public BFSGraph(ArrayList<Node<String>> nodes) {
+		super();
+		this.nodes = nodes;
+	}
+
+}

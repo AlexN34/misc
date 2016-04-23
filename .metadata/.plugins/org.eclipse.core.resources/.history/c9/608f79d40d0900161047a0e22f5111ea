@@ -1,0 +1,11 @@
+
+public interface Graph<E> {
+	public void addVertex (Vertex<E> Vertex);
+	public void removeVertex (Vertex<E> Vertex);
+	public void addEdge (Edge<E> e);
+	public void removeEdge (Edge<E> e);
+	public boolean contains (Object o);
+	public Edge<E> searchEdge (Vertex<E> src, Vertex<E> dest);
+
+}
+
