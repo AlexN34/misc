@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/alex/Dropbox/2016/comp2911/2911/BFSGraphV2"/>
 			<item value="/home/alex/Dropbox/2911/tutwk6"/>
 			<item value="E:\HDD Files\Documents\Dropbox\2016\comp2911\workspace\workspace\DT9"/>
 		</list>

@@ -28,8 +28,9 @@ Edge 71 Zerind Oradea
 Edge 151 Oradea Sibiu 
 Edge 99 Sibiu Fagaras
 Edge 80 Sibiu Rimnicu Vilcea
-Edge 111 Timosoara Lugoj
+Edge 111 Timisoara Lugoj
 Edge 70 Lugoj Mehadia
+Edge 75 Mehadia Dobreta
 Edge 120 Dobreta Craiova
 Edge 146 Rimnicu Vilcea Craiova
 Edge 97 Rimnicu Vilcea Pitesti

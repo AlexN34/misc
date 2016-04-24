@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public interface Graph<E> {
 	public boolean addVertex (Vertex<E> Vertex);
@@ -8,6 +9,7 @@ public interface Graph<E> {
 	public int numV();
 	public int numE();
 	public Vertex<E> getVertex(E contents);
+//	public ArrayList<Edge<E>> getConnectedEdges(Vertex<E> v);
 	public Edge<E> getEdge(E srcContents, E destContents); 
 
 }

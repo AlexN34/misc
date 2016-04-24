@@ -1,0 +1,45 @@
+#Format:
+#Vertex <contents> <id>
+#Edge <weight> <src> <dest>
+Vertex 10 Arad
+Vertex 20 Zerind
+Vertex 30 Oradea
+Vertex 40 Sibiu
+Vertex 50 Timisoara
+Vertex 50 Lugoj
+Vertex 50 Mehadia
+Vertex 50 Dobreta
+Vertex 50 Craiova
+Vertex 60 Fagaras
+Vertex 70 Rimnicu Vilcea
+Vertex 80 Pitesti
+Vertex 15 Bucharest
+Vertex 25 Giurgiu
+Vertex 35 Urziceni
+Vertex 45 Neamt
+Vertex 55 Iasi
+Vertex 65 Vaslui
+Vertex 75 Hirsova
+Vertex 85 Eforie
+Edge 75 Arad Zerind
+Edge 140 Arad Sibiu
+Edge 118 Arad Timisoara
+Edge 71 Zerind Oradea
+Edge 151 Oradea Sibiu 
+Edge 99 Sibiu Fagaras
+Edge 80 Sibiu Rimnicu Vilcea
+Edge 111 Timosoara Lugoj
+Edge 70 Lugoj Mehadia
+Edge 120 Dobreta Craiova
+Edge 146 Rimnicu Vilcea Craiova
+Edge 97 Rimnicu Vilcea Pitesti
+Edge 138 Craiova Pitesti
+Edge 211 Fagaras Bucharest
+Edge 101 Pitesti Bucharest
+Edge 90 Bucharest Giurgiu
+Edge 85 Bucharest Urziceni
+Edge 142 Urziceni Vaslui
+Edge 92 Vaslui Iasi
+Edge 87 Iasi Neamt 
+Edge 98 Urziceni Hirsova
+Edge 87 Hirsova Eforie
