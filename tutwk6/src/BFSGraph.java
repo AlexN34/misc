@@ -23,7 +23,12 @@ import java.util.Set;
 	}
 	@Override
 	public void removeEdge(Edge<E> e) {
-		this.vertices.get(e.src).remove(e);
+		ArrayList<Edge<E>> edgeList= this.getEdgesFromVertex(e.src);
+		for (Edge<E> edge : edgeList ) {
+			if (edge.equals(e)) {
+				edgeList.remove(edgeList.indexOf(edge));
+			}
+		}
 		
 	}
 
@@ -62,10 +67,22 @@ import java.util.Set;
 	public Set<Vertex<E>> getVertexSet() {
 		return this.vertices.keySet();
 	}
+
+	public boolean isInVertexSet(Vertex<E> v){
+		  for(Vertex<E> temp : this.vertices.keySet()){
+//		   System.out.println("Original: " + temp.toString());
+//		   System.out.println("Other: " + v.toString());
+		   if(temp.equals(v)) return true;
+		  }
+		  return false;
+		 }
+
 	public Vertex<E> findVertex(E contents) {
 			Set<Vertex<E>> vertexSet = this.getVertexSet();
 			for (Vertex<E> vertex : vertexSet) {
-				if (vertex.contents.equals(contents)) return vertex;
+				if (vertex.contents.equals(contents)) {
+					return vertex;
+				}
 			}
 			return new Vertex<>(contents); //if not found, make the vertex
 	}

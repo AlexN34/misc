@@ -134,7 +134,7 @@ public class BFSGraphTest {
 		edges.add(new Edge<String>(hash.get("Sibiu"), hash.get("Fagaras"), 239));
 		edges.add(new Edge<String>(hash.get("Oaradea"), hash.get("Sibiu"), 297));
 		for (String name : nodeNames) {
-			assertTrue(graph.contains(hash.get(name)));
+			assertTrue(graph.isInVertexSet(hash.get(name)));
 		}
 		for (Edge<String> edge : edges) {
 			assertTrue(graph.contains(edge));
@@ -151,9 +151,13 @@ public class BFSGraphTest {
 	@Test
 	public void testBFSGraph() { 
 		System.out.println(" === Testing contains ===");
-		Set<Vertex<String>> set = this.graph.getVertexSet();
-		System.out.println(set.contains(new Vertex<String>("Arad")));
-		System.out.println(set.contains(this.graph.findVertex("Arad")));
+		System.out.println(" Graph is: " + graph.toString());
+		Vertex<String> v = new Vertex<String>("Arad");
+		System.out.println(v.toString());
+		Vertex<String> v2 = this.graph.findVertex("Arad");
+		System.out.println(v2.toString());
+		System.out.println(this.graph.getVertexSet().contains(v));
+		System.out.println(this.graph.getVertexSet().contains(v2));
 	}
 
 }

@@ -1,0 +1,24 @@
+#Format
+#<node ID> <heuristic distance to goal>
+366 Arad
+374 Zerind
+380 Oradea
+253 Sibiu
+328 Timisoara
+244 Lugoj
+241 Mehadia
+242 Dobreta
+160 Craiova
+178 Fagaras
+193 Rimnicu Vilcea
+98 Pitesti
+0 Bucharest
+77 Giurgiu
+80 Urziceni
+234 Neamt
+226 Iasi
+199 Vaslui
+151 Hirsova
+161 Eforie
+
+

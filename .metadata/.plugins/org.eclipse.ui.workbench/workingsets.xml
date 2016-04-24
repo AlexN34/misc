@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457739799487_1" label="Eclipse Tutorials" name="Eclipse Tutorials">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/de.vogella.eclipse.ide.jars" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457739799487_1" label="Eclipse Tutorials" name="Eclipse Tutorials"/>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457739809490_2" label="COMP2911" name="COMP2911">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tutwk6" type="4"/>
 <item elementID="=tutwk5" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tutwk4" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tutwk3" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tutwk2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/BFSGraphV2" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.mylyn.tasks.ui.workingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1459497919900_5" label="Assignment1" name="Assignment1">
 <item elementID="=VHS" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/VHS" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457417321346_0" label="Window Working Set" name="Aggregate for window 1457417321346"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1457739886744_6" label="Multiple Working Sets" name="Aggregate:COMP2911:Eclipse Tutorials:">

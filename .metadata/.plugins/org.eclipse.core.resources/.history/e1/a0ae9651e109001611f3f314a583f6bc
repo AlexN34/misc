@@ -1,0 +1,18 @@
+import java.util.Collection;
+
+public interface Graph<E> {
+	public boolean addVertex (Vertex<E> Vertex);
+	public boolean removeVertex (Vertex<E> Vertex);
+	public boolean addEdge (Edge<E> e);
+	public boolean removeEdge (Edge<E> e);
+	public boolean contains (Object o);
+	public int numV();
+	public int numE();
+	public Collection<Vertex<E>> getVertexCollection();
+	public Vertex<E> getVertex(String id);
+	public Edge<E> getEdge(Vertex<E> src, Vertex<E> dest);
+//	public Edge<E> searchEdge (Vertex<E> src, Vertex<E> dest);
+	public Vertex<E> findVertex (String id);
+
+}
+

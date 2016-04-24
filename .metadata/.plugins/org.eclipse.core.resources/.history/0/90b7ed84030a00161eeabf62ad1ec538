@@ -1,0 +1,37 @@
+import static org.junit.Assert.*;
+
+import java.io.FileReader;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class AListGraphTest {
+
+	@Before
+	public void setUp() throws Exception {
+		// Initialise system contents as empty lists
+		// Scan from input for stuff to put into system s
+		Scanner sc = null; // sc is now the input file.
+		AListGraph<Station> g = new AListGraph<>();
+		try {
+			// args[0] is the first command line argument
+			sc = new Scanner(new FileReader(args[0]));
+			// set first argument as object to scan through
+			parseLine(g, sc.nextLine());
+			g.toString();
+		} catch (FileNotFoundException e) {
+		} finally {
+			// once done with file, close to free memory
+			if (sc != null)
+				sc.close();
+		}
+
+		System.out.println("Scan finished");
+	}}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

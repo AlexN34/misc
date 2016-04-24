@@ -2,23 +2,24 @@
 <section name="Workbench">
 	<item value="false" key="EXT_FOLDER_LAST_SUBDIR_SETTING"/>
 	<item value="/usr/lib/jvm/java-1.7.0-openjdk-amd64" key="EXT_FOLDER_LAST_PATH_SETTING"/>
-	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
-		<item value="525" key="DIALOG_WIDTH"/>
-		<item value="258" key="DIALOG_Y_ORIGIN"/>
-		<item value="405" key="DIALOG_HEIGHT"/>
-		<item value="699" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-	</section>
+	<item value="/home/alex/Downloads/jdk1.7.0_80" key="org.eclipse.debug.internal.ui.sourcelookup.browsers.ExternalArchiveSourceContainerBrowser.rootDir"/>
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item value="392" key="DIALOG_WIDTH"/>
 		<item value="429" key="DIALOG_HEIGHT"/>
 		<item value="1|Droid Sans|14.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
+	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="258" key="DIALOG_Y_ORIGIN"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
+		<item value="405" key="DIALOG_HEIGHT"/>
+		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="org.eclipse.debug.ui.STRING_VARIABLE_SELECTION_DIALOG_SECTION">
 		<item value="578" key="DIALOG_WIDTH"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="302" key="DIALOG_X_ORIGIN"/>
 		<item value="820" key="DIALOG_HEIGHT"/>
+		<item value="302" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Droid Sans|14.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCHERS_DIALOG">
@@ -26,23 +27,23 @@
 		<item value="450" key="DIALOG_HEIGHT"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
-	<section name="org.eclipse.debug.ui.WORKSPACE_SELECTION_DIALOG">
-		<item value="404" key="DIALOG_WIDTH"/>
-		<item value="490" key="DIALOG_HEIGHT"/>
-		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
 		<item value="679" key="DIALOG_WIDTH"/>
 		<item value="702" key="DIALOG_HEIGHT"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
+	<section name="org.eclipse.debug.ui.WORKSPACE_SELECTION_DIALOG">
+		<item value="404" key="DIALOG_WIDTH"/>
+		<item value="490" key="DIALOG_HEIGHT"/>
+		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
 		<item value="894" key="DIALOG_WIDTH"/>
-		<item value="org.eclipse.jdt.launching.localJavaApplication, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
-		<item value="1055" key="DIALOG_HEIGHT"/>
+		<item value="org.eclipse.jdt.launching.localJavaApplication, org.eclipse.jdt.junit.launchconfig, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
+		<item value="1054" key="DIALOG_HEIGHT"/>
 		<item value="237" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
-		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="762" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.jdt.debug.ui.PROJECT_SELECTION_DIALOG_SECTION">
 		<item value="296" key="DIALOG_WIDTH"/>

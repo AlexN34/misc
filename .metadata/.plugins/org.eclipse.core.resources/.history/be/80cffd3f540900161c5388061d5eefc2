@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class VertexTest {
+
+	@Before
+	public void setUp() throws Exception {
+		HashMap<String, Vertex<String>> hash = new HashMap<>();
+		ArrayList<String> nodeNames = new ArrayList<>();
+		nodeNames.add("Arad");
+		nodeNames.add("Zerind");
+		nodeNames.add("Sibiu");
+		nodeNames.add("Timisoara");
+		nodeNames.add("Oaradea");
+		nodeNames.add("Fagaras");
+		for (String name : nodeNames) {
+			hash.put(name, new Vertex<String>(name));
+		}
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

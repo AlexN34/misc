@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;BFSGraphV2/src&apos;&#x0A;- Original project: &apos;tutwk6&apos;&#x0A;- Destination element: &apos;BFSGraphV2/src&apos;&#x0A;- Original elements:&#x0A;     Edge.java&#x0A;     Graph.java&#x0A;     Vertex.java" description="Copy compilation units" destination="=BFSGraphV2/src" element1="/src&lt;{Edge.java" element2="/src&lt;{Graph.java" element3="/src&lt;{Vertex.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1461413313928" units="3" version="1.0"/>
+</session>
