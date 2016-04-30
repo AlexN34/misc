@@ -1,5 +1,5 @@
 
-public class Station {
+public class Station implements Comparable<Station>{
 	private String name;
 	private int layover;
 	/* (non-Javadoc)
@@ -7,7 +7,7 @@ public class Station {
 	 */
 	@Override
 	public String toString() {
-		return "Station [name=" + name + ", layover=" + layover + "]";
+		return "[" + name + " : " + layover + "]";
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
@@ -20,6 +20,8 @@ public class Station {
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
+
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -66,6 +68,7 @@ public class Station {
 		this.layover = layover;
 	}
 	
+	
 	public Station() {
 		this.name = "";
 		this.layover = 0;
@@ -84,5 +87,10 @@ public class Station {
 			substr += tokens[i];
 		}
 		this.setName(substr);
+	}
+
+	@Override
+	public int compareTo(Station o) {
+		return this.name.compareTo(o.name);
 	}
 }

@@ -1,0 +1,5 @@
+import java.util.Comparator;
+
+public interface ComparisonStrategy {
+ public Comparator<T> sortObjects();
+}

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Vertex<E> {
 //	String id;
 
-	E contents;
+	private E contents;
 	ArrayList<Edge<E>> connectedEdges;
 	
 	public E getContents() {
@@ -34,11 +34,21 @@ public class Vertex<E> {
 	}
 
 	public boolean addConnectedEdge(Edge<E> e) {
-		return this.connectedEdges.add(e);
+		try {
+			return this.connectedEdges.add(e);
+		} catch (Exception ex) {
+			System.out.println("Could not add in addConnectedEge: " + e.toString());
+		}
+		return false;//if reached here add didn't work
 	}
 
 	public boolean removeConnectedEdge(Edge<E> e) {
-		return this.connectedEdges.remove(e);
+		try {
+			return this.connectedEdges.remove(e);
+		} catch (Exception ex) {
+			System.out.println("Could not remove in removedConnectedEge: " + e.toString());
+		}
+		return false;
 	}
 
 	public Vertex (/*String id,*/ E contents, ArrayList<Edge<E>> connectedEdges) {
@@ -58,7 +68,7 @@ public class Vertex<E> {
 	 */
 	@Override
 	public String toString() {
-		return "\nVertex [\ncontents=" + contents + "\nconnectedEdges=" + connectedEdges + "\n]";
+		return "\nVertex [" + contents.toString() + " is connected to:\n" + connectedEdges.toString() + "\n]";
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
@@ -67,8 +77,8 @@ public class Vertex<E> {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((connectedEdges == null) ? 0 : connectedEdges.hashCode());
 		result = prime * result + ((contents == null) ? 0 : contents.hashCode());
+		result = prime * result + ((connectedEdges == null) ? 0 : connectedEdges.hashCode());
 		return result;
 	}
 	/* (non-Javadoc)
@@ -95,6 +105,5 @@ public class Vertex<E> {
 			return false;
 		return true;
 	}
-
 
 }

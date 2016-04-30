@@ -1,0 +1,11 @@
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+
+public class BufferedImageLoader {
+	private BufferedImage image;
+	public BufferedImage loadImage (String path) {
+		image = ImageIO.read(getClass().getResourceAsStream(path));
+		return image;
+	}
+}

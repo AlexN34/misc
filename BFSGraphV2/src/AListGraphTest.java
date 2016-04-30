@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -27,7 +28,7 @@ public class AListGraphTest {
 				System.out.println(nextLine);
 				parseLine(g, nextLine);
 			}
-			System.out.println("\n======== All Vertices and Edges created ========\n" + g.toString());
+			System.out.println("\n======== All Vertices and Edges created ============================\n" + g.toString());
 		} catch (NullPointerException e) {
 			System.out.println("null pointer during loop");
 		} catch (FileNotFoundException e) {
@@ -43,14 +44,23 @@ public class AListGraphTest {
 	
 	@After
 	public void tearDown() throws Exception {
-		System.out.println("\n======== About to tear down, graph is: ========\n" + g.toString());
-		while (!(g.getVertexList().isEmpty())) {
-			Vertex<Station> v = g.getVertexList().iterator().next();
-			for (Edge<Station> edge : v.getConnectedEdges()) {
-				assertTrue(g.removeEdge(edge));
+		System.out.println("\n======== About to tear down, graph is: ================================\n" + g.toString());
+		System.out.println("\n======== Removal loop starting now================================\n" );
+		for (Iterator<Vertex<Station>> iteratorV = g.getVertexList().iterator(); iteratorV.hasNext();) {
+			Vertex<Station> v = iteratorV.next();
+			ArrayList<Edge<Station>> cE = v.getConnectedEdges();
+			for (Iterator<Edge<Station>> iteratorE = cE.iterator(); iteratorE.hasNext();) {
+				Edge<Station> edge = iteratorE.next();
+				iteratorE.remove(); //TODO migrate remove step to remove methods
+				assertFalse(cE.contains(edge));
+				System.out.println("Removed " + edge.toString() );
+//				assertTrue(g.removeEdge(edge));
 			}
-			assertTrue(g.removeVertex(v));
+			iteratorV.remove();
+			System.out.println("Removed " + v.toString() );
+//			assertTrue(g.removeVertex(v));
 		}
+		System.out.println("\n======== Tear Down complete, graph is: ================================\n" + g.toString());
 	}
 	
 	@Test
@@ -58,7 +68,7 @@ public class AListGraphTest {
 	}
 
 
-	private static void parseLine (AListGraph<Station> g, String line) { // ensure E has a constructor from parsed Line
+	private static void parseLine (AListGraph<Station> g, String line) throws NotInStructureException { // ensure E has a constructor from parsed Line
 		if (!line.startsWith("#")) {
 			if (line.startsWith("Vertex")) {
 //				System.out.println(g.addVertex(parseVertex(g, line)));//print result to debug
@@ -78,7 +88,7 @@ public class AListGraphTest {
 		return new Vertex<Station>(s);
 	}
 
-	private static Edge<Station> parseEdge (AListGraph<Station> g, String line) {
+	private static Edge<Station> parseEdge (AListGraph<Station> g, String line) throws NotInStructureException {
 		String[] tokens = line.split(" ");
 		int weight = Integer.parseInt(tokens[1]);
 		String substr = ""; //0th token is Vertex, 1st is contents

@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+/**
+ * @author alex
+ *
+ */
+
+public class NotInStructureException extends Exception {
+
+	public NotInStructureException(String message) {
+		super(message);
+	}
+
+	public NotInStructureException(String message, Throwable throwable) {
+		super(message, throwable);
+	}
+
+}

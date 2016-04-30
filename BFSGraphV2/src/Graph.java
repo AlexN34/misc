@@ -8,9 +8,9 @@ public interface Graph<E> {
 //	public boolean contains (Object o);
 	public int numV();
 	public int numE();
-	public Vertex<E> getVertex(E contents);
+	public Vertex<E> getVertex(E contents) throws NotInStructureException;
 //	public ArrayList<Edge<E>> getConnectedEdges(Vertex<E> v);
-	public Edge<E> getEdge(E srcContents, E destContents); 
-
+	public Edge<E> getEdge(E srcContents, E destContents, int weight) throws NotInStructureException; 
+	public ArrayList<Vertex<E>> getVertexList(); 
 }
 

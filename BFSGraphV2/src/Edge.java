@@ -4,7 +4,7 @@ public class Edge<E>{
 	Vertex<E> dest;
 	int weight;
 
-	public Edge(AListGraph<E> g, E from, E to, int weight) {
+	public Edge(AListGraph<E> g, E from, E to, int weight) throws NotInStructureException {
 		this.src = g.getVertex(from);
 		this.dest = g.getVertex(to);
 		this.weight = weight;
@@ -40,7 +40,7 @@ public class Edge<E>{
 	 */
 	@Override
 	public String toString() {
-		return "\nEdge [\nsrc=" + src.contents.toString() + ",\ndest=" + dest.contents.toString() + ",\nweight=" + weight + "]";
+		return "\nEdge [src=" + src.getContents().toString() + ",dest=" + dest.getContents().toString() + ",weight=" + weight + "]";
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
@@ -49,8 +49,8 @@ public class Edge<E>{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((dest == null) ? 0 : dest.hashCode());
-		result = prime * result + ((src == null) ? 0 : src.hashCode());
+		result = prime * result + ((dest.getContents() == null) ? 0 : dest.getContents().hashCode());
+		result = prime * result + ((src.getContents() == null) ? 0 : src.getContents().hashCode());
 		result = prime * result + weight;
 		return result;
 	}
@@ -69,12 +69,12 @@ public class Edge<E>{
 		if (dest == null) {
 			if (other.dest != null)
 				return false;
-		} else if (!dest.contents.equals(other.dest))
+		} else if (!dest.getContents().equals(other.dest.getContents()))
 			return false;
 		if (src == null) {
 			if (other.src != null)
 				return false;
-		} else if (!src.contents.equals(other.src))
+		} else if (!src.getContents().equals(other.src.getContents()))
 			return false;
 		if (weight != other.weight)
 			return false;

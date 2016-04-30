@@ -1,0 +1,21 @@
+
+public class Player {
+	private double x;
+	private double y;
+	
+	public Player (double x, double y, Game game) {
+		this.x = x;
+		this.y = y;
+		
+		SpriteSheet ss = new SpriteSheet(game.getSpriteSheet());
+		
+	}
+	
+	public void tick() {
+		
+	}
+	
+	public void render (Graphics g) {
+		
+	}
+}

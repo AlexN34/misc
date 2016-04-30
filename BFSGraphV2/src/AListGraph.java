@@ -2,6 +2,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -12,6 +13,7 @@ public class AListGraph<E> implements Graph<E>{
 	/**
 	 * @return the vertexList
 	 */
+	@Override
 	public ArrayList<Vertex<E>> getVertexList() {
 		return vertexList;
 	}
@@ -62,10 +64,10 @@ public class AListGraph<E> implements Graph<E>{
 	@Override
 	public boolean addEdge(Edge<E> e) {
 		System.out.println("About to add: " + e.toString()); //for debugging
-		boolean result = true; // TODO: Unwieldy converting Vertex -> index -> original index. Is this necessary? -> does e point to original graph
-		result = vertexList.get(vertexList.indexOf(e.src)).addConnectedEdge(e); //returns bool, TODO throw error if false
+		// Unwieldy converting Vertex -> index -> original index. Is this necessary? -> does e point to original graph
+		boolean result = vertexList.get(vertexList.indexOf(e.src)).addConnectedEdge(e);
 		Edge<E> mirror = new Edge<>(e.dest, e.src, e.weight);
-		result = vertexList.get(vertexList.indexOf(mirror.src)).addConnectedEdge(mirror); //returns bool, TODO throw error if false
+		result = vertexList.get(vertexList.indexOf(mirror.src)).addConnectedEdge(mirror); //returns bool - learn to do proper exception handling 
 		return result;
 
 	}
@@ -73,37 +75,17 @@ public class AListGraph<E> implements Graph<E>{
 	@Override
 	public boolean removeEdge(Edge<E> e) {
 		System.out.println("About to remove: " + e.toString()); //for debugging
-		boolean result = true;
-		result = vertexList.get(vertexList.indexOf(e.src)).removeConnectedEdge(e); //returns bool, TODO throw error if false
+		boolean result = true;//returns bool - learn to do proper exception handling 
+		result = vertexList.get(vertexList.indexOf(e.src)).removeConnectedEdge(e); 
 		Edge<E> mirror = new Edge<>(e.dest, e.src, e.weight);
-		result = vertexList.get(vertexList.indexOf(mirror.src)).removeConnectedEdge(mirror); //returns bool, TODO throw error if false
+		Vertex<E> v = vertexList.get(vertexList.indexOf(mirror.src));
+		result = v.getConnectedEdges().contains(mirror);
+//		result = v.removeConnectedEdge(mirror); 
+		System.out.println("Connected edge list to vertex: " + v.getConnectedEdges().toString());
+		System.out.println("Edge to delete: " + mirror.toString());
 		return result; //if any fail, result will be false
 	}
 
-	/*@Override
-	public boolean contains(Object o) {
-		if (o == null) {
-			return false;
-		} else if (o instanceof Edge) {
-			Edge<?> obj = (Edge<?>) o;
-			if (!(vertexList.contains(obj.src)) || !(vertexList.contains(obj.dest)) ) { //TODO: consider using recursive contains call
-				return false;
-			}
-			if (!(vertexList.get(vertexList.indexOf(obj.src)).getConnectedEdges().contains(obj)) || 
-					!(vertexList.get(vertexList.indexOf(obj.src)).getConnectedEdges().contains(obj))) {
-				return false;
-			} else {
-				return true;
-			}
-		} else if (o instanceof Vertex) {
-			Vertex<?> obj = (Vertex<?>) o;
-			return vertexList.contains(obj);
-		} else {
-			return false;
-		}
-		
-	}
-	*/
 
 
 	@Override
@@ -121,46 +103,60 @@ public class AListGraph<E> implements Graph<E>{
 	}
 
 	@Override
-	public Edge<E> getEdge(E srcContents, E destContents) { //TODO consider adding weight consideration if needed
+	public Edge<E> getEdge(E srcContents, E destContents, int weight) throws NotInStructureException { 
 		Vertex<E> src = this.getVertex(srcContents);
 		Vertex<E> dest = this.getVertex(destContents);
 		for (Edge<E> edge : src.getConnectedEdges()) {
-			if (edge.src.equals(src) && edge.dest.equals(dest)) {
+			if (edge.getFrom().equals(src) && edge.getTo().equals(dest) && edge.weight == weight) {
 				return edge;
 			}
 		}
-		return new Edge<>(src, dest, 0); //TODO change to throw exception instead;
+		throw new NotInStructureException("Contents in getEdge not found in graph: " + srcContents.toString() + " and " + destContents.toString());
 	}
 
 	@Override
-	public Vertex<E> getVertex(E contents) {
+	public Vertex<E> getVertex(E contents) throws NotInStructureException {
 		ArrayList<Vertex<E>> vList = this.getVertexList();
 		for (Vertex<E> vertex : vList) {
-			if (vertex.contents.equals(contents)) {
+			if (vertex.getContents().equals(contents)) {
 				return vertex;
 			}
 		}
-		return new Vertex<E>(contents); //make a vertex if not found ? TODO change to throw exception
+		throw new NotInStructureException("Contents in getVertex not found in graph: " + contents.toString());
 	}
-
-
-	
+/*
+% java BreadthFirstPaths tinyCG.txt
+(least recently added for BFS, most recently add-
+0 to 0: 0
+0 to 1: 0-1
+ed for DFS). This difference leads to completely
+0 to 2: 0-2
+different views of the graph, even though all the
+0 to 3: 0-2-3
+0 to 4: 0-2-4
+vertices and edges connected to the source are
+0 to 5: 0-5
+*/	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
+		/*for (Vertex<E> vertex : vertexList) {
+			for (Edge<E> edge : vertex.getConnectedEdges()) {
+				str += edge.getContents().toString() 
+			}
+		} */
 		return "AListGraph [vertexList=" + vertexList + "]";
 	}
 
-	//TODO: constructors for graph w/ no edges given vertexSet, graph taking entirely from input
 	public AListGraph () {
 		this.vertexList = new ArrayList<>();
 		this.contentMap = new HashMap<>();
 	}
 	
 
-	private static void parseLine (AListGraph<Station> g, String line) { // ensure E has a constructor from parsed Line
+	private static void parseLine (AListGraph<Station> g, String line) throws NotInStructureException { // ensure E has a constructor from parsed Line
 		if (!line.startsWith("#")) {
 			if (line.startsWith("Vertex")) {
 				System.out.println(g.addVertex(parseVertex(g, line)));//print result to debug
@@ -178,7 +174,7 @@ public class AListGraph<E> implements Graph<E>{
 		return new Vertex<Station>(s);
 	}
 
-	private static Edge<Station> parseEdge (AListGraph<Station> g, String line) {
+	private static Edge<Station> parseEdge (AListGraph<Station> g, String line) throws NotInStructureException {
 		String[] tokens = line.split(" ");
 		int weight = Integer.parseInt(tokens[1]);
 		String substr = ""; //0th token is Vertex, 1st is contents
@@ -197,6 +193,22 @@ public class AListGraph<E> implements Graph<E>{
 	public E inputStrToContents (String input) { //returns null if nonexistent in graph
 		return this.contentMap.get(input);
 	}
+	
+	public void deleteGraph () {
+		for (Iterator<Vertex<E>> iteratorV = this.getVertexList().iterator(); iteratorV.hasNext();) {
+			Vertex<E> v = iteratorV.next();
+			ArrayList<Edge<E>> cE = v.getConnectedEdges();
+			for (Iterator<Edge<E>> iteratorE = cE.iterator(); iteratorE.hasNext();) {
+				Edge<E> edge = iteratorE.next();
+				iteratorE.remove(); //TODO migrate remove step to remove methods
+				System.out.println("Removed " + edge.toString() );
+//				assertTrue(g.removeEdge(edge));
+			}
+			iteratorV.remove();
+			System.out.println("Removed " + v.toString() );
+//			assertTrue(g.removeVertex(v));
+		}
+	}
 	public static void main(String[] args) { //section that will parse input
 		// Initialise system contents as empty lists
 		// Scan from input for stuff to put into system s
@@ -209,6 +221,8 @@ public class AListGraph<E> implements Graph<E>{
 			parseLine(g, sc.nextLine());
 			g.toString();
 		} catch (FileNotFoundException e) {
+		} catch (NotInStructureException e) {
+			e.printStackTrace();
 		} finally {
 			// once done with file, close to free memory
 			if (sc != null)
