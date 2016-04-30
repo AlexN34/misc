@@ -70,6 +70,7 @@ public class Vertex<E> {
 	public String toString() {
 		return "\nVertex [" + contents.toString() + " is connected to:\n" + connectedEdges.toString() + "\n]";
 	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
@@ -105,5 +106,5 @@ public class Vertex<E> {
 			return false;
 		return true;
 	}
-
+	
 }

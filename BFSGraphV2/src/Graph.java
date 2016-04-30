@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Map;
 
 public interface Graph<E> {
 	public boolean addVertex (Vertex<E> Vertex);
@@ -12,5 +13,14 @@ public interface Graph<E> {
 //	public ArrayList<Edge<E>> getConnectedEdges(Vertex<E> v);
 	public Edge<E> getEdge(E srcContents, E destContents, int weight) throws NotInStructureException; 
 	public ArrayList<Vertex<E>> getVertexList(); 
+	public void addHeuristicVal (Vertex<E> v, int val);
+	public int getHeuristicVal (Vertex<E> v);
+	/*
+	public void addFScoreVal (Vertex<E> v, int val); 
+	public int getFScoreVal(Vertex<E> v);
+	public Map<Vertex<E>, Integer> getgScoreMap() ;
+	public void setgScoreMap(Map<Vertex<E>, Integer> gScoreMap) ;
+	public Map<Vertex<E>, Integer> getfScoreMap();
+	public void setfScoreMap(Map<Vertex<E>, Integer> fScoreMap);
+	*/
 }
-

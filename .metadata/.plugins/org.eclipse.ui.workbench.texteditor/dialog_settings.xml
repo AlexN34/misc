@@ -3,36 +3,36 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="297" key="DIALOG_WIDTH"/>
 		<item value="409" key="DIALOG_Y_ORIGIN"/>
-		<item value="382" key="DIALOG_HEIGHT"/>
 		<item value="1001" key="DIALOG_X_ORIGIN"/>
+		<item value="382" key="DIALOG_HEIGHT"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Vertex" key="selection"/>
+		<item value="&lt;Station&gt;" key="selection"/>
 		<list key="findhistory">
+			<item value="&lt;E&gt;"/>
+			<item value="E&gt;"/>
+			<item value="E"/>
+			<item value="parentMap"/>
 			<item value="Node"/>
 			<item value="equals"/>
 			<item value="equalss"/>
 			<item value="TreeSet&lt;Action&gt; reservations"/>
-			<item value="LinkedHashMap&lt;String, Int&gt; type"/>
-			<item value="LinkedHashMap&lt;String, int&gt; type"/>
-			<item value="String type"/>
-			<item value="actions"/>
 		</list>
 		<list key="replacehistory">
+			<item value="&lt;Station&gt;"/>
+			<item value="Station"/>
+			<item value="cameFrom"/>
 			<item value="Vertex"/>
 			<item value="LinkedList&lt;Action&gt; reservations"/>
 			<item value="LinkedHashMap&lt;String, Integer&gt; type"/>
 			<item value="LinkedHashMap&lt;String, Int&gt; type"/>
 			<item value="LinkedHashMap&lt;String, int&gt; type"/>
-			<item value="actionResults"/>
-			<item value="LinkedHashMap&lt;Action, String&gt;"/>
-			<item value="LinkedHashMap&lt;String, Action&gt;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

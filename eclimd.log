@@ -70,3 +70,51 @@
 2016-04-25 01:05:21,083 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.pydev
 2016-04-25 01:05:21,083 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
 2016-04-25 01:05:21,084 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2016-04-30 15:18:27,608 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/alex/Dropbox/2016/comp2911/2911
+2016-04-30 15:18:27,610 INFO  [org.eclim.eclipse.EclimDaemon] Home: /media/alex/2A54E89754E866D3/LinuxStuff/eclipse/plugins/org.eclim_2.5.0/
+2016-04-30 15:18:27,611 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2016-04-30 15:18:27,626 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2016-04-30 15:18:27,628 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2016-04-30 15:18:27,851 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2016-04-30 15:18:27,876 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.adt
+2016-04-30 15:18:27,885 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.cdt
+2016-04-30 15:18:27,899 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.dltk
+2016-04-30 15:18:27,909 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2016-04-30 15:18:27,980 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.pydev
+2016-04-30 15:18:27,999 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.wst
+2016-04-30 15:18:28,054 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2016-04-30 15:18:28,055 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2016-04-30 15:18:28,055 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2016-04-30 16:04:45,155 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2016-04-30 16:04:45,169 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2016-04-30 16:04:45,188 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.adt
+2016-04-30 16:04:45,188 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.cdt
+2016-04-30 16:04:45,188 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.dltk
+2016-04-30 16:04:45,189 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2016-04-30 16:04:45,189 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.pydev
+2016-04-30 16:04:45,189 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
+2016-04-30 16:04:45,189 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2016-04-30 20:37:10,174 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /home/alex/Dropbox/2016/comp2911/2911
+2016-04-30 20:37:10,176 INFO  [org.eclim.eclipse.EclimDaemon] Home: /media/alex/2A54E89754E866D3/LinuxStuff/eclipse/plugins/org.eclim_2.5.0/
+2016-04-30 20:37:10,176 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2016-04-30 20:37:10,183 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2016-04-30 20:37:10,186 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2016-04-30 20:37:10,363 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2016-04-30 20:37:10,368 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.adt
+2016-04-30 20:37:10,387 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.cdt
+2016-04-30 20:37:10,395 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.dltk
+2016-04-30 20:37:10,403 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2016-04-30 20:37:10,404 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.pydev
+2016-04-30 20:37:10,407 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.wst
+2016-04-30 20:37:10,457 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2016-04-30 20:37:10,458 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2016-04-30 20:37:10,458 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2016-04-30 20:52:49,622 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2016-04-30 20:52:49,633 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2016-04-30 20:52:49,634 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.adt
+2016-04-30 20:52:49,634 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.cdt
+2016-04-30 20:52:49,635 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.dltk
+2016-04-30 20:52:49,635 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2016-04-30 20:52:49,635 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.pydev
+2016-04-30 20:52:49,635 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.wst
+2016-04-30 20:52:49,635 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.

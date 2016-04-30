@@ -1,0 +1,17 @@
+#Format:
+#Vertex <contents> <id>
+#Edge <weight> <src> <dest>
+Vertex 00 Arad
+Vertex 00 Zerind
+Vertex 00 Oradea
+Vertex 00 Sibiu
+Vertex 00 Timisoara
+Vertex 00 Fagaras
+Vertex 00 Rimnicu Vilcea
+Edge 75 Arad Zerind
+Edge 140 Arad Sibiu
+Edge 118 Arad Timisoara
+Edge 71 Zerind Oradea
+Edge 151 Oradea Sibiu 
+Edge 99 Sibiu Fagaras
+Edge 80 Sibiu Rimnicu Vilcea

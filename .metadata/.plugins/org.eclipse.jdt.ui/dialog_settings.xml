@@ -52,12 +52,12 @@
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SkipNull"/>
 		<item value="10" key="LimitValue"/>
-		<item value="0" key="ToStringTemplateSelected"/>
 		<item value="0" key="StringStyle"/>
-		<item value="true" key="Comments"/>
+		<item value="0" key="ToStringTemplateSelected"/>
 		<item value="1" key="VisibilityModifier"/>
-		<item value="2" key="InsertPosition.v2"/>
+		<item value="true" key="Comments"/>
 		<item value="false" key="LimitElements"/>
+		<item value="2" key="InsertPosition.v2"/>
 		<item value="false" key="InstanceOf"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Blocks"/>

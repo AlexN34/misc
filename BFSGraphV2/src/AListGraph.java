@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class AListGraph<E> implements Graph<E>{
 	private ArrayList<Vertex<E>> vertexList; //identify vertices with index # given by V
 	private Map<String, E> contentMap; //map name of String to object contents for easier setup
+	private Map<Vertex<E>, Integer> heuristicMap;
 
 	/**
 	 * @return the vertexList
@@ -151,10 +152,12 @@ vertices and edges connected to the source are
 	}
 
 	public AListGraph () {
+		this.heuristicMap = new HashMap<>();
 		this.vertexList = new ArrayList<>();
 		this.contentMap = new HashMap<>();
+
 	}
-	
+
 
 	private static void parseLine (AListGraph<Station> g, String line) throws NotInStructureException { // ensure E has a constructor from parsed Line
 		if (!line.startsWith("#")) {
@@ -231,6 +234,21 @@ vertices and edges connected to the source are
 
 //		System.out.println("Scan finished");
 	}
+
+	@Override
+	public void addHeuristicVal(Vertex<E> v, int val) {
+		this.heuristicMap.put(v, val);
+		System.out.println("just added to heurstic, printing contents:\n");
+		System.out.println(heuristicMap.toString());
+		
+	}
+
+	@Override
+	public int getHeuristicVal(Vertex<E> v) {
+		return heuristicMap.get(v);
+	}
+
+
 
 
 
