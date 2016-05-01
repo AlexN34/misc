@@ -33,8 +33,5 @@ public class Search<E> {
 
 /*
 
-TODO Implement BFS to search through ALL components (for connected components)
-TODO Find out how to use comparator in Priority queue for below
-TODO Implement BFS in BFSPaths to find shortest path (priority queue)
 
 */

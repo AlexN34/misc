@@ -51,7 +51,7 @@ public class AListGraphTest {
 			ArrayList<Edge<Station>> cE = v.getConnectedEdges();
 			for (Iterator<Edge<Station>> iteratorE = cE.iterator(); iteratorE.hasNext();) {
 				Edge<Station> edge = iteratorE.next();
-				iteratorE.remove(); //TODO migrate remove step to remove methods
+				iteratorE.remove(); 
 				assertFalse(cE.contains(edge));
 				System.out.println("Removed " + edge.toString() );
 //				assertTrue(g.removeEdge(edge));

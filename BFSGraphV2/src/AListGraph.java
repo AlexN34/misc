@@ -203,7 +203,7 @@ vertices and edges connected to the source are
 			ArrayList<Edge<E>> cE = v.getConnectedEdges();
 			for (Iterator<Edge<E>> iteratorE = cE.iterator(); iteratorE.hasNext();) {
 				Edge<E> edge = iteratorE.next();
-				iteratorE.remove(); //TODO migrate remove step to remove methods
+				iteratorE.remove(); //migrate remove step to remove methods
 				System.out.println("Removed " + edge.toString() );
 //				assertTrue(g.removeEdge(edge));
 			}

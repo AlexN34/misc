@@ -1,0 +1,14 @@
+
+public class TripPlanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//TODO rename input files
+		// TODO Modify parses to take in trip
+		// TODO modify heuristic function 
+		// TODO modify gScore to take in transfers
+		
+
+	}
+
+}

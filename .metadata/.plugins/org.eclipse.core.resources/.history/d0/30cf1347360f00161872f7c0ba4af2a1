@@ -1,0 +1,11 @@
+
+public class TripPlanner {
+
+	public static void main(String[] args) {
+		// TODO Modify parses to take in trip
+		// TODO modify heuristic function  - check if admissable heuristic
+		// TODO modify gScore to take in transfers
+
+	}
+
+}

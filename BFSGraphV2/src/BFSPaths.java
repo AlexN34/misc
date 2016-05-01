@@ -21,10 +21,8 @@ public class BFSPaths<E extends Station> {
 	private Graph<Station> g;
 	private int pathNumVertices;
 	private int verticesExpanded;
-	//TODO make getterse and setters for g and f score -> use in comparators
 	//How to abstract with strategy pattern?
 	
-	//TODO Alphabetical checking of connectedEdges -- add in alphabetical/reorganise?
 	/*
 	 *Store the successors of a node in an ArrayList and make sure they are sorted in alphabetical order of the city name before adding them to the Queue 
 	 * 
