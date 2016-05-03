@@ -68,7 +68,23 @@ public class AStarSearch<E extends Station> {
 				return (!(result != 0)) ? result : o1.getContents().compareTo(o2.getContents());
 			} 
 	 };
-
+	 //Searches given heuristic and a destination to get to.
+	public AStarSearch (Graph<Station> g, Vertex<Station> s, Vertex<Station> t){
+		this.closedSet = new HashSet<>();
+		this.cameFrom = new HashMap<>();
+		this.g = g;
+		this.s = s;
+		this.t= t;
+		this.pathNumVertices = 0;
+		this.verticesExpanded = 0;
+		gScoreMap = new HashMap<>(); //edgeTo - parent node of this vertex
+//		fScoreMap = new HashMap<>(); 
+		for (Vertex<Station> v : g.getVertexList()) {
+			gScoreMap.put(v, Integer.MAX_VALUE);
+//			fScoreMap.put(v, Integer.MAX_VALUE);
+		}
+//		aStarPathFind(g, s, t);
+	}
 	//Searches on heuristic given a starting node and reqTrips (in g)
 	public AStarSearch (Graph<Station> g, Vertex<Station> s){
 		this.closedSet = new HashSet<>();
@@ -95,6 +111,7 @@ public class AStarSearch<E extends Station> {
 			Path current = openSet.poll();
 			verticesExpanded++;
 			this.closedSet = current.getClosedSet();
+//			closedSet.add(current); this is now done in path class when edges are added
 			if (current.getReqTripsLeft() == 0) { //finish when there are no required trips left
 				this.resultPath = current;
 				System.out.println("aStarPathFind final path:" + current.toString());
@@ -102,7 +119,6 @@ public class AStarSearch<E extends Station> {
 			}
 			System.out.println("\n********Just popped off queue in bfs: " + current.getLastVertex().toString() + "***********");
 			ArrayList<Edge<Station>> edgesFromV = current.getLastVertex().getConnectedEdges(); // computes adjacent successors..?
-//			Collections.sort(edgesFromV, cmp); //sort connections so alphabetical always taken
 			for (Edge<Station> e : edgesFromV) {
 				System.out.println("\n********Checking edge destination vertex in bfs: " + e.getTo().toString() + "***********");
 
