@@ -55,7 +55,7 @@ public class AStarSearch<E extends Station> {
 			return result;
 		}
 	 };
-	 /*
+
 	private Comparator<Vertex<Station>> cmpBasic = new Comparator<Vertex<Station>>()
 	 {
 			@Override
@@ -68,7 +68,7 @@ public class AStarSearch<E extends Station> {
 				return (!(result != 0)) ? result : o1.getContents().compareTo(o2.getContents());
 			} 
 	 };
-	*/
+
 	//Searches on heuristic given a starting node and reqTrips (in g)
 	public AStarSearch (Graph<Station> g, Vertex<Station> s){
 		this.closedSet = new HashSet<>();
