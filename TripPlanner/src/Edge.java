@@ -40,7 +40,7 @@ public class Edge<E>{
 	 */
 	@Override
 	public String toString() {
-		return "\nEdge [src=" + src.getContents().toString() + ",dest=" + dest.getContents().toString() + ",weight=" + weight + "]";
+		return "\nEdge [src=" + src.getContents().toString() + ",dest=" + dest.getContents().toString() + ",weight=" + weight + "]\n";
 	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()

@@ -12,51 +12,51 @@
 	<section name="org.eclipse.egit.ui.internal.dialogs.ResetTargetSelectionDialog.dialogBounds">
 		<item value="538" key="DIALOG_WIDTH"/>
 		<item value="28" key="DIALOG_Y_ORIGIN"/>
-		<item value="699" key="DIALOG_X_ORIGIN"/>
 		<item value="750" key="DIALOG_HEIGHT"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="GitCommitMessageComponent">
-		<list key="/home/alex/Dropbox/2016/comp2911/2911/.git">
-			<item value="empty"/>
-		</list>
 		<list key="E:\HDD Files\Documents\Dropbox\2016\comp2911\2911\tutwk3\.git">
 			<item value="empty"/>
 		</list>
-	</section>
-	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
-		<item value="628" key="DIALOG_WIDTH"/>
-		<item value="86" key="DIALOG_Y_ORIGIN"/>
-		<item value="612" key="DIALOG_X_ORIGIN"/>
-		<item value="659" key="DIALOG_HEIGHT"/>
-		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<list key="/home/alex/Dropbox/2016/comp2911/2911/.git">
+			<item value="empty"/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.dialogs.RebaseTargetSelectionDialog.dialogBounds">
 		<item value="538" key="DIALOG_WIDTH"/>
 		<item value="174" key="DIALOG_Y_ORIGIN"/>
-		<item value="699" key="DIALOG_X_ORIGIN"/>
 		<item value="532" key="DIALOG_HEIGHT"/>
+		<item value="699" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="628" key="DIALOG_WIDTH"/>
+		<item value="86" key="DIALOG_Y_ORIGIN"/>
+		<item value="659" key="DIALOG_HEIGHT"/>
+		<item value="612" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
 		<item value="500" key="DIALOG_WIDTH"/>
 		<item value="262" key="DIALOG_Y_ORIGIN"/>
-		<item value="718" key="DIALOG_X_ORIGIN"/>
 		<item value="400" key="DIALOG_HEIGHT"/>
+		<item value="718" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
 		<item value="602" key="DIALOG_WIDTH"/>
 		<item value="229" key="DIALOG_Y_ORIGIN"/>
-		<item value="660" key="DIALOG_X_ORIGIN"/>
 		<item value="447" key="DIALOG_HEIGHT"/>
+		<item value="660" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item value="652" key="DIALOG_WIDTH"/>
 		<item value="223" key="DIALOG_Y_ORIGIN"/>
-		<item value="635" key="DIALOG_X_ORIGIN"/>
 		<item value="447" key="DIALOG_HEIGHT"/>
+		<item value="635" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Droid Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<list key="sashWeights">
 			<item value="600"/>

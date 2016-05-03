@@ -27,7 +27,7 @@ public class AStarSearchTest {
 				parseLine(g, nextLine);
 			}
 			System.out.println("\n\n\n ============== Read required trips ============ \n\n\n"); //print result to debug
-			System.out.println(g.getReqTripMap().toString()); //print result to debug
+			System.out.println(g.getReqTrips().toString()); //print result to debug
 			System.out.println("\n\n\n ============== FINAL INPUT GRAPH: ============ \n\n\n"); //print result to debug
 			System.out.println(g.toString()); //print result to debug
 		} catch (NullPointerException e) {
@@ -55,10 +55,11 @@ public class AStarSearchTest {
 			}
 		*/
 		try {
-			g.initialiseHeuristic();
-			AStarSearch<Station> srch = new AStarSearch<>(g, g.getVertex(new Station("London", 60)), g.getVertex(new Station("Berlin", 40)));
+//			g.initialiseHeuristic();
+//			AStarSearch<Station> srch = new AStarSearch<>(g, g.getVertex(new Station("London", 60)), g.getVertex(new Station("Berlin", 40)));
+			AStarSearch<Station> srch = new AStarSearch<>(g, g.getVertex(new Station("London", 60)));
 			System.out.println(srch.pathString());
-				assertTrue(srch.hasPath());
+//				assertTrue(srch.hasPath());
 				//define new searches for each vertex?
 //		} catch (FileNotFoundException e) {
 		} catch (NotInStructureException e) {
@@ -107,7 +108,19 @@ public class AStarSearchTest {
 
 	private static void parseTrip (AdjListGraph<Station> g, String line) {
 		String[] tokens = line.split(" ");
-		g.addReqTrip(g.getContentsFromString(tokens[1]), g.getContentsFromString(tokens[2]));
+		String substr = ""; //0th token is Vertex, 1st is contents
+		ArrayList<String> vertexNames = new ArrayList<>();
+		for (int i = 1; i < tokens.length; i++) {
+			substr += tokens[i] + " ";
+			String testStr = substr.trim();
+			//trim first, check
+			//check if substr forms a vertex name
+			if ((g.getContentMap().containsKey(testStr))) {
+				vertexNames.add(substr.trim());
+				substr = ""; //reset to find next vertex
+			}
+		}
+		g.addReqTrip(g.getContentsFromString(vertexNames.get(0)), g.getContentsFromString(vertexNames.get(1)));
 	}
 	private static Vertex<Station> parseVertex (AdjListGraph<Station> g, String line) {
 		//Remember vertex using strings for edge setup
@@ -122,11 +135,13 @@ public class AStarSearchTest {
 		String substr = ""; //0th token is Vertex, 1st is contents
 		ArrayList<String> vertexNames = new ArrayList<>();
 		for (int i = 2; i < tokens.length; i++) {
-			substr += tokens[i];
+			substr += tokens[i] + " ";
+			String testStr = substr.trim();
+			//trim first, check
 			//check if substr forms a vertex name
-			if ((g.getContentMap().containsKey(substr))) {
-				vertexNames.add(substr);
-				substr = "";
+			if ((g.getContentMap().containsKey(testStr))) {
+				vertexNames.add(testStr);
+				substr = ""; //reset to find next vertex
 			}
 		}
 		return new Edge<>(g, g.getContentsFromString(vertexNames.get(0)), g.getContentsFromString(vertexNames.get(1)), weight); //only need to get contents from graph, all vertices loaded at this pt

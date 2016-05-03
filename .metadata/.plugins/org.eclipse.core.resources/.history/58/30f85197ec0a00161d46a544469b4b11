@@ -1,9 +1,0 @@
-
-public class Player {
-	private double x;
-	private double y;
-	
-	public Player (double x, double y) {
-		
-	}
-}

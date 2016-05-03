@@ -6,7 +6,7 @@ import java.util.Map;
 public class AdjListGraph<E> implements Graph<E>{
 	private ArrayList<Vertex<E>> vertexList; //identify vertices with index # given by V
 	private Map<String, E> contentMap; //map name of String to object contents for easier setup
-	private Map<Vertex<E>, Integer> heuristicMap;
+//	private Map<Vertex<E>, Integer> heuristicMap;
 	private ArrayList<Edge<E>> reqTrips;
 
 	/* ======================================== GRAPH CONSTRUCTION AND PRINTOUT =====================================
@@ -36,7 +36,7 @@ public class AdjListGraph<E> implements Graph<E>{
 	}
 
 	public AdjListGraph () {
-		this.heuristicMap = new HashMap<>();
+//		this.heuristicMap = new HashMap<>();
 		this.vertexList = new ArrayList<>();
 		this.contentMap = new HashMap<>();
 		this.reqTrips = new ArrayList<>();
@@ -124,6 +124,7 @@ public class AdjListGraph<E> implements Graph<E>{
 	
 
 // 	========================= HEURISTIC METHOD STUFF ==============================
+	/*
 	public void initialiseHeuristic () { //only call once graph is filled out
 		for (Vertex<E> vertex : vertexList) {
 			heuristicMap.put(vertex, 0); //lower heuristic is higher priority. set lowest by highest value
@@ -154,7 +155,7 @@ public class AdjListGraph<E> implements Graph<E>{
 	public int getHeuristicVal(Vertex<E> v) {
 		return heuristicMap.get(v);
 	}
-	
+	*/
 	public void addReqTrip(E src, E dest) {
 		try {
 			this.reqTrips.add(getEdge(src, dest));
@@ -166,7 +167,7 @@ public class AdjListGraph<E> implements Graph<E>{
 	/**
 	 * @return the reqTripMap
 	 */
-	public ArrayList<Edge<E>> getReqTripMap() {
+	public ArrayList<Edge<E>> getReqTrips() {
 		return reqTrips;
 	}
 		/**

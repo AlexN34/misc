@@ -1,0 +1,22 @@
+#Format:
+#Vertex <contents> <id>
+#Edge <weight> <src> <dest>
+Transfer 60 London Eye
+Transfer 40 Paris
+Transfer 40 Berlin
+Transfer 60 Amsterdam Blargh
+Transfer 80 Brussels
+Time 180 London Eye Paris
+Time 240 London Eye Berlin
+Time 180 London Eye Amsterdam
+Time 100 London Eye Brussels
+Time 100 Paris Berlin 
+Time 240 Paris Amsterdam Blargh
+Time 120 Paris Brussels 
+Time 240 Berlin Amsterdam Blargh
+Time 220 Berlin Brussels
+Time 200 Amsterdam Blargh Brussels
+Trip Berlin Amsterdam Blargh
+Trip Paris Berlin
+Trip London Eye Amsterdam Blargh
+Trip London Eye Brussels

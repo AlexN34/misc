@@ -84,9 +84,9 @@ public class Station implements Comparable<Station>{
 		this.setTransfer(Integer.parseInt(tokens[1]));
 		String substr = ""; //0th token is Vertex, 1st is contents
 		for (int i = 2; i < tokens.length; i++) {
-			substr += tokens[i];
+			substr += tokens[i] + " ";
 		}
-		this.setName(substr);
+		this.setName(substr.trim());
 	}
 
 	@Override

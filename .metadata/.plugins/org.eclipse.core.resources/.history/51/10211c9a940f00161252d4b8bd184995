@@ -1,0 +1,65 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Set;
+
+public class Path {
+	private LinkedList<Edge<Station>> pathContents;
+	private Set<Edge<Station>> pathClosedSet;
+	private ArrayList<Edge<Station>> reqTrips;
+	private int gScore;
+	private int maxHeuristic;
+
+	public Path (Edge<Station> e, ArrayList<Edge<Station>> reqTrips) {
+		this.pathContents = new LinkedList<>();
+		this.pathClosedSet = new HashSet<Edge<Station>>();
+		this.reqTrips = reqTrips;
+		pathContents.addLast(e);
+		updateClosedSet(e);
+		this.gScore = e.getWeight();
+		this.maxHeuristic = sumReqTripWeight();
+	}
+	
+	private void updateClosedSet(Edge<Station> e) {
+		if (reqTrips.contains(e) && !pathClosedSet.contains(e)) {
+			pathClosedSet.add(e);
+		}
+	}
+
+	private int sumReqTripWeight() {
+		int sum = 0;
+		for (Edge<Station> edge : reqTrips) {
+			sum += edge.getWeight();
+		}
+		return sum;
+	}
+
+	public void addToPath (Edge<Station> e) {
+		pathContents.addLast(e);
+		updateClosedSet(e);
+		this.gScore += e.getFrom().getContents().getTransfer() + e.getWeight();
+	}
+	
+	public int getPathGScore() {
+		return gScore;	
+	}
+	
+	public int getHeuristicVal() {
+		int total = 0;
+		for (Edge<Station> edge : pathClosedSet) {
+			total += edge.getWeight();
+		}
+		return maxHeuristic - total; //lower heuristic as more paths are closed i.e. more reqTrips taken
+	}
+
+	
+	public Vertex<Station> getLastVertex() { //last visited/expanded vertex in the path
+		return pathContents.getLast().getTo();
+	}
+	
+	
+	public Set<Edge<Station>> getClosedSet() { 
+		return pathClosedSet;
+	}
+	
+}

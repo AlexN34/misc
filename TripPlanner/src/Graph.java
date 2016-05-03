@@ -12,8 +12,8 @@ public interface Graph<E> {
 //	public ArrayList<Edge<E>> getConnectedEdges(Vertex<E> v);
 //	public Edge<E> getEdge(E srcContents, E destContents, int weight) throws NotInStructureException; 
 	public ArrayList<Vertex<E>> getVertexList(); 
-	public void addHeuristicVal (Vertex<E> v, int val);
-	public int getHeuristicVal (Vertex<E> v);
+//	public void addHeuristicVal (Vertex<E> v, int val);
+//	public int getHeuristicVal (Vertex<E> v);
 	/*
 	public void addFScoreVal (Vertex<E> v, int val); 
 	public int getFScoreVal(Vertex<E> v);
@@ -22,5 +22,6 @@ public interface Graph<E> {
 	public Map<Vertex<E>, Integer> getfScoreMap();
 	public void setfScoreMap(Map<Vertex<E>, Integer> fScoreMap);
 	*/
+	ArrayList<Edge<E>> getReqTrips(); 
 	Edge<E> getEdge(E srcContents, E destContents) throws NotInStructureException;
 }
