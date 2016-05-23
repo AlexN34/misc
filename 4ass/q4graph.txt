@@ -1,0 +1,29 @@
+digraph G {
+        s-> s1
+        s-> s2
+        s-> s3
+        s-> s4
+        s-> s5
+
+        COMP1911 -> t
+        COMP1917 -> t
+        COMP2041 -> t
+        COMP2911 -> t
+        COMP2121 -> t
+        COMP3121 -> t
+
+        
+        subgraph cluster0 {
+                 node[style=filled];
+                 label = "L"
+                 color = blue
+                 s1,s2,s3,s4,s5
+        }
+
+        subgraph cluster1 {
+                 node[style=filled];
+                 label = "R"
+                 color = red
+                 COMP1911, COMP1917, COMP2041, COMP2911, COMP2121, COMP3121
+        }
+}

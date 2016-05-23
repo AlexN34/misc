@@ -1,0 +1,2592 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2016.3.20)  17 MAY 2016 23:26
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\nonstopmode\nofiles\PassOptionsToPackage{active,tightpage,auctex}{preview}\A
+tBeginDocument{\ifx\ifPreview\undefined\RequirePackage[displaymath,floats,graph
+ics,textmath,sections,footnotes]{preview}[2004/11/05]\fi} \input _region_.tex
+(./_region_.tex  !name(4ass.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count87
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count88
+\lst@currlwidth=\dimen103
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen106
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
+\Gm@bindingoffset=\dimen107
+\Gm@wd@mp=\dimen108
+\Gm@odd@mp=\dimen109
+\Gm@even@mp=\dimen110
+\Gm@layoutwidth=\dimen111
+\Gm@layoutheight=\dimen112
+\Gm@layouthoffset=\dimen113
+\Gm@layoutvoffset=\dimen114
+\Gm@dimlist=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen115
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen117
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks18
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks19
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+No file _region_.aux.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+(/home/alex/.emacs.d/elpa/auctex-11.89.3/latex/preview.sty
+Package: preview 2010/02/14 11.89 (AUCTeX/preview-latex)
+
+(/home/alex/.emacs.d/elpa/auctex-11.89.3/latex/prtightpage.def
+\PreviewBorder=\dimen124
+)
+(/home/alex/.emacs.d/elpa/auctex-11.89.3/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count110
+\hfuzz=\dimen125
+(/home/alex/.emacs.d/elpa/auctex-11.89.3/latex/prauctex.cfg))
+(/home/alex/.emacs.d/elpa/auctex-11.89.3/latex/prfootnotes.def)
+\pr@snippet=\count111
+\pr@box=\box30
+\pr@output=\toks22
+
+Preview: Fontsize 10.95pt
+)
+\c@lstlisting=\count112
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(57.81621pt, 481.87546pt, 57.81621pt)
+* v-part:(T,H,B)=(57.81621pt, 729.41443pt, 57.81621pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=481.87546pt
+* \textheight=729.41443pt
+* \oddsidemargin=-14.45378pt
+* \evensidemargin=-14.45378pt
+* \topmargin=-51.45378pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ !name(4ass.tex) !offset(-3) 
+./_region_.tex:38: Preview: Snippet 1 started.
+<-><->
+      
+l.38 \[
+        G' = (V', E')\]
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+./_region_.tex:38: Preview: Snippet 1 ended.(766975+0x17839555).
+<-><->
+      
+l.38 \[ G' = (V', E')\]
+                       
+Not a real error.
+
+[1]
+./_region_.tex:40: Preview: Snippet 2 started.
+<-><->
+      
+l.40 Where $
+            V' = V \cup {s,t}$
+Not a real error.
+
+./_region_.tex:40: Preview: Snippet 2 ended.(551690+139537x4008663).
+<-><->
+      
+l.40 Where $V' = V \cup {s,t}$
+                              
+Not a real error.
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+
+./_region_.tex:67: Preview: Snippet 3 started.
+<-><->
+      
+l.67 This is achievable in $
+                            O(nlog n)$ time.
+Not a real error.
+
+./_region_.tex:67: Preview: Snippet 3 ended.(538214+179404x2931064).
+<-><->
+      
+l.67 This is achievable in $O(nlog n)$
+                                       time.
+Not a real error.
+
+[3]
+./_region_.tex:72: Preview: Snippet 4 started.
+<-><->
+      
+l.72 \textbf{Subproblems:} For every $
+                                      i \le n$ find a subsequence of $\sigma...
+
+Not a real error.
+
+./_region_.tex:72: Preview: Snippet 4 ended.(473287+97575x1634789).
+<-><->
+      
+l.72 \textbf{Subproblems:} For every $i \le n$
+                                               find a subsequence of $\sigma...
+
+Not a real error.
+
+[4]
+./_region_.tex:72: Preview: Snippet 5 started.
+<-><->
+      
+l.72 ...or every $i \le n$ find a subsequence of $
+                                                  \sigma_i$ of decreasing el...
+
+Not a real error.
+
+./_region_.tex:72: Preview: Snippet 5 ended.(308974+107642x632483).
+<-><->
+      
+l.72 ...$i \le n$ find a subsequence of $\sigma_i$
+                                                   of decreasing elephant we...
+
+Not a real error.
+
+[5]
+./_region_.tex:72: Preview: Snippet 6 started.
+<-><->
+      
+l.72 ...f decreasing elephant weight subsequence $
+                                                  DE_i = <e_1, e_2, .. e_i>$...
+
+Not a real error.
+
+./_region_.tex:72: Preview: Snippet 6 ended.(490372+139537x6522697).
+<-><->
+      
+l.72 ...ht subsequence $DE_i = <e_1, e_2, .. e_i>$
+                                                   such that:
+Not a real error.
+
+[6]
+./_region_.tex:74: Preview: Snippet 7 started.
+<-><->
+      
+l.74 1) $
+         \sigma_j = <a_1 \dots a_j >$ is the longest increasing subsequence ...
+
+Not a real error.
+
+./_region_.tex:74: Preview: Snippet 7 ended.(386866+209587x5405417).
+<-><->
+      
+l.74 1) $\sigma_j = <a_1 \dots a_j >$
+                                      is the longest increasing subsequence ...
+
+Not a real error.
+
+[7]
+./_region_.tex:74: Preview: Snippet 8 started.
+<-><->
+      
+l.74 ...nce (comparing IQ values, represented by $
+                                                  a_i$)  in $DE_n$ for $1 \l...
+
+Not a real error.
+
+./_region_.tex:74: Preview: Snippet 8 ended.(308974+107642x601752).
+<-><->
+      
+l.74 ...(comparing IQ values, represented by $a_i$
+                                                  )  in $DE_n$ for $1 \le i ...
+
+Not a real error.
+
+[8]
+./_region_.tex:74: Preview: Snippet 9 started.
+<-><->
+      
+l.74 ...ing IQ values, represented by $a_i$)  in $
+                                                  DE_n$ for $1 \le i < n$; (...
+
+Not a real error.
+
+./_region_.tex:74: Preview: Snippet 9 ended.(490372+107642x1514574).
+<-><->
+      
+l.74 ...Q values, represented by $a_i$)  in $DE_n$
+                                                   for $1 \le i < n$; (i.e. ...
+
+Not a real error.
+
+[9]
+./_region_.tex:74: Preview: Snippet 10 started.
+<-><->
+      
+l.74 ...es, represented by $a_i$)  in $DE_n$ for $
+                                                  1 \le i < n$; (i.e. $a_i >...
+
+Not a real error.
+
+./_region_.tex:74: Preview: Snippet 10 ended.(473287+97575x2950419).
+<-><->
+      
+l.74 ...ted by $a_i$)  in $DE_n$ for $1 \le i < n$
+                                                  ; (i.e. $a_i > a_{i-1} > a...
+
+Not a real error.
+
+[10]
+./_region_.tex:74: Preview: Snippet 11 started.
+<-><->
+      
+l.74 ..._i$)  in $DE_n$ for $1 \le i < n$; (i.e. $
+                                                  a_i > a_{i-1} > a_{i-2} \d...
+
+Not a real error.
+
+./_region_.tex:74: Preview: Snippet 11 ended.(386866+162258x6218925).
+<-><->
+      
+l.74 ... n$; (i.e. $a_i > a_{i-1} > a_{i-2} \dots$
+                                                  )
+Not a real error.
+
+[11]
+./_region_.tex:76: Preview: Snippet 12 started.
+<-><->
+      
+l.76  2) For convenience, $
+                           \sigma_j$ ends in $a_j$
+Not a real error.
+
+./_region_.tex:76: Preview: Snippet 12 ended.(308974+209587x698323).
+<-><->
+      
+l.76  2) For convenience, $\sigma_j$
+                                     ends in $a_j$
+Not a real error.
+
+[12]
+./_region_.tex:76: Preview: Snippet 13 started.
+<-><->
+      
+l.76  2) For convenience, $\sigma_j$ ends in $
+                                              a_j$
+Not a real error.
+
+./_region_.tex:76: Preview: Snippet 13 ended.(308974+209587x667592).
+<-><->
+      
+l.76  2) For convenience, $\sigma_j$ ends in $a_j$
+                                                  
+Not a real error.
+
+[13]
+./_region_.tex:80: Preview: Snippet 14 started.
+<-><->
+      
+l.80 ...ition 2) as it allows us to use  a given $
+                                                  a_k$ to increment a curren...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 14 ended.(308974+116910x716112).
+<-><->
+      
+l.80 ...n 2) as it allows us to use  a given $a_k$
+                                                   to increment a current $\...
+
+Not a real error.
+
+[14]
+./_region_.tex:80: Preview: Snippet 15 started.
+<-><->
+      
+l.80 ...se  a given $a_k$ to increment a current $
+                                                  \sigma_{k-1}$ if it satisf...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 15 ended.(308974+171526x1458647).
+<-><->
+      
+l.80 ...a_k$ to increment a current $\sigma_{k-1}$
+                                                   if it satisfies condition...
+
+Not a real error.
+
+[15]
+./_region_.tex:80: Preview: Snippet 16 started.
+<-><->
+      
+l.80 ... it satisfies condition 1) (by comparing $
+                                                  a_k > a_{k-1}$) with confi...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 16 ended.(386866+171526x3100848).
+<-><->
+      
+l.80 ...condition 1) (by comparing $a_k > a_{k-1}$
+                                                  ) with confidence that thi...
+
+Not a real error.
+
+[16]
+./_region_.tex:80: Preview: Snippet 17 started.
+<-><->
+      
+l.80 ...in the longest increasing subsequence at $
+                                                  k$. This is legitimate as ...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 17 ended.(498346+0x396186).
+<-><->
+      
+l.80 ... the longest increasing subsequence at $k$
+                                                  . This is legitimate as al...
+
+Not a real error.
+
+[17]
+./_region_.tex:80: Preview: Snippet 18 started.
+<-><->
+      
+l.80 ...ng subsequences have to end with an item $
+                                                  a_l$ - we just specify whi...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 18 ended.(308974+116910x584582).
+<-><->
+      
+l.80 ...ubsequences have to end with an item $a_l$
+                                                   - we just specify which. ...
+
+Not a real error.
+
+[18]
+./_region_.tex:80: Preview: Snippet 19 started.
+<-><->
+      
+l.80 ... for all possible subsequences ending in $
+                                                  a_j$, all ending subsequen...
+
+Not a real error.
+
+./_region_.tex:80: Preview: Snippet 19 ended.(308974+209587x667592).
+<-><->
+      
+l.80 ... all possible subsequences ending in $a_j$
+                                                  , all ending subsequences ...
+
+Not a real error.
+
+[19]
+./_region_.tex:84: Preview: Snippet 20 started.
+<-><->
+      
+l.84 \[
+        \sigma_j = \begin{cases}
+Not a real error.
+
+./_region_.tex:89: Preview: Snippet 20 ended.(3527674+0x22688103).
+<-><->
+      
+l.89 \]
+       
+Not a real error.
+
+[20]
+./_region_.tex:92: Preview: Snippet 21 started.
+<-><->
+      
+l.92 In this case $
+                   LE(\sigma_i)$ calculates the length of the input $\sigma_...
+
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 21 ended.(538214+179404x2250118).
+<-><->
+      
+l.92 In this case $LE(\sigma_i)$
+                                 calculates the length of the input $\sigma_...
+
+Not a real error.
+
+[21]
+./_region_.tex:92: Preview: Snippet 22 started.
+<-><->
+      
+l.92 ...a_i)$ calculates the length of the input $
+                                                  \sigma_i$. Hence, the recu...
+
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 22 ended.(308974+107642x632483).
+<-><->
+      
+l.92 ...culates the length of the input $\sigma_i$
+                                                  . Hence, the recursion bui...
+
+Not a real error.
+
+[22]
+./_region_.tex:92: Preview: Snippet 23 started.
+<-><->
+      
+l.92 ...by considering all previous subsequences $
+                                                   1 \le j < n$ and picking ...
+
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 23 ended.(473287+139537x3039788).
+<-><->
+      
+l.92 ...g all previous subsequences $ 1 \le j < n$
+                                                   and picking the subsequen...
+
+Not a real error.
+
+[23]
+./_region_.tex:92: Preview: Snippet 24 started.
+<-><->
+      
+l.92 ...ing the subsequence with maximum length ($
+                                                  LE(\sigma_i)$) such that t...
+
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 24 ended.(538214+179404x2250118).
+<-><->
+      
+l.92 ...quence with maximum length ($LE(\sigma_i)$
+                                                  ) such that the current te...
+
+Not a real error.
+
+[24]
+./_region_.tex:92: Preview: Snippet 25 started.
+<-><->
+      
+l.92 ...E(\sigma_i)$) such that the current term $
+                                                  a_j$ is greater than the m...
+
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 25 ended.(308974+209587x667592).
+<-><->
+      
+l.92 ...igma_i)$) such that the current term $a_j$
+                                                   is greater than the maxim...
+
+Not a real error.
+
+[25]
+./_region_.tex:92: Preview: Snippet 26 started.
+<-><->
+      
+l.92 ...ater than the maximum (last) term inside $
+                                                  \sigma_i$, $a_i$.
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 26 ended.(308974+107642x632483).
+<-><->
+      
+l.92 ... the maximum (last) term inside $\sigma_i$
+                                                  , $a_i$.
+Not a real error.
+
+[26]
+./_region_.tex:92: Preview: Snippet 27 started.
+<-><->
+      
+l.92 ...e maximum (last) term inside $\sigma_i$, $
+                                                  a_i$.
+Not a real error.
+
+./_region_.tex:92: Preview: Snippet 27 ended.(308974+107642x601752).
+<-><->
+      
+l.92 ...ximum (last) term inside $\sigma_i$, $a_i$
+                                                  .
+Not a real error.
+
+[27]
+./_region_.tex:94: Preview: Snippet 28 started.
+<-><->
+      
+l.94 If the current last term in subsequence $
+                                              \sigma_j$ is greater than the ...
+
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 28 ended.(308974+209587x698323).
+<-><->
+      
+l.94 ...urrent last term in subsequence $\sigma_j$
+                                                   is greater than the last ...
+
+Not a real error.
+
+[28]
+./_region_.tex:94: Preview: Snippet 29 started.
+<-><->
+      
+l.94 ... max increasing subsequence (last picked $
+                                                  \sigma_i$), add $a_j$ to f...
+
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 29 ended.(308974+107642x632483).
+<-><->
+      
+l.94 ...easing subsequence (last picked $\sigma_i$
+                                                  ), add $a_j$ to form $\sig...
+
+Not a real error.
+
+[29]
+./_region_.tex:94: Preview: Snippet 30 started.
+<-><->
+      
+l.94 ...ubsequence (last picked $\sigma_i$), add $
+                                                  a_j$ to form $\sigma_j$.
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 30 ended.(308974+209587x667592).
+<-><->
+      
+l.94 ...quence (last picked $\sigma_i$), add $a_j$
+                                                   to form $\sigma_j$.
+Not a real error.
+
+[30]
+./_region_.tex:94: Preview: Snippet 31 started.
+<-><->
+      
+l.94 ...st picked $\sigma_i$), add $a_j$ to form $
+                                                  \sigma_j$.
+Not a real error.
+
+./_region_.tex:94: Preview: Snippet 31 ended.(308974+209587x698323).
+<-><->
+      
+l.94 ... $\sigma_i$), add $a_j$ to form $\sigma_j$
+                                                  .
+Not a real error.
+
+[31]
+./_region_.tex:95: Preview: Snippet 32 started.
+<-><->
+      
+l.95 ...smaller (lower LE) subsequence such that $
+                                                  a_j > a_i$ and do the same...
+
+Not a real error.
+
+./_region_.tex:95: Preview: Snippet 32 ended.(386866+209587x2226164).
+<-><->
+      
+l.95 ...ower LE) subsequence such that $a_j > a_i$
+                                                   and do the same - if this...
+
+Not a real error.
+
+[32]
+./_region_.tex:95: Preview: Snippet 33 started.
+<-><->
+      
+l.95 ...not exist, then start a new subsequence: $
+                                                  a_j$ alone.
+Not a real error.
+
+./_region_.tex:95: Preview: Snippet 33 ended.(308974+209587x667592).
+<-><->
+      
+l.95 ...exist, then start a new subsequence: $a_j$
+                                                   alone.
+Not a real error.
+
+[33]
+./_region_.tex:97: Preview: Snippet 34 started.
+<-><->
+      
+l.97 Note: $
+            LE(0) = 0, LE(1) = 1$ as base cases for length.
+Not a real error.
+
+./_region_.tex:97: Preview: Snippet 34 ended.(538214+179404x6903090).
+<-><->
+      
+l.97 Note: $LE(0) = 0, LE(1) = 1$
+                                  as base cases for length.
+Not a real error.
+
+[34]
+./_region_.tex:101: Preview: Snippet 35 started.
+<-><->
+      
+l.101 Following this recursion for $
+                                    1 \le j < n$ will produce the longest in...
+
+Not a real error.
+
+./_region_.tex:101: Preview: Snippet 35 ended.(473287+139537x3039788).
+<-><->
+      
+l.101 Following this recursion for $1 \le j < n$
+                                                 will produce the longest in...
+
+Not a real error.
+
+[35]
+./_region_.tex:101: Preview: Snippet 36 started.
+<-><->
+      
+l.101 ...e the longest increasing subsequence at $
+                                                  \sigma_n$ in terms of IQ. ...
+
+Not a real error.
+
+./_region_.tex:101: Preview: Snippet 36 ended.(308974+107642x780825).
+<-><->
+      
+l.101 ...gest increasing subsequence at $\sigma_n$
+                                                   in terms of IQ. As elepha...
+
+Not a real error.
+
+[36]
+./_region_.tex:101: Preview: Snippet 37 started.
+<-><->
+      
+l.101 ...igma_n$ in terms of IQ. As elephants in $
+                                                  DE_n$ were already pre-sor...
+
+Not a real error.
+
+./_region_.tex:101: Preview: Snippet 37 ended.(490372+107642x1514574).
+<-><->
+      
+l.101 ...n$ in terms of IQ. As elephants in $DE_n$
+                                                   were already pre-sorted o...
+
+Not a real error.
+
+[37]
+./_region_.tex:110: Preview: Snippet 38 started.
+<-><->
+      
+l.110 ...revolve around fun in each node (parent $
+                                                  p$ at level i) and compare...
+
+Not a real error.
+
+./_region_.tex:110: Preview: Snippet 38 ended.(308974+139537x361052).
+<-><->
+      
+l.110 ...volve around fun in each node (parent $p$
+                                                   at level i) and compared ...
+
+Not a real error.
+
+[38]
+./_region_.tex:110: Preview: Snippet 39 started.
+<-><->
+      
+l.110 ...n ratings for every direct sub-employee $
+                                                  \Sigma c_l$ (child nodes a...
+
+Not a real error.
+
+./_region_.tex:110: Preview: Snippet 39 ended.(490372+116910x1034091).
+<-><->
+      
+l.110 ...or every direct sub-employee $\Sigma c_l$
+                                                   (child nodes at level i -...
+
+Not a real error.
+
+[39]
+./_region_.tex:112: Preview: Snippet 40 started.
+<-><->
+      
+l.112 ...aximum between the total fun score: Let $
+                                                  g$ be the grand-child node...
+
+Not a real error.
+
+./_region_.tex:112: Preview: Snippet 40 ended.(308974+139537x368028).
+<-><->
+      
+l.112 ...imum between the total fun score: Let $g$
+                                                   be the grand-child node l...
+
+Not a real error.
+
+[40]
+./_region_.tex:112: Preview: Snippet 41 started.
+<-><->
+      
+l.112 ...t $g$ be the grand-child node level and $
+                                                  F(n)$ be the total fun sum...
+
+Not a real error.
+
+./_region_.tex:112: Preview: Snippet 41 ended.(538214+179404x1550029).
+<-><->
+      
+l.112 ... be the grand-child node level and $F(n)$
+                                                   be the total fun sum for ...
+
+Not a real error.
+
+[41]
+./_region_.tex:114: Preview: Snippet 42 started.
+<-><->
+      
+l.114 ...arent (boss at current level) including $
+                                                  p$: $F(g) + p $
+Not a real error.
+
+./_region_.tex:114: Preview: Snippet 42 ended.(308974+139537x361052).
+<-><->
+      
+l.114 ...ent (boss at current level) including $p$
+                                                  : $F(g) + p $
+Not a real error.
+
+[42]
+./_region_.tex:114: Preview: Snippet 43 started.
+<-><->
+      
+l.114 ... (boss at current level) including $p$: $
+                                                  F(g) + p $
+Not a real error.
+
+./_region_.tex:114: Preview: Snippet 43 ended.(538214+179404x2725455).
+<-><->
+      
+l.114 ...current level) including $p$: $F(g) + p $
+                                                  
+Not a real error.
+
+[43]
+./_region_.tex:116: Preview: Snippet 44 started.
+<-><->
+      
+l.116 b) Total fun rating at the party excluding $
+                                                  p$ and instead keeping all...
+
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 44 ended.(308974+139537x361052).
+<-><->
+      
+l.116 ...tal fun rating at the party excluding $p$
+                                                   and instead keeping all $...
+
+Not a real error.
+
+[44]
+./_region_.tex:116: Preview: Snippet 45 started.
+<-><->
+      
+l.116 ...y excluding $p$ and instead keeping all $
+                                                  p$'s $k$ employees: $F(g) ...
+
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 45 ended.(308974+139537x361052).
+<-><->
+      
+l.116 ...excluding $p$ and instead keeping all $p$
+                                                  's $k$ employees: $F(g) + ...
+
+Not a real error.
+
+[45]
+./_region_.tex:116: Preview: Snippet 46 started.
+<-><->
+      
+l.116 ...uding $p$ and instead keeping all $p$'s $
+                                                  k$ employees: $F(g) + \sum...
+
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 46 ended.(498346+0x396186).
+<-><->
+      
+l.116 ...ing $p$ and instead keeping all $p$'s $k$
+                                                   employees: $F(g) + \sum_{...
+
+Not a real error.
+
+[46]
+./_region_.tex:116: Preview: Snippet 47 started.
+<-><->
+      
+l.116 ...nstead keeping all $p$'s $k$ employees: $
+                                                  F(g) + \sum_{l= 0}^{k}  {c...
+
+Not a real error.
+
+./_region_.tex:116: Preview: Snippet 47 ended.(694776+212178x4674363).
+<-><->
+      
+l.116 ...ployees: $F(g) + \sum_{l= 0}^{k}  {c_l} $
+                                                  
+Not a real error.
+
+[47]
+./_region_.tex:118: Preview: Snippet 48 started.
+<-><->
+      
+l.118 ...), memoize the max value and update the $
+                                                  F(i)$ and repeat for $0 \l...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 48 ended.(538214+179404x1366518).
+<-><->
+      
+l.118 ...moize the max value and update the $F(i)$
+                                                   and repeat for $0 \le i \...
+
+Not a real error.
+
+[48]
+./_region_.tex:118: Preview: Snippet 49 started.
+<-><->
+      
+l.118 ...ue and update the $F(i)$ and repeat for $
+                                                  0 \le i \le n$ levels . As...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 49 ended.(473287+97575x2950419).
+<-><->
+      
+l.118 ...the $F(i)$ and repeat for $0 \le i \le n$
+                                                   levels . As there are $l ...
+
+Not a real error.
+
+[49]
+./_region_.tex:118: Preview: Snippet 50 started.
+<-><->
+      
+l.118 ...r $0 \le i \le n$ levels . As there are $
+                                                  l = 0 \dots j$ parents at ...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 50 ended.(498346+139537x2956893).
+<-><->
+      
+l.118 ... n$ levels . As there are $l = 0 \dots j$
+                                                   parents at each level, th...
+
+Not a real error.
+
+[50]
+./_region_.tex:118: Preview: Snippet 51 started.
+<-><->
+      
+l.118 ...as to be made for all parent nodes from $
+                                                  0 \dots j$ and the maximum...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 51 ended.(473287+139537x1771829).
+<-><->
+      
+l.118 ...ade for all parent nodes from $0 \dots j$
+                                                   and the maximum fun value...
+
+Not a real error.
+
+[51]
+./_region_.tex:118: Preview: Snippet 52 started.
+<-><->
+      
+l.118 ...e maximum fun value between each parent-$
+                                                  \sum$ child relationship. ...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 52 ended.(538218+179410x757489).
+<-><->
+      
+l.118 ...imum fun value between each parent-$\sum$
+                                                   child relationship. Conti...
+
+Not a real error.
+
+[52]
+./_region_.tex:118: Preview: Snippet 53 started.
+<-><->
+      
+l.118 ...relationship. Continue this until level $
+                                                  n$ is reached in the tree ...
+
+Not a real error.
+
+./_region_.tex:118: Preview: Snippet 53 ended.(308974+0x430740).
+<-><->
+      
+l.118 ...lationship. Continue this until level $n$
+                                                   is reached in the tree - ...
+
+Not a real error.
+
+[53]
+./_region_.tex:121: Preview: Snippet 54 started.
+<-><->
+      
+l.121 Assume anyone on the same level as a $
+                                            p_i$ will not be able to come if...
+
+Not a real error.
+
+./_region_.tex:121: Preview: Snippet 54 ended.(308974+139537x583478).
+<-><->
+      
+l.121 Assume anyone on the same level as a $p_i$
+                                                 will not be able to come if...
+
+Not a real error.
+
+[54]
+./_region_.tex:121: Preview: Snippet 55 started.
+<-><->
+      
+l.121 ...a $p_i$ will not be able to come if any $
+                                                  p_i$ is unable to come (fu...
+
+Not a real error.
+
+./_region_.tex:121: Preview: Snippet 55 ended.(308974+139537x583478).
+<-><->
+      
+l.121 ..._i$ will not be able to come if any $p_i$
+                                                   is unable to come (fun ra...
+
+Not a real error.
+
+[55]
+./_region_.tex:123: Preview: Snippet 56 started.
+<-><->
+      
+l.123 ...ach level, the max of every parent node $
+                                                  p_l$ and the sum of employ...
+
+Not a real error.
+
+./_region_.tex:123: Preview: Snippet 56 ended.(308974+139537x566308).
+<-><->
+      
+l.123 ...level, the max of every parent node $p_l$
+                                                   and the sum of employee $...
+
+Not a real error.
+
+[56]
+./_region_.tex:123: Preview: Snippet 57 started.
+<-><->
+      
+l.123 ...rent node $p_l$ and the sum of employee $
+                                                  e_l$'s fun will be compare...
+
+Not a real error.
+
+./_region_.tex:123: Preview: Snippet 57 ended.(308974+116910x539398).
+<-><->
+      
+l.123 ... node $p_l$ and the sum of employee $e_l$
+                                                  's fun will be compared wi...
+
+Not a real error.
+
+[57]
+./_region_.tex:123: Preview: Snippet 58 started.
+<-><->
+      
+l.123 ...ent to give the maximum total fun level $
+                                                  F(i)$ at every given level...
+
+Not a real error.
+
+./_region_.tex:123: Preview: Snippet 58 ended.(538214+179404x1366518).
+<-><->
+      
+l.123 ...o give the maximum total fun level $F(i)$
+                                                   at every given level. At ...
+
+Not a real error.
+
+[58]
+./_region_.tex:123: Preview: Snippet 59 started.
+<-><->
+      
+l.123 ... level. At the end of the recursion the $
+                                                  F(n)$ value will give the ...
+
+Not a real error.
+
+./_region_.tex:123: Preview: Snippet 59 ended.(538214+179404x1550029).
+<-><->
+      
+l.123 ...l. At the end of the recursion the $F(n)$
+                                                   value will give the maxim...
+
+Not a real error.
+
+[59]
+./_region_.tex:125: Preview: Snippet 60 started.
+<-><->
+      
+l.125 \[
+         F(i) = \begin{cases}
+Not a real error.
+
+./_region_.tex:129: Preview: Snippet 60 ended.(2583453+0x24867592).
+<-><->
+      
+l.129 \]
+        
+Not a real error.
+
+[60]
+./_region_.tex:131: Preview: Snippet 61 started.
+<-><->
+      
+l.131 ... was taken over b), add all a subset of $
+                                                  p_l | l = 0 \dots j$ nodes...
+
+Not a real error.
+
+./_region_.tex:131: Preview: Snippet 61 ended.(538214+179404x3722540).
+<-><->
+      
+l.131 ...add all a subset of $p_l | l = 0 \dots j$
+                                                   nodes to the cahce at lev...
+
+Not a real error.
+
+[61]
+./_region_.tex:131: Preview: Snippet 62 started.
+<-><->
+      
+l.131 ...ldren if they are existing) . Else, add $
+                                                  e_l | l = 0 \dots k$ child...
+
+Not a real error.
+
+./_region_.tex:131: Preview: Snippet 62 ended.(538214+179404x3755218).
+<-><->
+      
+l.131 ...isting) . Else, add $e_l | l = 0 \dots k$
+                                                   children. The guest list ...
+
+Not a real error.
+
+[62]
+./_region_.tex:131: Preview: Snippet 63 started.
+<-><->
+      
+l.131 ... guest list can then be read once level $
+                                                  n$ is reached and $F(n)$ h...
+
+Not a real error.
+
+./_region_.tex:131: Preview: Snippet 63 ended.(308974+0x430740).
+<-><->
+      
+l.131 ...uest list can then be read once level $n$
+                                                   is reached and $F(n)$ has...
+
+Not a real error.
+
+[63]
+./_region_.tex:131: Preview: Snippet 64 started.
+<-><->
+      
+l.131 ...n be read once level $n$ is reached and $
+                                                  F(n)$ has been generated.
+Not a real error.
+
+./_region_.tex:131: Preview: Snippet 64 ended.(538214+179404x1550029).
+<-><->
+      
+l.131 ...read once level $n$ is reached and $F(n)$
+                                                   has been generated.
+Not a real error.
+
+[64]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 140.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 140.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+./_region_.tex:160: Preview: Snippet 65 started.
+<-><->
+      
+l.160 ...nto even 'indices' along the stick from $
+                                                  i = 0 \dots n$ that reflec...
+
+Not a real error.
+
+./_region_.tex:160: Preview: Snippet 65 ended.(473287+0x3070020).
+<-><->
+      
+l.160 ...ces' along the stick from $i = 0 \dots n$
+                                                   that reflected where it c...
+
+Not a real error.
+
+[65]
+./_region_.tex:163: Preview: Snippet 66 started.
+<-><->
+      
+l.163 Let $
+           C(i,j)$ be the minimal cost of cutting a rod between marks $i$ an...
+
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 66 ended.(538214+179404x2025143).
+<-><->
+      
+l.163 Let $C(i,j)$
+                   be the minimal cost of cutting a rod between marks $i$ an...
+
+Not a real error.
+
+[66]
+./_region_.tex:163: Preview: Snippet 67 started.
+<-><->
+      
+l.163 ...mal cost of cutting a rod between marks $
+                                                  i$ and $j$ on the rod. How...
+
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 67 ended.(473287+0x247229).
+<-><->
+      
+l.163 ...l cost of cutting a rod between marks $i$
+                                                   and $j$ on the rod. Howev...
+
+Not a real error.
+
+[67]
+./_region_.tex:163: Preview: Snippet 68 started.
+<-><->
+      
+l.163 ... of cutting a rod between marks $i$ and $
+                                                  j$ on the rod. However, th...
+
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 68 ended.(473287+139537x336598).
+<-><->
+      
+l.163 ...f cutting a rod between marks $i$ and $j$
+                                                   on the rod. However, the ...
+
+Not a real error.
+
+[68]
+./_region_.tex:163: Preview: Snippet 69 started.
+<-><->
+      
+l.163 ...od is dependent on its length, given by $
+                                                  cLength(i, j)$. As the que...
+
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 69 ended.(538214+179404x4065364).
+<-><->
+      
+l.163 ...t on its length, given by $cLength(i, j)$
+                                                  . As the question defines ...
+
+Not a real error.
+
+[69]
+./_region_.tex:163: Preview: Snippet 70 started.
+<-><->
+      
+l.163 ... beginning section (relative to overall $
+                                                  0 \dots n$).
+Not a real error.
+
+./_region_.tex:163: Preview: Snippet 70 ended.(462465+0x1865971).
+<-><->
+      
+l.163 ... section (relative to overall $0 \dots n$
+                                                  ).
+Not a real error.
+
+[70]
+./_region_.tex:164: Preview: Snippet 71 started.
+<-><->
+      
+l.164 \[
+        cLength(i, j) = j - i\]
+Not a real error.
+
+./_region_.tex:164: Preview: Snippet 71 ended.(717618+0x19031644).
+<-><->
+      
+l.164 \[cLength(i, j) = j - i\]
+                               
+Not a real error.
+
+[71]
+./_region_.tex:168: Preview: Snippet 72 started.
+<-><->
+      
+l.168 \[
+        C(i, i+1) = 0\]
+Not a real error.
+
+./_region_.tex:168: Preview: Snippet 72 ended.(717618+0x18033745).
+<-><->
+      
+l.168 \[C(i, i+1) = 0\]
+                       
+Not a real error.
+
+[72]
+./_region_.tex:170: Preview: Snippet 73 started.
+<-><->
+      
+l.170 With the first chop at point $
+                                    i$, the wood stick becomes split into 2 ...
+
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 73 ended.(473287+0x247229).
+<-><->
+      
+l.170 With the first chop at point $i$
+                                      , the wood stick becomes split into 2 ...
+
+Not a real error.
+
+[73]
+./_region_.tex:170: Preview: Snippet 74 started.
+<-><->
+      
+l.170 ...s split into 2 extra sections of length $
+                                                  l = i - 0$ and $ l = n - i...
+
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 74 ended.(498346+59802x2668189).
+<-><->
+      
+l.170 ...to 2 extra sections of length $l = i - 0$
+                                                   and $ l = n - i$, which w...
+
+Not a real error.
+
+[74]
+./_region_.tex:170: Preview: Snippet 75 started.
+<-><->
+      
+l.170 ...xtra sections of length $l = i - 0$ and $
+                                                   l = n - i$, which will re...
+
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 75 ended.(498346+59802x2740119).
+<-><->
+      
+l.170 ...ns of length $l = i - 0$ and $ l = n - i$
+                                                  , which will require furth...
+
+Not a real error.
+
+[75]
+./_region_.tex:170: Preview: Snippet 76 started.
+<-><->
+      
+l.170 ...uire further corresponding min costs of $
+                                                  C(0, i)$ and $C(i, n)$ for...
+
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 76 ended.(538214+179404x2047355).
+<-><->
+      
+l.170 ...ther corresponding min costs of $C(0, i)$
+                                                   and $C(i, n)$ for each su...
+
+Not a real error.
+
+[76]
+./_region_.tex:170: Preview: Snippet 77 started.
+<-><->
+      
+l.170 ...orresponding min costs of $C(0, i)$ and $
+                                                  C(i, n)$ for each subseque...
+
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 77 ended.(538214+179404x2119285).
+<-><->
+      
+l.170 ...ding min costs of $C(0, i)$ and $C(i, n)$
+                                                   for each subsequent cut. ...
+
+Not a real error.
+
+[77]
+./_region_.tex:170: Preview: Snippet 78 started.
+<-><->
+      
+l.170 ...ut. As the rod had initial length n, so $
+                                                  cLength(0, n) = n$.
+Not a real error.
+
+./_region_.tex:170: Preview: Snippet 78 ended.(538214+179404x5658647).
+<-><->
+      
+l.170 ... initial length n, so $cLength(0, n) = n$
+                                                  .
+Not a real error.
+
+[78]
+./_region_.tex:172: Preview: Snippet 79 started.
+<-><->
+      
+l.172 \[
+         C(0, i) + C(i, n) + cLength(0, n) \]
+Not a real error.
+
+./_region_.tex:172: Preview: Snippet 79 ended.(717618+0x20886045).
+<-><->
+      
+l.172 \[ C(0, i) + C(i, n) + cLength(0, n) \]
+                                             
+Not a real error.
+
+[79]
+./_region_.tex:173: Preview: Snippet 80 started.
+<-><->
+      
+l.173 ...ge, (if known) the optimal solution for $
+                                                  C(i,j)$ will give the best...
+
+Not a real error.
+
+./_region_.tex:173: Preview: Snippet 80 ended.(538214+179404x2025143).
+<-><->
+      
+l.173 ... known) the optimal solution for $C(i,j)$
+                                                   will give the best index ...
+
+Not a real error.
+
+[80]
+./_region_.tex:175: Preview: Snippet 81 started.
+<-><->
+      
+l.175 ...s for a sub-stick section between marks $
+                                                  i$ and $j$.
+Not a real error.
+
+./_region_.tex:175: Preview: Snippet 81 ended.(473287+0x247229).
+<-><->
+      
+l.175 ...for a sub-stick section between marks $i$
+                                                   and $j$.
+Not a real error.
+
+[81]
+./_region_.tex:175: Preview: Snippet 82 started.
+<-><->
+      
+l.175 ...sub-stick section between marks $i$ and $
+                                                  j$.
+Not a real error.
+
+./_region_.tex:175: Preview: Snippet 82 ended.(473287+139537x336598).
+<-><->
+      
+l.175 ...b-stick section between marks $i$ and $j$
+                                                  .
+Not a real error.
+
+[82]
+./_region_.tex:176: Preview: Snippet 83 started.
+<-><->
+      
+l.176 Assume that the optimal $
+                               C(i,j)$ are all known/computed (memoized) - t...
+
+Not a real error.
+
+./_region_.tex:176: Preview: Snippet 83 ended.(538214+179404x2025143).
+<-><->
+      
+l.176 Assume that the optimal $C(i,j)$
+                                       are all known/computed (memoized) - t...
+
+Not a real error.
+
+[83]
+./_region_.tex:176: Preview: Snippet 84 started.
+<-><->
+      
+l.176 ...r any stick with length indices between $
+                                                  i$ and $j$ then becomes:
+Not a real error.
+
+./_region_.tex:176: Preview: Snippet 84 ended.(473287+0x247229).
+<-><->
+      
+l.176 ...any stick with length indices between $i$
+                                                   and $j$ then becomes:
+Not a real error.
+
+[84]
+./_region_.tex:176: Preview: Snippet 85 started.
+<-><->
+      
+l.176 ...ick with length indices between $i$ and $
+                                                  j$ then becomes:
+Not a real error.
+
+./_region_.tex:176: Preview: Snippet 85 ended.(473287+139537x336598).
+<-><->
+      
+l.176 ...k with length indices between $i$ and $j$
+                                                   then becomes:
+Not a real error.
+
+[85]
+./_region_.tex:178: Preview: Snippet 86 started.
+<-><->
+      
+l.178 \[
+         C(i, j) = \begin{cases}
+Not a real error.
+
+./_region_.tex:182: Preview: Snippet 86 ended.(2583453+0x25482684).
+<-><->
+      
+l.182 \]
+        
+Not a real error.
+
+[86]
+./_region_.tex:183: Preview: Snippet 87 started.
+<-><->
+      
+l.183 Note: $
+             cLength(i, j) = j - i$ is included in recursion as there is a c...
+
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 87 ended.(538214+179404x6483097).
+<-><->
+      
+l.183 Note: $cLength(i, j) = j - i$
+                                    is included in recursion as there is a c...
+
+Not a real error.
+
+[87]
+./_region_.tex:183: Preview: Snippet 88 started.
+<-><->
+      
+l.183 ... each step equal to its current length: $
+                                                  j - i$.
+Not a real error.
+
+./_region_.tex:183: Preview: Snippet 88 ended.(473287+139537x1460913).
+<-><->
+      
+l.183 ...step equal to its current length: $j - i$
+                                                  .
+Not a real error.
+
+[88]
+./_region_.tex:185: Preview: Snippet 89 started.
+<-><->
+      
+l.185 ...tion for cutting a rod between interval $
+                                                  C(i, j)$. We cache any opt...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 89 ended.(538214+179404x2025143).
+<-><->
+      
+l.185 ... cutting a rod between interval $C(i, j)$
+                                                  . We cache any optimal $C(...
+
+Not a real error.
+
+[89]
+./_region_.tex:185: Preview: Snippet 90 started.
+<-><->
+      
+l.185 ...nterval $C(i, j)$. We cache any optimal $
+                                                  C(i, j)$ values along the ...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 90 ended.(538214+179404x2025143).
+<-><->
+      
+l.185 ...$C(i, j)$. We cache any optimal $C(i, j)$
+                                                   values along the recursio...
+
+Not a real error.
+
+[90]
+./_region_.tex:185: Preview: Snippet 91 started.
+<-><->
+      
+l.185 ...cursion in case of reuse - by symmetry, $
+                                                  C(i, j) = C(j, i)$ for eff...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 91 ended.(538214+179404x4967238).
+<-><->
+      
+l.185 ... reuse - by symmetry, $C(i, j) = C(j, i)$
+                                                   for efficiencies in calcu...
+
+Not a real error.
+
+[91]
+./_region_.tex:185: Preview: Snippet 92 started.
+<-><->
+      
+l.185 ...g optimal solutions. This way, normally $
+                                                  O(2^n)$ algorithm is reduc...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 92 ended.(538214+179404x1855044).
+<-><->
+      
+l.185 ...al solutions. This way, normally $O(2^n)$
+                                                   algorithm is reduced to $...
+
+Not a real error.
+
+[92]
+./_region_.tex:185: Preview: Snippet 93 started.
+<-><->
+      
+l.185 ...rmally $O(2^n)$ algorithm is reduced to $
+                                                  O(n^2)$ in looking up $n$ ...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 93 ended.(598293+179404x1867506).
+<-><->
+      
+l.185 ...$O(2^n)$ algorithm is reduced to $O(n^2)$
+                                                   in looking up $n$ values ...
+
+Not a real error.
+
+[93]
+./_region_.tex:185: Preview: Snippet 94 started.
+<-><->
+      
+l.185 ...hm is reduced to $O(n^2)$ in looking up $
+                                                  n$ values and evaluating $...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 94 ended.(308974+0x430740).
+<-><->
+      
+l.185 ... is reduced to $O(n^2)$ in looking up $n$
+                                                   values and evaluating $n$...
+
+Not a real error.
+
+[94]
+./_region_.tex:185: Preview: Snippet 95 started.
+<-><->
+      
+l.185 ...in looking up $n$ values and evaluating $
+                                                  n$ sub-problems in recursi...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 95 ended.(308974+0x430740).
+<-><->
+      
+l.185 ... looking up $n$ values and evaluating $n$
+                                                   sub-problems in recursion...
+
+Not a real error.
+
+[95]
+./_region_.tex:185: Preview: Snippet 96 started.
+<-><->
+      
+l.185 ...ng $n$ sub-problems in recursion (where $
+                                                  n$ is number of cuts/recur...
+
+Not a real error.
+
+./_region_.tex:185: Preview: Snippet 96 ended.(308974+0x430740).
+<-><->
+      
+l.185 ... $n$ sub-problems in recursion (where $n$
+                                                   is number of cuts/recursi...
+
+Not a real error.
+
+[96]
+./_region_.tex:187: Preview: Snippet 97 started.
+<-><->
+      
+l.187 ...lemented to find the cost of rod length $
+                                                  n$ by finding $C(0, n)$. T...
+
+Not a real error.
+
+./_region_.tex:187: Preview: Snippet 97 ended.(308974+0x430740).
+<-><->
+      
+l.187 ...mented to find the cost of rod length $n$
+                                                   by finding $C(0, n)$. Thi...
+
+Not a real error.
+
+[97]
+./_region_.tex:187: Preview: Snippet 98 started.
+<-><->
+      
+l.187 ...d the cost of rod length $n$ by finding $
+                                                  C(0, n)$. This is illustra...
+
+Not a real error.
+
+./_region_.tex:187: Preview: Snippet 98 ended.(538214+179404x2230866).
+<-><->
+      
+l.187 ...st of rod length $n$ by finding $C(0, n)$
+                                                  . This is illustrated in p...
+
+Not a real error.
+
+[98]
+./_region_.tex:216: Preview: Snippet 99 started.
+<-><->
+      
+l.216 Say, $
+            X =  101$ and $Y = 01$,  $Z = 10011$.
+Not a real error.
+
+./_region_.tex:216: Preview: Snippet 99 ended.(490372+0x2684090).
+<-><->
+      
+l.216 Say, $X =  101$
+                      and $Y = 01$,  $Z = 10011$.
+Not a real error.
+
+[99]
+./_region_.tex:216: Preview: Snippet 100 started.
+<-><->
+      
+l.216 Say, $X =  101$ and $
+                           Y = 01$,  $Z = 10011$.
+Not a real error.
+
+./_region_.tex:216: Preview: Snippet 100 ended.(490372+0x2250529).
+<-><->
+      
+l.216 Say, $X =  101$ and $Y = 01$
+                                  ,  $Z = 10011$.
+Not a real error.
+
+[100]
+./_region_.tex:216: Preview: Snippet 101 started.
+<-><->
+      
+l.216 Say, $X =  101$ and $Y = 01$,  $
+                                      Z = 10011$.
+Not a real error.
+
+./_region_.tex:216: Preview: Snippet 101 ended.(490372+0x3292074).
+<-><->
+      
+l.216 Say, $X =  101$ and $Y = 01$,  $Z = 10011$
+                                                .
+Not a real error.
+
+[101]
+./_region_.tex:217: Preview: Snippet 102 started.
+<-><->
+      
+l.217 ...nt (to indicate conclusion), we compare $
+                                                  (empty), x_1 \dots x_3$ wi...
+
+Not a real error.
+
+./_region_.tex:217: Preview: Snippet 102 ended.(538214+179404x5358385).
+<-><->
+      
+l.217 ...ion), we compare $(empty), x_1 \dots x_3$
+                                                   with $z_1 \dots z_3$.
+Not a real error.
+
+[102]
+./_region_.tex:217: Preview: Snippet 103 started.
+<-><->
+      
+l.217 ...e compare $(empty), x_1 \dots x_3$ with $
+                                                  z_1 \dots z_3$.
+Not a real error.
+
+./_region_.tex:217: Preview: Snippet 103 ended.(308974+107642x2366477).
+<-><->
+      
+l.217 ...pty), x_1 \dots x_3$ with $z_1 \dots z_3$
+                                                  .
+Not a real error.
+
+[103]
+./_region_.tex:218: Preview: Snippet 104 started.
+<-><->
+      
+l.218 If $
+          x_i$ or $(empty)$ match $z_i$ and the preceding component ($x_{i-1...
+
+Not a real error.
+
+./_region_.tex:218: Preview: Snippet 104 ended.(308974+107642x632565).
+<-><->
+      
+l.218 If $x_i$
+               or $(empty)$ match $z_i$ and the preceding component ($x_{i-1...
+
+Not a real error.
+
+[104]
+./_region_.tex:218: Preview: Snippet 105 started.
+<-><->
+      
+l.218 If $x_i$ or $
+                   (empty)$ match $z_i$ and the preceding component ($x_{i-1...
+
+Not a real error.
+
+./_region_.tex:218: Preview: Snippet 105 ended.(538214+179404x2520146).
+<-><->
+      
+l.218 If $x_i$ or $(empty)$
+                            match $z_i$ and the preceding component ($x_{i-1...
+
+Not a real error.
+
+[105]
+./_region_.tex:218: Preview: Snippet 106 started.
+<-><->
+      
+l.218 If $x_i$ or $(empty)$ match $
+                                   z_i$ and the preceding component ($x_{i-1...
+
+Not a real error.
+
+./_region_.tex:218: Preview: Snippet 106 ended.(308974+107642x556154).
+<-><->
+      
+l.218 If $x_i$ or $(empty)$ match $z_i$
+                                        and the preceding component ($x_{i-1...
+
+Not a real error.
+
+[106]
+./_region_.tex:218: Preview: Snippet 107 started.
+<-><->
+      
+l.218 ...atch $z_i$ and the preceding component ($
+                                                  x_{i-1}$) also matched, th...
+
+Not a real error.
+
+./_region_.tex:218: Preview: Snippet 107 ended.(308974+162258x1344369).
+<-><->
+      
+l.218 ...i$ and the preceding component ($x_{i-1}$
+                                                  ) also matched, then the b...
+
+Not a real error.
+
+[107]
+./_region_.tex:218: Preview: Snippet 108 started.
+<-><->
+      
+l.218 ...tched, then the bit string component of $
+                                                  X$ so far remains interlea...
+
+Not a real error.
+
+./_region_.tex:218: Preview: Snippet 108 ended.(490372+0x650840).
+<-><->
+      
+l.218 ...hed, then the bit string component of $X$
+                                                   so far remains interleave...
+
+Not a real error.
+
+[108]
+./_region_.tex:219: Preview: Snippet 109 started.
+<-><->
+      
+l.219 However, if a non-matching (with $
+                                        z_i$) is encountered, a False is pla...
+
+Not a real error.
+
+./_region_.tex:219: Preview: Snippet 109 ended.(308974+107642x556154).
+<-><->
+      
+l.219 However, if a non-matching (with $z_i$
+                                            ) is encountered, a False is pla...
+
+Not a real error.
+
+[109]
+./_region_.tex:219: Preview: Snippet 110 started.
+<-><->
+      
+l.219 ...he interleaving is broken for the first $
+                                                  z_1 \dots z_3$ component.
+Not a real error.
+
+./_region_.tex:219: Preview: Snippet 110 ended.(308974+107642x2366477).
+<-><->
+      
+l.219 ...g is broken for the first $z_1 \dots z_3$
+                                                   component.
+Not a real error.
+
+[110]
+./_region_.tex:224: Preview: Snippet 111 started.
+<-><->
+      
+l.224 Next stage is consider $
+                              x_1 \dots x_3, y_1$ and compare these to $z_1 ...
+
+Not a real error.
+
+./_region_.tex:224: Preview: Snippet 111 ended.(308974+139537x3501374).
+<-><->
+      
+l.224 Next stage is consider $x_1 \dots x_3, y_1$
+                                                  and compare these to $z_1 ...
+
+Not a real error.
+
+[111]
+./_region_.tex:224: Preview: Snippet 112 started.
+<-><->
+      
+l.224 ..._1 \dots x_3, y_1$ and compare these to $
+                                                  z_1 \dots z_4$ instead - e...
+
+Not a real error.
+
+./_region_.tex:224: Preview: Snippet 112 ended.(308974+107642x2366477).
+<-><->
+      
+l.224 ...y_1$ and compare these to $z_1 \dots z_4$
+                                                   instead - extending the s...
+
+Not a real error.
+
+[112]
+./_region_.tex:224: Preview: Snippet 113 started.
+<-><->
+      
+l.224 ...tring interleaves the current subset of $
+                                                  X$ and $Y$.
+Not a real error.
+
+./_region_.tex:224: Preview: Snippet 113 ended.(490372+0x650840).
+<-><->
+      
+l.224 ...ing interleaves the current subset of $X$
+                                                   and $Y$.
+Not a real error.
+
+[113]
+./_region_.tex:224: Preview: Snippet 114 started.
+<-><->
+      
+l.224 ...terleaves the current subset of $X$ and $
+                                                  Y$.
+Not a real error.
+
+./_region_.tex:224: Preview: Snippet 114 ended.(490372+0x576089).
+<-><->
+      
+l.224 ...rleaves the current subset of $X$ and $Y$
+                                                  .
+Not a real error.
+
+[114]
+./_region_.tex:226: Preview: Snippet 115 started.
+<-><->
+      
+l.226 This is completed for the example $
+                                         X, Y$ and $Z$ below:
+Not a real error.
+
+./_region_.tex:226: Preview: Snippet 115 ended.(490372+139537x1506001).
+<-><->
+      
+l.226 This is completed for the example $X, Y$
+                                               and $Z$ below:
+Not a real error.
+
+[115]
+./_region_.tex:226: Preview: Snippet 116 started.
+<-><->
+      
+l.226 ...is completed for the example $X, Y$ and $
+                                                  Z$ below:
+Not a real error.
+
+./_region_.tex:226: Preview: Snippet 116 ended.(490372+0x541204).
+<-><->
+      
+l.226 ... completed for the example $X, Y$ and $Z$
+                                                   below:
+Not a real error.
+
+[116]
+./_region_.tex:238: Preview: Snippet 117 started.
+<-><->
+      
+l.238 ...empty) and (empty) above return True as $
+                                                  Z$ also contains an (empty...
+
+Not a real error.
+
+./_region_.tex:238: Preview: Snippet 117 ended.(490372+0x541204).
+<-><->
+      
+l.238 ...pty) and (empty) above return True as $Z$
+                                                   also contains an (empty) ...
+
+Not a real error.
+
+[117]
+./_region_.tex:240: Preview: Snippet 118 started.
+<-><->
+      
+l.240 The boolean at row $
+                          m$, column $n$ will reveal whether $Z$ is an inter...
+
+Not a real error.
+
+./_region_.tex:240: Preview: Snippet 118 ended.(308974+0x630079).
+<-><->
+      
+l.240 The boolean at row $m$
+                            , column $n$ will reveal whether $Z$ is an inter...
+
+Not a real error.
+
+[118]
+./_region_.tex:240: Preview: Snippet 119 started.
+<-><->
+      
+l.240 The boolean at row $m$, column $
+                                      n$ will reveal whether $Z$ is an inter...
+
+Not a real error.
+
+./_region_.tex:240: Preview: Snippet 119 ended.(308974+0x430740).
+<-><->
+      
+l.240 The boolean at row $m$, column $n$
+                                         will reveal whether $Z$ is an inter...
+
+Not a real error.
+
+[119]
+./_region_.tex:240: Preview: Snippet 120 started.
+<-><->
+      
+l.240 ...row $m$, column $n$ will reveal whether $
+                                                  Z$ is an interleaving of $...
+
+Not a real error.
+
+./_region_.tex:240: Preview: Snippet 120 ended.(490372+0x541204).
+<-><->
+      
+l.240 ...w $m$, column $n$ will reveal whether $Z$
+                                                   is an interleaving of $X$...
+
+Not a real error.
+
+[120]
+./_region_.tex:240: Preview: Snippet 121 started.
+<-><->
+      
+l.240 ...eveal whether $Z$ is an interleaving of $
+                                                  X$ and $Y$. In this case, ...
+
+Not a real error.
+
+./_region_.tex:240: Preview: Snippet 121 ended.(490372+0x650840).
+<-><->
+      
+l.240 ...eal whether $Z$ is an interleaving of $X$
+                                                   and $Y$. In this case, it...
+
+Not a real error.
+
+[121]
+./_region_.tex:240: Preview: Snippet 122 started.
+<-><->
+      
+l.240 ...ether $Z$ is an interleaving of $X$ and $
+                                                  Y$. In this case, it retur...
+
+Not a real error.
+
+./_region_.tex:240: Preview: Snippet 122 ended.(490372+0x576089).
+<-><->
+      
+l.240 ...her $Z$ is an interleaving of $X$ and $Y$
+                                                  . In this case, it returns...
+
+Not a real error.
+
+[122]
+./_region_.tex:242: Preview: Snippet 123 started.
+<-><->
+      
+l.242 ...om top-down in the below recurrence for $
+                                                  I[i,j]$ - the boolean for ...
+
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 123 ended.(538214+179404x1673211).
+<-><->
+      
+l.242 ...down in the below recurrence for $I[i,j]$
+                                                   - the boolean for whether...
+
+Not a real error.
+
+[123]
+./_region_.tex:242: Preview: Snippet 124 started.
+<-><->
+      
+l.242 ... for $I[i,j]$ - the boolean for whether $
+                                                  Z$ is interleaving of X an...
+
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 124 ended.(490372+0x541204).
+<-><->
+      
+l.242 ...or $I[i,j]$ - the boolean for whether $Z$
+                                                   is interleaving of X and ...
+
+Not a real error.
+
+[124]
+./_region_.tex:242: Preview: Snippet 125 started.
+<-><->
+      
+l.242 ...r $Z$ is interleaving of X and Y, where $
+                                                  i$ and $j$ are lengths of ...
+
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 125 ended.(473287+0x247229).
+<-><->
+      
+l.242 ...$Z$ is interleaving of X and Y, where $i$
+                                                   and $j$ are lengths of $X...
+
+Not a real error.
+
+[125]
+./_region_.tex:242: Preview: Snippet 126 started.
+<-><->
+      
+l.242 ... interleaving of X and Y, where $i$ and $
+                                                  j$ are lengths of $X$ and ...
+
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 126 ended.(473287+139537x336598).
+<-><->
+      
+l.242 ...nterleaving of X and Y, where $i$ and $j$
+                                                   are lengths of $X$ and $Y...
+
+Not a real error.
+
+[126]
+./_region_.tex:242: Preview: Snippet 127 started.
+<-><->
+      
+l.242 ...and Y, where $i$ and $j$ are lengths of $
+                                                  X$ and $Y$ respectively:
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 127 ended.(490372+0x650840).
+<-><->
+      
+l.242 ...d Y, where $i$ and $j$ are lengths of $X$
+                                                   and $Y$ respectively:
+Not a real error.
+
+[127]
+./_region_.tex:242: Preview: Snippet 128 started.
+<-><->
+      
+l.242 ...here $i$ and $j$ are lengths of $X$ and $
+                                                  Y$ respectively:
+Not a real error.
+
+./_region_.tex:242: Preview: Snippet 128 ended.(490372+0x576089).
+<-><->
+      
+l.242 ...re $i$ and $j$ are lengths of $X$ and $Y$
+                                                   respectively:
+Not a real error.
+
+[128]
+./_region_.tex:244: Preview: Snippet 129 started.
+<-><->
+      
+l.244 \[
+         I[i,j] = \begin{cases}
+Not a real error.
+
+./_region_.tex:250: Preview: Snippet 129 ended.(4305749+0x21611229).
+<-><->
+      
+l.250 \]
+        
+Not a real error.
+
+[129]
+./_region_.tex:252: Preview: Snippet 130 started.
+<-><->
+      
+l.252 ...previous step (left/previous column for $
+                                                  X$, up/previous row for $Y$).
+
+Not a real error.
+
+./_region_.tex:252: Preview: Snippet 130 ended.(490372+0x650840).
+<-><->
+      
+l.252 ...evious step (left/previous column for $X$
+                                                  , up/previous row for $Y$).
+Not a real error.
+
+[130]
+./_region_.tex:252: Preview: Snippet 131 started.
+<-><->
+      
+l.252 ...ous column for $X$, up/previous row for $
+                                                  Y$).
+Not a real error.
+
+./_region_.tex:252: Preview: Snippet 131 ended.(490372+0x576089).
+<-><->
+      
+l.252 ...s column for $X$, up/previous row for $Y$
+                                                  ).
+Not a real error.
+
+[131]
+./_region_.tex:254: Preview: Snippet 132 started.
+<-><->
+      
+l.254 ...r cache as they are encountered and the $
+                                                  I[m, n]$ quickly accessed ...
+
+Not a real error.
+
+./_region_.tex:254: Preview: Snippet 132 ended.(538214+179404x2150203).
+<-><->
+      
+l.254 ...as they are encountered and the $I[m, n]$
+                                                   quickly accessed in $O(1)...
+
+Not a real error.
+
+[132]
+./_region_.tex:254: Preview: Snippet 133 started.
+<-><->
+      
+l.254 ...d and the $I[m, n]$ quickly accessed in $
+                                                  O(1)$ time to give whether...
+
+Not a real error.
+
+./_region_.tex:254: Preview: Snippet 133 ended.(538214+179404x1484276).
+<-><->
+      
+l.254 ... the $I[m, n]$ quickly accessed in $O(1)$
+                                                   time to give whether $Z$ ...
+
+Not a real error.
+
+[133]
+./_region_.tex:254: Preview: Snippet 134 started.
+<-><->
+      
+l.254 ...accessed in $O(1)$ time to give whether $
+                                                  Z$ is interleaving of $X$ ...
+
+Not a real error.
+
+./_region_.tex:254: Preview: Snippet 134 ended.(490372+0x541204).
+<-><->
+      
+l.254 ...cessed in $O(1)$ time to give whether $Z$
+                                                   is interleaving of $X$ an...
+
+Not a real error.
+
+[134]
+./_region_.tex:254: Preview: Snippet 135 started.
+<-><->
+      
+l.254 ... to give whether $Z$ is interleaving of $
+                                                  X$ and $Y$.
+Not a real error.
+
+./_region_.tex:254: Preview: Snippet 135 ended.(490372+0x650840).
+<-><->
+      
+l.254 ...o give whether $Z$ is interleaving of $X$
+                                                   and $Y$.
+Not a real error.
+
+[135]
+./_region_.tex:254: Preview: Snippet 136 started.
+<-><->
+      
+l.254 ... whether $Z$ is interleaving of $X$ and $
+                                                  Y$.
+Not a real error.
+
+./_region_.tex:254: Preview: Snippet 136 ended.(490372+0x576089).
+<-><->
+      
+l.254 ...hether $Z$ is interleaving of $X$ and $Y$
+                                                  .
+Not a real error.
+
+[136]
+./_region_.tex:256: Preview: Snippet 137 started.
+<-><->
+      
+l.256 However, as the table computes $
+                                      (m + n)(n + 1)$ boolean values dependi...
+
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 137 ended.(538214+179404x4720841).
+<-><->
+      
+l.256 ...r, as the table computes $(m + n)(n + 1)$
+                                                   boolean values depending ...
+
+Not a real error.
+
+[137]
+./_region_.tex:256: Preview: Snippet 138 started.
+<-><->
+      
+l.256 ... n)(n + 1)$ boolean values depending on $
+                                                  X$ and $Y$, the algorithm ...
+
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 138 ended.(490372+0x650840).
+<-><->
+      
+l.256 ...)(n + 1)$ boolean values depending on $X$
+                                                   and $Y$, the algorithm ru...
+
+Not a real error.
+
+[138]
+./_region_.tex:256: Preview: Snippet 139 started.
+<-><->
+      
+l.256 ...1)$ boolean values depending on $X$ and $
+                                                  Y$, the algorithm runs on ...
+
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 139 ended.(490372+0x576089).
+<-><->
+      
+l.256 ...$ boolean values depending on $X$ and $Y$
+                                                  , the algorithm runs on $O...
+
+Not a real error.
+
+[139]
+./_region_.tex:256: Preview: Snippet 140 started.
+<-><->
+      
+l.256 ...g on $X$ and $Y$, the algorithm runs on $
+                                                  O(mn)$ time - $O(n^2)$ if ...
+
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 140 ended.(538214+179404x2186285).
+<-><->
+      
+l.256 ...X$ and $Y$, the algorithm runs on $O(mn)$
+                                                   time - $O(n^2)$ if $X$ an...
+
+Not a real error.
+
+[140]
+./_region_.tex:256: Preview: Snippet 141 started.
+<-><->
+      
+l.256 ...$, the algorithm runs on $O(mn)$ time - $
+                                                  O(n^2)$ if $X$ and $Y$ are...
+
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 141 ended.(598293+179404x1867506).
+<-><->
+      
+l.256 ...algorithm runs on $O(mn)$ time - $O(n^2)$
+                                                   if $X$ and $Y$ are equal ...
+
+Not a real error.
+
+[141]
+./_region_.tex:256: Preview: Snippet 142 started.
+<-><->
+      
+l.256 ...ithm runs on $O(mn)$ time - $O(n^2)$ if $
+                                                  X$ and $Y$ are equal length.
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 142 ended.(490372+0x650840).
+<-><->
+      
+l.256 ...hm runs on $O(mn)$ time - $O(n^2)$ if $X$
+                                                   and $Y$ are equal length.
+Not a real error.
+
+[142]
+./_region_.tex:256: Preview: Snippet 143 started.
+<-><->
+      
+l.256 ...s on $O(mn)$ time - $O(n^2)$ if $X$ and $
+                                                  Y$ are equal length.
+Not a real error.
+
+./_region_.tex:256: Preview: Snippet 143 ended.(490372+0x576089).
+<-><->
+      
+l.256 ...on $O(mn)$ time - $O(n^2)$ if $X$ and $Y$
+                                                   are equal length.
+Not a real error.
+
+[143] ) 
+Here is how much of TeX's memory you used:
+ 2870 strings out of 495001
+ 38789 string characters out of 6181195
+ 122514 words of memory out of 5000000
+ 6109 multiletter control sequences out of 15000+600000
+ 9150 words of font info for 33 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 34i,11n,43p,767b,1559s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on _region_.dvi (143 pages, 20256 bytes).
