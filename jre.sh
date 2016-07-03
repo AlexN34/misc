@@ -2,7 +2,7 @@
 
 
 stty ixany
-sudo cp -r /usr/lib/jvm/java-7-openjdk-amd64/ /dev/shm/
+sudo cp -r /usr/lib/jvm/java-7-openjdk-amd64/ /dev/shm/ # Reduce eclipse lag when loading
 xcape
 xcape -e 'Shift_L=Escape'
 xcape -e 'Shift_R=Control_L|space'
