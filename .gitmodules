@@ -1,0 +1,3 @@
+[submodule "tmux-save-sessions"]
+	path = tmux-save-sessions
+	url = https://github.com/zsoltf/tmux-save-sessions.git

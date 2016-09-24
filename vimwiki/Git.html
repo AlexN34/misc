@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Git</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<div id="Adding&#47;Staging commands"><h1 id="Adding&#47;Staging commands">Adding/Staging commands</h1></div>
+<ul>
+<li>
+add/commit for staging
+
+<li>
+reset HEAD &lt;filename&gt; - reverts staged changes latest head (undeletes, unchanges)
+
+<li>
+git checkout &lt;filename&gt; - restores most recently committed state
+
+<li>
+git rm - deletes from os and stages delete
+
+<li>
+git checkout (commit hash code) - go back in time to specified state
+
+<li>
+git checkout master(or name of other branch) - return to master branch/desired branch
+
+<li>
+git branch &lt;new name&gt; &lt;hash code of latest commit (if alternate/previously discarded branch)&gt;
+
+<li>
+git branch &lt;new name&gt; (with no hash code) clones current branch/master
+
+<li>
+git merge &lt;branch to merge to master&gt; - brings changes from branch to merge into master
+
+<li>
+git branch -m &lt;oldname&gt; &lt;newname&gt; - rename branch
+
+<li>
+git branch -D &lt;name&gt; - deletes branch &lt;name&gt;
+
+<li>
+cloned projects; git checkout -b &lt;branch name&gt; &lt;location of branch on github (origin) origin/&lt;name&gt;&gt; - check out this branch, switch to project branch
+
+<li>
+clone all branches: git clone -- mirror (link) .git (have to make directory for it first)
+ git config --bool core.bare false &lt;-- switch from bare to reg repo after cloning
+ git reset --hard &lt;-- resets HEAD/everything into normal repository
+
+</ul>
+<p>
+git branch &lt;sdfasd&gt; a2c6a5f
+</p>
+<ul>
+<li>
+.gitignore will only work on untracked (not yet added) files unlesss... just remove using git rm (to untrack). if want to keep file, use git rm --cache &lt;filename&gt;
+
+<li>
+make git track empty directories? touch .gitkeep and keep empty file in directory
+
+<li>
+
+
+</ul>
+
+<div id="Stash"><h1 id="Stash">Stash</h1></div>
+<ul>
+<li>
+git stash save "change message" - saves changes that have not been committed yet separately.
+
+<li>
+above command also runs git reset --hard (above, takes latest current repo and puts into pwd)
+
+<li>
+--untracked option to also include untracked files
+
+<li>
+git stash list - shows all stashed states
+
+<li>
+git stash show &lt;stash name from list&gt; - can use -p option to show differences between head
+
+<li>
+git stash pop &lt;name&gt;/ git stash apply &lt;name&gt;- pop removes after taking out, apply leaves in stash
+
+<li>
+MAKE SURE IN CORRECT BRANCH BEFORE APPLYING
+
+<li>
+remove from stash? (directory state) - git stash drop &lt;stash name&gt;
+
+<li>
+mass delete - git stash clear
+
+</ul>
+
+
+<div id="Pushing and stuff"><h1 id="Pushing and stuff">Pushing and stuff</h1></div>
+<ul>
+<li>
+origin/master is local copy of repo branch that reflects remote repo. update by fetching
+
+<li>
+push to update repo with local changes, merge to get remote changes
+
+<li>
+To add: git remote add origin [link]
+
+<li>
+pull: git pull [link] [which branch]
+
+<ul>
+<li>
+to pull only from specific branc: git push -u origin [branch name]
+
+<li>
+to push: git push -u origin master
+
+<li>
+Delete remote branch: git push origin :[branch name] or git push origin --delete [branch name]
+
+</ul>
+</ul>
+
+</body>
+</html>

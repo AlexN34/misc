@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>here1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<p>
+Project 1 SQL Views and Functions	CSE@UNSW
+Important Notice
+</p>
+<ol>
+<li>
+If you cannot install their project properly due to the space limit, you can fix this problem as follows: delete the installation file of postgresql "postgresql-9.3.3.tar.bz2". The file should be in directory "/srvr/YOU/" if you followed the lab instruction when installing postgresql. After deletion, if you still have disk errors, please delete the folder named "/srvr/YOU/postgresql-9.3.3" by "rm -r". If you still cannot set up the project propoerly, please find a lab time and ask the tutor for help.
+
+</ol>
+<p>
+The table used in Q2 should be Affiliations, we'v revised it in the specification.
+the unit of Q5c should be School of Computer Science and Engineering, we've revised it in the specification. (13/04/2016)
+According to the feedback from students, we clarify the points about Question 10 that may be unclear as follows:
+</p>
+<ol>
+<li>
+You may find that there are some unusual Asia semesters in Semesters table. Thus, it is possible that two semesters have the same year and term. For example, for major semester 2007S1, we actually have two semesters, i.e., "Semester 1 2007" and "Asia Semester March 2007".A subject is considered to be offered in major semester 2007S1 as long as it was offered in either normal semester, e.g., "Semester 1 2007" or Asia semester, e.g., "Asia Semester March 2007". A subject is considered to be popular as long as it was taught in all major semesters from 2002 to 2013 (i.e., 02S1, 02S2, 03S1, 03S2, ..., 13S1, 13S2).You should identify the major semester based on its year and term, rather than its id or longname.
+
+</ol>
+
+<ol>
+<li>
+A student is considered to have good performance on a subject as long as s/he once got a 'HD' or 'DN' on that subject.It does not matter whether s/he once got some other grades on that subject.
+
+</ol>
+
+<p>
+Introduction
+Reading and understanding a moderately large relational schema (MyMyUNSW)
+Implementing SQL views and functions to satisfy requests for information
+Total mark of this project is 25
+The due date is Sun 24 Apr. 23:59
+Specification
+</p>
+
+<p>
+Download specification
+</p>
+
+<p>
+Documents
+SQL_Schema
+schema summary
+description
+proj1.sql
+check.sql
+proj1.tar.gz
+mymyunsw.dump
+Submission
+You can submit this project by doing the following:
+</p>
+
+<p>
+Ensure that you are in the directory containing the file to be submitted.
+Type give cs3311 proj1 proj1.sql.
+If you submit your project more than once, the last submission will replace the previous one.
+To prove successful submission, please take a screenshot as assignment submission manual shows and keep it by yourself. For details of submission guideline see section 6 in the specification.
+Late submission penalty
+10% reduction for the 1st day, then 30% reduction.
+</p>
+
+
+<p>
+If you have any questions, or find any errors in the project, please contact: longyuan@cse.unsw.edu.au or xiangw@cse.unsw.edu.au. You can also ask questions in project group, we will answer your question as soon as possible. Thanks. 
+Have fun:) 
+</p>
+
+<p>
+links:
+<a href="http:&#47;&#47;www.cse.unsw.edu.au&#47;~cs3311&#47;16s1&#47;proj&#47;proj1&#47;schema.sql">http://www.cse.unsw.edu.au/~cs3311/16s1/proj/proj1/schema.sql</a>
+<a href="http:&#47;&#47;www.cse.unsw.edu.au&#47;~cs3311&#47;16s1&#47;proj&#47;proj1&#47;summary.pdf">http://www.cse.unsw.edu.au/~cs3311/16s1/proj/proj1/summary.pdf</a>
+</p>
+
+
+<p>
+Project 2 PLpgSQL	CSE@UNSW
+Important Notice
+</p>
+<ol>
+<li>
+The mymyunsw.dump used in project 2 is different from that used in project 1, please confirm that you load the correct database when you start your work.
+
+</ol>
+<p>
+In Q1, the "name" is just the name of the course's subject, not short name, we've revised it in the specification, and the check.sql has been updated. You need to redownload check.sql to do this project if you have already downloaded (31/3/2016).
+Q2 and Q3 in template file proj2.sql miss one argument respectively and we've revised it. (11/4/2016)
+How to determine UOC in Q1. We determine the UOC in Q1 based on the following rule: if the mark of the course is not null and the grade of the course is not in SY, PC, PS, CR, DN, HD, PT, A, B, and C, then the UOC of the course is 0; in all other cases, the UOC remains the same.(25/4/2016)
+Introduction
+Implementing PLpgSQL functions to satisfy requests for information
+Total mark of this project is 25
+The due date is Fri 20 May 23:59 (48 hrs extension without support from tutors and system people)
+Specification
+</p>
+
+<p>
+Download specification
+</p>
+
+<p>
+Documents
+SQL_Schema
+schema summery
+description
+proj2.sql
+check.sql
+proj2.tar.gz
+mymyunsw.dump
+graph.sql
+store_graph.sh (please rename the file as store_graph.sh when download)
+check_graph.sql
+dataset_0.txt
+graph.tar.gz
+Submission
+You can submit this project by doing the following:
+</p>
+
+<p>
+Ensure that you are in the directory containing the file to be submitted.
+Type give cs3311 proj2 proj2.sql graph.sql.
+If you submit your project more than once, the last submission will replace the previous one.
+To prove successful submission, please take a screenshot as assignment submission manual shows and keep it by yourself. For details of submission guideline see section 6 in the specification.
+Late submission penalty
+10% reduction for the 1st day, then 30% reduction.
+</p>
+
+<p>
+If you have any questions, or find any errors in the project, please contact: longyuan@cse.unsw.edu.au. You can also ask questions in project group, we will answer your question as soon as possible. Thanks. 
+Have fun:) 
+</p>
+
+
+<p>
+Labs:
+</p>
+
+<p>
+<a href="comp3311lab1.html">comp3311lab1</a>
+<a href="comp3311lab2.html">comp3311lab2</a>
+<a href="comp3311lab3.html">comp3311lab3</a>
+<a href="comp3311lab4.html">comp3311lab4</a>
+<a href="comp3311lab5.html">comp3311lab5</a>
+<a href="comp3311lab6.html">comp3311lab6</a>
+<a href="comp3311lab7.html">comp3311lab7</a>
+comp3311lab8
+comp3311lab9
+comp3311lab10
+comp3311lab11
+comp3311lab12
+</p>
+
+</body>
+</html>

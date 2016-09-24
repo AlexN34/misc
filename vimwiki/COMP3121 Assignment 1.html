@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>COMP3121 Assignment 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+
+
+<ul>
+<li class="done4">
+=== Question 1 ===
+<pre class="brush: java">
+    void split (thiefArray, spoilsArray, curThief, pileSize) { //curThief is index of
+                                                              //thief to take from pile
+        valTaken = pileSize/n //fair share according to curThief;
+        //Check with all other thieves [[that]] curThief's split is fair 
+        for (j = 0; j &lt; n; j++) { 
+            next if (thiefArray[j] != 'no' or j == curThief);
+            //if thiefArray[j] == no, thief j has already taken his share and has no
+            //further say. 
+            //Thief i obviously thinks it's fair, exclude him from check 
+            //Ask remaining thieves if this amt is fair
+            if (!agree(j, valTaken))) { 
+                //If a thief j disagrees; 
+                //The pile is recombined, now THIS thief j attempts to take his share. 
+                split (thiefArray, spoilsArray, j, pileSize); 
+            } 
+        } 
+        spoilsArray[i] = valTaken; //take from the pot (with others permission) 
+        thiefArray[i] = 'yes'; //effectively deletes this thief from consideration 
+        *pileSize -= valTaken; //past check; all other thieves agree this is 1/n of share 
+                              //so thief i reduces pileSize 
+        delete(spoilsArray, i) //remove thief and move positions of all, other 
+                              // thieves left; he has taken his share 
+    } 
+    
+    boolean agree(thiefNo, value); 
+    // INPUT: takes in value which might be taken by 
+    // current thief and another thief in line so he can check the size
+    // OUTPUT: returns true/false whether checked thief  
+    // Agrees that value = pileSize/n 
+    // Not implemented as this is subjective to each thief 
+    
+    int main (int argc, char * argv[]) { 
+        int pileSize;  //this is the total pot; reduce as thieves take 
+        int *thiefArray = createNewArray(n); 
+        initialise(thiefArray);  //thiefArray[i] records whether thief at each index 
+                               // has taken from the pot. each initialised to 'no' 
+        int *spoilsArray = createNewArray(n); 
+        spoilsArray will contains the winnings of the ith thief, i is indexes of array
+        
+        // Number all thieves; let the current thief to take be the ith thief
+        for (int i = 0; i &lt; n; i++) { 
+            split (thiefArray, spoilsArray, i, pileSize); 
+        } 
+        //Print out the spoils of each thief 
+        for (int i = 0; i &lt; n; i++) { 
+        printf ("Thief %d was able to take %d things", i, spoilsArray[i]); 
+        } 
+    } 
+</pre>
+
+<li class="done4">
+Question 2
+<pre>
+    
+    Problem Statement:
+    - In a room of 20 people (including himself) Tom got 19 different answers from other people (wife included) (1)
+    - Nobody shook hands with themselves (2)
+    - Nobody shook hands with their spouse (3)
+    
+    To show the number of hands Tom shook, first show that Mary shook 9 hands.
+    - Combining (1) with (2) and (3), of the group the highest number of handshakes for an individual
+    was 18 (-1 for each condition). (Someone knew nobody)
+    - From 1), someone also knew everyone and shook 0 hands, as range 0..18 gives 19 unique shake combinations 
+    - The person who shook 0 hands (P0) is married to the one who shook 18 (P18). 
+        (Everyone BUT P18's wife shook hands with him. So, P0 must be the only person who didn't - his wife)
+       
+    Consider the below:
+    
+    | Couples remaining | Range(min) | Range(max) | Removed couples | Effective 'new' handshakes |
+    |-------------------|------------|------------|-----------------|----------------------------|
+    | 8                 | 0          | 18         | 0               | 0 .. 18                    |
+    | 7                 | 1          | 17         | 1               | 0 .. 16                    |
+    | 6                 | 2          | 16         | 2               | 0 .. 15                    |
+    | ..                | ..         | ..         | ..              | ..                         |
+    | ..                | ..         | ..         | ..              | ..                         |
+    | ..                | ..         | ..         | ..              | ..                         |
+    | 2                 | 7          | 11         | 8               | 0 .. 4                     |
+    | 1                 | 8          | 10         | 9               | 0 .. 2                     |
+    
+    Logic: Wife shook 9 hands.
+    From table, can see relationship between spouse. Since Tom was Mary's spouse and participating in the
+    Handshakes, he contributed to the handshake range above.
+    
+     {{$
+     \sum_i a_i^2
+     =
+     1
+     nshakes = total - nspouse
+     nspouse = 9
+     ntom = 18 - 9 = 9 shakes also.
+     }}$
+     
+</pre>
+
+</ul>
+
+
+<ul>
+<li class="done0">
+Question 3
+
+<li class="done4">
+Question 4
+
+<li class="done4">
+Question 5
+
+<li class="done4">
+Question 6
+
+</ul>
+
+<ul>
+<li class="done0">
+Type up solutions
+
+</ul>
+
+<ul>
+<li class="done0">
+Question 7
+
+<li class="done0">
+Question 8
+
+<li class="done0">
+Question 9
+
+<li class="done0">
+Question 10
+
+<li class="done0">
+Question 11
+
+<li class="done0">
+Question 12
+
+<li>
+f(n) = O(g(n)); f(n) = n^2 and g(n) = (n-2log2n)(n+cosn)
+
+<li>
+f(n) = O(g(n)); f(n) = n^2 and g(n) = (n-2log2n)(n+cosn)
+
+<li class="done0">
+Question 13
+
+<li class="done0">
+Question 14
+
+<li class="done0">
+Question 15
+
+<li class="done0">
+
+
+</ul>
+
+<ol>
+<li>
+sdfasdf
+
+<li>
+asdfdsf
+
+</ol>
+
+</body>
+</html>
