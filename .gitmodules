@@ -7,3 +7,6 @@
 [submodule "golden-ratio"]
 	path = golden-ratio
 	url = https://github.com/roman/golden-ratio.git
+[submodule "gruvbox"]
+	path = gruvbox
+	url = https://github.com/morhetz/gruvbox.git
