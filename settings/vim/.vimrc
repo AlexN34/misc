@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set t_ut=
 " 256-color terminal
 set t_Co=256
@@ -91,17 +92,18 @@ else
   set completeopt
 endif " has("autocmd")
 
-colorscheme xoria256
+colorscheme gruvbox
+set background=dark
 
 set number
 set relativenumber
 "autocmd InsertEnter * :set number
 "autocmd InsertLeave * :set relativenumber
 
-execute pathogen#infect()
 filetype plugin indent on
 map <C-n> :NERDTreeToggle<CR>
-let mapleader = " "
+let mapleader = ","
+" let localleader = " " " doesn't work
 nnoremap <S-tab> <<
 nnoremap <tab> >>
 inoremap fd <ESC>
@@ -109,12 +111,14 @@ nnoremap K i<CR><Esc>
 nnoremap <Leader>y "+yy
 vnoremap <Leader>y "+yy
 nnoremap <Leader>p "+gP
-nnoremap <Leader>s :w<CR>
+nnoremap <Leader>fs :w<CR>
 nnoremap <Leader>z :!zeal --query "<cword>"&<CR><CR>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set expandtab
 set tabstop=4
 set shiftwidth=4
+" Use 2 spaces for tabs in html files
+autocmd FileType html :setlocal sw=2 ts=2 sts=2
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -149,8 +153,8 @@ let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp', 'c': 'c', 'java': 
 let g:vimwiki_list = [wiki]
 let g:vimwiki_list = [{'path': '/home/alex/Dropbox/vim/vimwiki/', 'path_html': '/home/alex/Dropbox/vim/vimwiki_html/'}]
 
-set backupdir=~/tmp//
-set dir=~/tmp//
+set backupdir=~/vimTmp//
+set dir=~/vimTmp//
 
 augroup vimrc_autocmds
     autocmd!
@@ -160,6 +164,9 @@ augroup vimrc_autocmds
     autocmd FileType python set nowrap
     augroup END
 set laststatus=2
+
+let g:jedi#completions_command = "<leader>c"
+let g:jedi#goto_definitions_command = "<leader>h"
 
 " Python-mode
 " Activate rope
@@ -174,6 +181,11 @@ set laststatus=2
 " ]]            Jump on next class or function (normal, visual, operator modes)
 " [M            Jump on previous class or method (normal, visual, operator modes)
 " ]M            Jump on next class or method (normal, visual, operator modes)
+" Enable pymode features
+let g:pymode_virtualenv = 1
+let g:pymode_run = 1
+let g:pymode_run_bind = '<leader>r'
+
 let g:pymode_rope = 0
 
 " Documentation
@@ -207,4 +219,63 @@ let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 let g:slime_python_ipython = 1
 
-nmap <c-c><c-x> ggvG$<Plug>SlimeRegionSend
+"send buffer to ipython through slime
+nmap <leader>ms ggvG$<Plug>SlimeRegionSend
+
+
+" Automatic reloading of vimrc
+autocmd! bufwritepost .vimrc source %
+
+
+" bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
+" Every unnecessary keystroke that can be saved is good for your health :)
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+nmap <c-h> <c-w>h
+
+nmap Q @@
+
+"convert tabs and save
+nmap <F2> :retab <CR> :w <CR> 
+
+"Supertab case
+set infercase
+set completeopt=longest,menuone
+let g:SuperTabLongestEnhanced = 1
+
+"Attempt at calling latexcount function - for Latex; make sure count script is in folder
+function! WC()
+    let filename = expand("%")
+    let cmd = "perl latexcount.pl " . filename
+    let result = system(cmd)
+    echo result
+endfunction
+
+command WC call WC()
+nmap <F3> :WC<CR>
+
+" Keep search matches in middle of window, pulse line when moving to them
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Split line (sister to [J]oin lines)
+" The normal use of S is covered by cc, so don't worry about shadowing it.
+nnoremap S i<cr><esc>^mwgk:silent! s/\v +$//<cr>:noh<cr>`w
+
+" Easymotion remap
+map <Leader> <Plug>(easymotion-prefix)
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)

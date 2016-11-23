@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.zshenv
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export WORKON_HOME=$HOME/.virtualenvs
