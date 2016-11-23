@@ -1,8 +1,0 @@
-
-public class Action {
-	int dummy;
-	public Action () {
-		this.dummy = 0;
-	}
-
-}

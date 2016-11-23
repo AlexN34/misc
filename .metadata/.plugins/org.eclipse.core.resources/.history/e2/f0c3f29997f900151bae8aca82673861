@@ -1,6 +1,0 @@
-
-public interface Request {
-	public String requestBooking(Venue v, Action a) {
-		return "dummy";
-	}
-}

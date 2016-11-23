@@ -1,5 +1,0 @@
-alias tmux="tmux -2"
-alias enw="emacs -nw"
-alias esv="emacs --daemon"
-alias ecl="emacsclient -t"
-alias psh="powershell"
