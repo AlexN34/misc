@@ -9,7 +9,9 @@ param (
     git commit -m "added $elt"    
 }
 #pull anything not yet updated
-git pull
+git pull origin windowsvim
 #update to master repo
 git push
 
+#to finish, add module to plugin list
+Add-Content .\pluginURLs.txt "`r`n$path"

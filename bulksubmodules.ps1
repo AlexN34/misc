@@ -12,7 +12,7 @@ foreach ($elt in $textfile) {
     git commit -m "added $elt"    
 }
 #pull anything not yet updated
-git pull
+git pull origin windowsvim
 #update to master repo
 git push
 
