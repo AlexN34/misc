@@ -15,3 +15,4 @@ git push
 
 #to finish, add module to plugin list
 Add-Content .\pluginURLs.txt "`r`n$path"
+
